@@ -1,0 +1,63 @@
+.bkb_connected li{
+    background: #f6f6f6 none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    color: #2c2c2c;
+    cursor: move;
+    font-family: inherit;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    list-style: outside none none;
+    margin: 5px;
+    padding: 5px;
+}
+
+#bkb_connected {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    clear: both;
+}
+.bkb_connected {
+    float: left;
+    width: 48%;
+    border: 1px solid #EEEEEE;
+    min-height: 250px;
+    height: 250px;
+    overflow-y: scroll;
+}
+.bkb_connected.bkb_cat ,
+.bkb_connected.bkb_tags {
+    float: right;
+    background: #fffff4;
+    border: 1px solid #CCC;
+}
+
+.bkb_connected.bkb_cat li,
+.bkb_connected.bkb_tags li{
+    background: #FFF;
+}
+li.sortable-placeholder {
+    border: 1px dashed #CCC;
+    background: none;
+}
+
+
+.bkb_tabs{
+    width: 99%;
+    min-height: 150px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+
+.bkb_counter{
+    width: 99%;
+    min-height: 170px;
+    height: 170px;
+    overflow-y: auto;
+}
+
+.vc_license-activation-notice{
+    display:none;
+}
