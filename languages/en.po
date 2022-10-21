@@ -1,0 +1,695 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: KB Addon For Visual Composer\n"
+"POT-Creation-Date: 2020-07-18 13:09+0600\n"
+"PO-Revision-Date: 2020-07-18 13:09+0600\n"
+"Last-Translator: \n"
+"Language-Team: BlueWindLab <hkhan.cse@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;_n\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../includes/bkb-vc-element.php:36
+msgid "KB Category"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:39 ../includes/bkb-vc-element.php:328
+#: ../includes/bkb-vc-element.php:613 ../includes/bkb-vc-element.php:659
+#: ../includes/bkb-vc-element.php:753 ../includes/bkb-vc-element.php:817
+#: ../includes/bkb-vc-element.php:938 ../includes/bkb-vc-element.php:1137
+msgid "BWL KB"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:47
+msgid "Categories"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:49
+msgid "Just drag and drop your required categories in to right box."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:56 ../includes/bkb-vc-element.php:345
+#: ../includes/bkb-vc-element.php:633 ../includes/bkb-vc-element.php:791
+#: ../includes/bkb-vc-element.php:921 ../includes/bkb-vc-element.php:1120
+#: ../includes/bkb-vc-element.php:1229
+msgid "Extra Class"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:59
+msgid "Additional classes: bkbm-custom-layout-1, bkbm-box-shadow"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:69
+msgid "Layout Type"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:72 ../includes/bkb-vc-element.php:361
+msgid "Lists View"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:73 ../includes/bkb-vc-element.php:362
+msgid "Boxed View"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:85 ../includes/bkb-vc-element.php:376
+msgid "Enable Carousel?"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:87 ../includes/bkb-vc-element.php:98
+#: ../includes/bkb-vc-element.php:112 ../includes/bkb-vc-element.php:161
+#: ../includes/bkb-vc-element.php:193 ../includes/bkb-vc-element.php:244
+#: ../includes/bkb-vc-element.php:256 ../includes/bkb-vc-element.php:378
+#: ../includes/bkb-vc-element.php:389 ../includes/bkb-vc-element.php:403
+#: ../includes/bkb-vc-element.php:450 ../includes/bkb-vc-element.php:482
+#: ../includes/bkb-vc-element.php:532 ../includes/bkb-vc-element.php:544
+#: ../includes/bkb-vc-element.php:912 ../includes/bkb-vc-element.php:1178
+#: ../includes/bkb-vc-element.php:1193
+msgid "Yes"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:95 ../includes/bkb-vc-element.php:386
+msgid "Hide Carousel Navigation Arrow?"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:99 ../includes/bkb-vc-element.php:111
+#: ../includes/bkb-vc-element.php:162 ../includes/bkb-vc-element.php:192
+#: ../includes/bkb-vc-element.php:243 ../includes/bkb-vc-element.php:255
+#: ../includes/bkb-vc-element.php:390 ../includes/bkb-vc-element.php:402
+#: ../includes/bkb-vc-element.php:451 ../includes/bkb-vc-element.php:481
+#: ../includes/bkb-vc-element.php:531 ../includes/bkb-vc-element.php:543
+#: ../includes/bkb-vc-element.php:911 ../includes/bkb-vc-element.php:1179
+#: ../includes/bkb-vc-element.php:1192
+msgid "No"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:101 ../includes/bkb-vc-element.php:392
+msgid "You can show/hide two arrow will display beside the carousel items."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:108 ../includes/bkb-vc-element.php:399
+msgid "Hide Carousel Dots ?"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:114 ../includes/bkb-vc-element.php:405
+msgid "You can show/hide bottom will display below the carousel items."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:121 ../includes/bkb-vc-element.php:412
+msgid "Auto Play Time Out"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:132 ../includes/bkb-vc-element.php:423
+msgid "Select scroll speed."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:140 ../includes/bkb-vc-element.php:429
+#: ../includes/bkb-vc-element.php:1213
+msgid "List Styles"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:143 ../includes/bkb-vc-element.php:177
+#: ../includes/bkb-vc-element.php:432 ../includes/bkb-vc-element.php:466
+#: ../includes/bkb-vc-element.php:681 ../includes/bkb-vc-element.php:710
+#: ../includes/bkb-vc-element.php:724 ../includes/bkb-vc-element.php:1216
+msgid "Select"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:144 ../includes/bkb-vc-element.php:433
+#: ../includes/bkb-vc-element.php:712 ../includes/bkb-vc-element.php:853
+#: ../includes/bkb-vc-element.php:1217
+msgid "Rounded"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:145 ../includes/bkb-vc-element.php:434
+#: ../includes/bkb-vc-element.php:854 ../includes/bkb-vc-element.php:1218
+msgid "Rectangle"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:146 ../includes/bkb-vc-element.php:435
+#: ../includes/bkb-vc-element.php:855 ../includes/bkb-vc-element.php:1219
+msgid "Iconized"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:147 ../includes/bkb-vc-element.php:436
+msgid "Accordion"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:148 ../includes/bkb-vc-element.php:437
+#: ../includes/bkb-vc-element.php:856 ../includes/bkb-vc-element.php:1220
+msgid "None"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:158
+msgid "Show Category Title?"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:174 ../includes/bkb-vc-element.php:463
+msgid "Column Settings"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:178 ../includes/bkb-vc-element.php:467
+msgid "One Column"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:179 ../includes/bkb-vc-element.php:468
+msgid "Two Columns"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:180 ../includes/bkb-vc-element.php:469
+msgid "Three Columns"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:189 ../includes/bkb-vc-element.php:478
+msgid "Display Category Description?"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:202 ../includes/bkb-vc-element.php:491
+msgid "No of items to display"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:211 ../includes/bkb-vc-element.php:500
+msgid "Order By Settings"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:214 ../includes/bkb-vc-element.php:503
+msgid "ID"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:215 ../includes/bkb-vc-element.php:504
+msgid "Title"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:216 ../includes/bkb-vc-element.php:505
+msgid "Date"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:217 ../includes/bkb-vc-element.php:506
+msgid "Recent Modified"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:218 ../includes/bkb-vc-element.php:507
+msgid "Random"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:219 ../includes/bkb-vc-element.php:508
+msgid "Custom Sort"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:227 ../includes/bkb-vc-element.php:516
+msgid "Order Type Settings"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:230 ../includes/bkb-vc-element.php:519
+msgid "Ascending"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:231 ../includes/bkb-vc-element.php:520
+msgid "Descending"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:240 ../includes/bkb-vc-element.php:528
+msgid "Display Post Count?"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:252 ../includes/bkb-vc-element.php:540
+msgid "Display Post Count Info?"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:259 ../includes/bkb-vc-element.php:547
+msgid "Display total number of posts below the list."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:268 ../includes/bkb-vc-element.php:556
+msgid "Icon Type"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:271 ../includes/bkb-vc-element.php:559
+msgid "Font Awesome Icon"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:272 ../includes/bkb-vc-element.php:560
+msgid "Image Icon"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:280 ../includes/bkb-vc-element.php:568
+msgid "Icon Size"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:283 ../includes/bkb-vc-element.php:571
+msgid "Option Panel Size"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:284 ../includes/bkb-vc-element.php:572
+msgid "Auto Size"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:293 ../includes/bkb-vc-element.php:581
+msgid "Box View Extra Class"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:296
+msgid ""
+"Additional classes: box-left-align, box-right-align, no-icon, no-separator, "
+"no-view-more-link"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:307 ../includes/bkb-vc-element.php:595
+#: ../includes/bkb-vc-element.php:642 ../includes/bkb-vc-element.php:800
+#: ../includes/bkb-vc-element.php:1238
+msgid "Animation"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:309 ../includes/bkb-vc-element.php:597
+#: ../includes/bkb-vc-element.php:644 ../includes/bkb-vc-element.php:802
+#: ../includes/bkb-vc-element.php:1240
+msgid "Choose your animation style."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:325 ../includes/bkb-vc-element.php:1074
+#: ../includes/bkb-vc-tab-shortcode.php:76
+msgid "KB Tags"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:336
+msgid "Tags"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:338
+msgid "Just drag and drop your required Tags in to right box."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:348
+msgid "Additional class: bkbm-box-shadow"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:358
+msgid "Layout Type Settings"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:447
+msgid "Show Tag Title?"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:584
+msgid ""
+"Additional classes: box-left-align, box-right-align, no-icon, no-separator"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:610
+msgid "KB Search"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:623
+msgid "Placeholder Text"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:625
+msgid "Search Keywords ..... "
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:626
+msgid "Text will display in search input box."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:636
+msgid ""
+"Add additional class: bkb-sbox-layout-1, bkb-sbox-layout-1 semi-rounded-box, "
+"bkb-sbox-layout-1 rounded-box, bkb-sbox-layout-1 dark-box"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:656
+msgid "Question Modal Button"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:669
+msgid "Button Title"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:671
+msgid "Add a Question"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:678
+msgid "Button Size"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:682
+msgid "Large"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:683
+msgid "Medium"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:684
+msgid "Small"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:685
+msgid "Full Width"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:694
+msgid "Button Alignment"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:697
+msgid "Center"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:698
+msgid "Left"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:699
+msgid "Right"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:707
+msgid "Button Border Style"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:711
+msgid "Square"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:721
+msgid "Button Animation"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:725
+msgid "Animation 1"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:726
+msgid "Animation 2"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:727
+msgid "Animation 3"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:728
+msgid "Animation 4"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:729
+msgid "Animation 5"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:730
+msgid "Animation 6"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:731
+msgid "Animation 7"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:732
+msgid "Animation 8"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:733
+msgid "Animation 9"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:734
+msgid "Animation 10"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:735
+msgid "Animation 11"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:736
+msgid "Animation 12"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:750
+msgid "KB External Form"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:763
+msgid "Form Headline"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:765
+msgid "Add A Knowledge Base Question !"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:766
+msgid "You can set custom form heading for KB External Form ."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:778
+msgid "Form Layout"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:781
+msgid "Layout 01"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:782
+msgid "Layout 02"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:785
+msgid "Layout 01 will display Form labels and Layout 02 will hide Form label."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:794
+msgid "Add additional class of button."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:814
+msgid "KB Tabs"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:825
+msgid "Tab Items"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:827 ../includes/bkb-vc-element.php:948
+msgid "You can use drag & drop to re-order tab position."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:836
+msgid "Tab Style"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:839
+msgid "Horizontal Tab"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:840
+msgid "Vertical Tab"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:850
+msgid "Tab Item Style"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:865
+msgid "No of Items"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:877
+msgid "Featured Tab Title"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:880
+msgid "Set custom title for Featured KB Tab"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:887
+msgid "Popular Tab Title"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:890
+msgid "Set custom title for Popular KB Tab"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:897
+msgid "Recent Tab Title"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:900
+msgid "Set custom title for Recent KB Tab"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:908
+msgid "Enable RTL Mode?"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:924
+msgid "Add additional class of tabs."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:935
+msgid "KB counter"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:946
+msgid "Elements"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:954
+msgid "Counter Delay"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:962
+msgid "Counter Time"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:970
+msgid "Counter Icon Color"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:973 ../includes/bkb-vc-element.php:981
+#: ../includes/bkb-vc-element.php:998 ../includes/bkb-vc-element.php:1016
+msgid "Set counter icon color."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:978
+msgid "Icon Font Size"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:987
+msgid "Counter Text Color"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:990
+msgid "Set counter text color."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:995
+msgid "Text Font Size"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1004
+msgid "Counter Title Color"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1007
+msgid "Set counter title color."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1013
+msgid "Title Font Size"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1026
+msgid "Total Kb Title"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1028 ../includes/bkb-vc-tab-shortcode.php:72
+msgid "KB Posts"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1035
+msgid "Total KB Icon"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1043 ../includes/bkb-vc-element.php:1066
+#: ../includes/bkb-vc-element.php:1089 ../includes/bkb-vc-element.php:1112
+msgid "Select icon from library."
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1049
+msgid "Total Category Title"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1051 ../includes/bkb-vc-tab-shortcode.php:74
+msgid "KB Categories"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1058
+msgid "Total Category Icon"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1072
+msgid "Total Tag Title"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1081
+msgid "Total Tag Icon"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1095
+msgid "Total Like Title"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1097 ../includes/bkb-vc-tab-shortcode.php:78
+msgid "KB Likes"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1104
+msgid "Total Like Icon"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1124 ../includes/bkb-vc-element.php:1232
+msgid "Additional Class: bkbm-post-list-custom-layout, bkbm-posts-box-shadow"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1134
+msgid "Knowledgebase Posts"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1148
+msgid "KB Type"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1151 ../includes/bkb-vc-tab-shortcode.php:246
+msgid "Recent KB"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1152 ../includes/bkb-vc-tab-shortcode.php:228
+msgid "Popular KB"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1153 ../includes/bkb-vc-tab-shortcode.php:234
+msgid "Featured KB"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1154 ../includes/bkb-vc-tab-shortcode.php:240
+msgid "Random KB"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1164
+msgid "KB Type Title"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1175
+msgid "Display KB Type Title?"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1189
+msgid "Enable Pagination?"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1202
+msgid "Post Per Page"
+msgstr ""
+
+#: ../includes/bkb-vc-element.php:1205
+msgid "Default: 5. You can add any number. Set -1 to display all the posts."
+msgstr ""
+
+#: ../includes/bkb-vc-tab-shortcode.php:11
+msgid "Featured"
+msgstr ""
+
+#: ../includes/bkb-vc-tab-shortcode.php:12
+msgid "Popular"
+msgstr ""
+
+#: ../includes/bkb-vc-tab-shortcode.php:13
+msgid "Recent"
+msgstr ""
