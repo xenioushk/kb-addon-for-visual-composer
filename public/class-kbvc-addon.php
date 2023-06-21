@@ -40,7 +40,6 @@ class BKB_VC
 
     function included_files()
     {
-
         include_once BKB_VC_PATH . 'includes/bkb-vc-element.php';
         include_once BKB_VC_PATH . 'includes/bkb-vc-tab-shortcode.php';
     }
@@ -48,8 +47,7 @@ class BKB_VC
     public function bkb_vc_enqueue_styles()
     {
 
-        wp_register_style($this->plugin_slug . '-bkb-ask-form-btn-styles', BKB_VC_PLUGIN_DIR . 'assets/css/bkb-ask-form-btn.css', array(), self::VERSION);
-        wp_enqueue_style($this->plugin_slug . '-bkb-ask-form-btn-styles');
+        wp_enqueue_script($this->plugin_slug . '-frontend', BKB_VC_PLUGIN_DIR . 'assets/styles/frontend.css', [], self::VERSION);
     }
 
     /**
@@ -59,25 +57,16 @@ class BKB_VC
      */
     public function bkb_vc_enqueue_scripts()
     {
-
-        wp_register_script($this->plugin_slug . '-waypoint-script', BKB_VC_PLUGIN_DIR . 'assets/js/waypoints.min.js', array('jquery'), self::VERSION, TRUE);
-        wp_register_script($this->plugin_slug . '-counter-up-script', BKB_VC_PLUGIN_DIR . 'assets/js/jquery.counterup.min.js', array('jquery'), self::VERSION, TRUE);
-        wp_register_script($this->plugin_slug . '-custom-script', BKB_VC_PLUGIN_DIR . 'assets/js/bkb-vc-custom.js', array('jquery', $this->plugin_slug . '-counter-up-script', $this->plugin_slug . '-waypoint-script'), self::VERSION, TRUE);
-        wp_enqueue_script('bkb_vc-waypoint-script');
-        wp_enqueue_script('bkb_vc-counter-up-script');
-        wp_enqueue_script('bkb_vc-custom-script');
+        wp_enqueue_script($this->plugin_slug . '-waypoint', BKB_VC_PLUGIN_DIR . 'libs/jquery-counterup/waypoints.min.js', ['jquery'], self::VERSION, TRUE);
+        wp_enqueue_script($this->plugin_slug . '-counter-up', BKB_VC_PLUGIN_DIR . 'libs/jquery-waypoint/jquery.counterup.min.js', ['jquery'], self::VERSION, TRUE);
+        wp_enqueue_script($this->plugin_slug . '-frontend', BKB_VC_PLUGIN_DIR . 'assets/scripts/frontend.js', array('jquery', $this->plugin_slug . '-counter-up-script', $this->plugin_slug . '-waypoint-script'), self::VERSION, TRUE);
     }
 
     function bkb_admin_vc_addon_style()
     {
 
-        wp_register_style('bkb-vc-admin-style', BKB_VC_PLUGIN_DIR . '/admin/css/bkb-vc-admin-style.css', false, BKB_VC_ADDON_CURRENT_VERSION, false);
-        wp_enqueue_style('bkb-vc-admin-style');
-
-        wp_register_script('bkb-admin-vc-addon-script', BKB_VC_PLUGIN_DIR . 'admin/js/bkb-vc-custom.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-sortable'), BKB_VC_ADDON_CURRENT_VERSION, TRUE);
-        wp_register_style('sort-style', BKB_VC_PLUGIN_DIR . '/admin/css/sort.css', false, BKB_VC_ADDON_CURRENT_VERSION, false);
-        //        return '';
-        wp_enqueue_style('sort-style');
+        wp_enqueue_style('bkb-vc-admin', BKB_VC_PLUGIN_DIR . 'assets/styles/admin.css', false, BKB_VC_ADDON_CURRENT_VERSION, false);
+        wp_enqueue_script('bkb-admin-vc-addon', BKB_VC_PLUGIN_DIR . 'assets/scripts/admin.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-sortable'), BKB_VC_ADDON_CURRENT_VERSION, TRUE);
     }
 
     public function get_plugin_slug()
