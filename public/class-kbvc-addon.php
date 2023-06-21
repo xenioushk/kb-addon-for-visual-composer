@@ -47,7 +47,7 @@ class BKB_VC
     public function bkb_vc_enqueue_styles()
     {
 
-        wp_enqueue_script($this->plugin_slug . '-frontend', BKB_VC_PLUGIN_DIR . 'assets/styles/frontend.css', [], self::VERSION);
+        wp_enqueue_style($this->plugin_slug . '-frontend', BKB_VC_PLUGIN_DIR . 'assets/styles/frontend.css', [], self::VERSION);
     }
 
     /**
