@@ -57,8 +57,8 @@ class BKB_VC
      */
     public function bkb_vc_enqueue_scripts()
     {
-        wp_enqueue_script($this->plugin_slug . '-waypoint', BKB_VC_PLUGIN_DIR . 'libs/jquery-counterup/waypoints.min.js', ['jquery'], self::VERSION, TRUE);
-        wp_enqueue_script($this->plugin_slug . '-counter-up', BKB_VC_PLUGIN_DIR . 'libs/jquery-waypoint/jquery.counterup.min.js', ['jquery'], self::VERSION, TRUE);
+        wp_enqueue_script($this->plugin_slug . '-waypoint', BKB_VC_PLUGIN_DIR . 'libs/jquery-counterup/jquery.counterup.min.js', ['jquery'], self::VERSION, TRUE);
+        wp_enqueue_script($this->plugin_slug . '-counter-up', BKB_VC_PLUGIN_DIR . 'libs/jquery-waypoint/waypoints.min.js', ['jquery'], self::VERSION, TRUE);
         wp_enqueue_script($this->plugin_slug . '-frontend', BKB_VC_PLUGIN_DIR . 'assets/scripts/frontend.js', array('jquery', $this->plugin_slug . '-counter-up-script', $this->plugin_slug . '-waypoint-script'), self::VERSION, TRUE);
     }
 
