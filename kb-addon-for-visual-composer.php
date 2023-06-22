@@ -43,7 +43,6 @@ add_action('plugins_loaded', array('BKB_VC', 'get_instance'));
  * ---------------------------------------------------------------------------- */
 
 if (is_admin()) {
-
   //require_once( plugin_dir_path( __FILE__ ) . 'admin/class-kbdabp-addon-admin.php' );
   //add_action( 'plugins_loaded', array( 'BKB_VC_Admin', 'get_instance' ) );
 
