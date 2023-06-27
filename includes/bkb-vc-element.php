@@ -1,5 +1,8 @@
 <?php
 
+use \BwlKbManager\Base\BaseController;
+
+
 function bkb_vc_addon_function()
 {
 
@@ -1289,6 +1292,9 @@ if (function_exists('vc_add_shortcode_param')) {
 // Function generate param type "number"
 function cb_kb_cat_field($settings, $value)
 {
+
+    $baseController = new BaseController();
+
     //    $dependency = vc_generate_dependencies_attributes($settings);
     $param_name = isset($settings['param_name']) ? $settings['param_name'] : '';
     $type = isset($settings['type']) ? $settings['type'] : '';
@@ -1303,8 +1309,8 @@ function cb_kb_cat_field($settings, $value)
     }
 
     $bkb_category_args = array(
-        'post_type'     => BWL_KB_CPT,
-        'taxonomy' => BWL_KB_TAX_CAT,
+        'post_type'     => $baseController->plugin_post_type,
+        'taxonomy' => $baseController->plugin_cpt_tax_category,
         'hide_empty' => 1,
         'orderby' => 'title',
         'order' => 'ASC',
@@ -1383,6 +1389,8 @@ if (function_exists('vc_add_shortcode_param')) {
 function cb_kb_tags_field($settings, $value)
 {
 
+    $baseController = new BaseController();
+
     $param_name = isset($settings['param_name']) ? $settings['param_name'] : '';
     $type = isset($settings['type']) ? $settings['type'] : '';
     $class = isset($settings['class']) ? $settings['class'] : '';
@@ -1396,8 +1404,8 @@ function cb_kb_tags_field($settings, $value)
     }
 
     $bkb_tags_args = array(
-        'post_type'     => BWL_KB_CPT,
-        'taxonomy' => BWL_KB_TAX_TAG,
+        'post_type'     => $baseController->plugin_post_type,
+        'taxonomy' => $baseController->plugin_cpt_tax_tags,
         'hide_empty' => 1,
         'orderby' => 'title',
         'order' => 'ASC',
