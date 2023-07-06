@@ -21,7 +21,7 @@ if (!defined('WPINC')) {
 define('BKB_VC_PARENT_PLUGIN_INSTALLED_VERSION', get_option('bwl_kb_plugin_version'));
 define('BKB_VC_ADDON_PARENT_PLUGIN_TITLE', 'BWL Knowledge Base Manager Plugin');
 define('BKB_VC_ADDON_TITLE', 'KB Addon For WPBakery Page Builder');
-define('BKB_VC_PARENT_PLUGIN_REQUIRED_VERSION', '1.4.1'); // change plugin required version in here.
+define('BKB_VC_PARENT_PLUGIN_REQUIRED_VERSION', '1.4.2'); // change plugin required version in here.
 define('BKB_VC_ADDON_CURRENT_VERSION', '1.1.0'); // change plugin current version in here.
 
 define('BKB_VC_PATH', plugin_dir_path(__FILE__));
