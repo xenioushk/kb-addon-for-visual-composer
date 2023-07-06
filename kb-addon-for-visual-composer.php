@@ -2,7 +2,7 @@
 /*
   Plugin Name: KB Addon For WPBakery Page Builder
   Plugin URI:  http://codecanyon.net/item/kb-addon-for-visual-composer/14935093
-  Version: 1.0.9
+  Version: 1.1.0
   Description: Manage KB categories, tags, ask a question form, search box, tabs from WPBakery Page Builder. This addon allows you to sort categories, tags and tabs by using drag drop feature.
   Author: xenioushk
   Author URI:  http://codecanyon.net/user/xenioushk
@@ -21,8 +21,8 @@ if (!defined('WPINC')) {
 define('BKB_VC_PARENT_PLUGIN_INSTALLED_VERSION', get_option('bwl_kb_plugin_version'));
 define('BKB_VC_ADDON_PARENT_PLUGIN_TITLE', 'BWL Knowledge Base Manager Plugin');
 define('BKB_VC_ADDON_TITLE', 'KB Addon For WPBakery Page Builder');
-define('BKB_VC_PARENT_PLUGIN_REQUIRED_VERSION', '1.0.9'); // change plugin required version in here.
-define('BKB_VC_ADDON_CURRENT_VERSION', '1.0.9'); // change plugin current version in here.
+define('BKB_VC_PARENT_PLUGIN_REQUIRED_VERSION', '1.4.1'); // change plugin required version in here.
+define('BKB_VC_ADDON_CURRENT_VERSION', '1.1.0'); // change plugin current version in here.
 
 define('BKB_VC_PATH', plugin_dir_path(__FILE__));
 define("BKB_VC_PLUGIN_DIR", plugins_url() . '/kb-addon-for-visual-composer/');
