@@ -63,14 +63,14 @@ class BKB_VC
     {
         wp_enqueue_script($this->plugin_slug . '-waypoint', BKB_VC_PLUGIN_DIR . 'libs/jquery-counterup/jquery.counterup.min.js', ['jquery'], self::VERSION, TRUE);
         wp_enqueue_script($this->plugin_slug . '-counter-up', BKB_VC_PLUGIN_DIR . 'libs/jquery-waypoint/waypoints.min.js', ['jquery'], self::VERSION, TRUE);
-        wp_enqueue_script($this->plugin_slug . '-frontend', BKB_VC_PLUGIN_DIR . 'assets/scripts/frontend.js', array('jquery', $this->plugin_slug . '-counter-up-script', $this->plugin_slug . '-waypoint-script'), self::VERSION, TRUE);
+        wp_enqueue_script($this->plugin_slug . '-frontend', BKB_VC_PLUGIN_DIR . 'assets/scripts/frontend.js', ['jquery', $this->plugin_slug . '-counter-up', $this->plugin_slug . '-waypoint'], self::VERSION, TRUE);
     }
 
     function bkb_admin_vc_addon_style()
     {
 
         wp_enqueue_style('bkb-vc-admin', BKB_VC_PLUGIN_DIR . 'assets/styles/admin.css', false, BKB_VC_ADDON_CURRENT_VERSION, false);
-        wp_enqueue_script('bkb-admin-vc-addon', BKB_VC_PLUGIN_DIR . 'assets/scripts/admin.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-sortable'), BKB_VC_ADDON_CURRENT_VERSION, TRUE);
+        wp_enqueue_script('bkb-admin-vc-addon', BKB_VC_PLUGIN_DIR . 'assets/scripts/admin.js', ['jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-sortable'], BKB_VC_ADDON_CURRENT_VERSION, TRUE);
         wp_localize_script(
             'bkb-admin-vc-addon',
             'BkbmKavcAdminData',
