@@ -40,6 +40,10 @@ class BKB_VC
 
     function included_files()
     {
+        include_once BKB_VC_PATH . 'includes/autoupdater/WpAutoUpdater.php';
+        include_once BKB_VC_PATH . 'includes/autoupdater/installer.php';
+        include_once BKB_VC_PATH . 'includes/autoupdater/updater.php';
+
         include_once BKB_VC_PATH . 'includes/bkb-vc-element.php';
         include_once BKB_VC_PATH . 'includes/bkb-vc-tab-shortcode.php';
     }
@@ -67,6 +71,14 @@ class BKB_VC
 
         wp_enqueue_style('bkb-vc-admin', BKB_VC_PLUGIN_DIR . 'assets/styles/admin.css', false, BKB_VC_ADDON_CURRENT_VERSION, false);
         wp_enqueue_script('bkb-admin-vc-addon', BKB_VC_PLUGIN_DIR . 'assets/scripts/admin.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-sortable'), BKB_VC_ADDON_CURRENT_VERSION, TRUE);
+        wp_localize_script(
+            'bkb-admin-vc-addon',
+            'BkbmKavcAdminData',
+            [
+                'product_id' => 14935093,
+                'installation' => get_option('bkbm_kavc_installation')
+            ]
+        );
     }
 
     public function get_plugin_slug()

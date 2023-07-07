@@ -26,6 +26,8 @@ define('BKB_VC_ADDON_CURRENT_VERSION', '1.1.0'); // change plugin current versio
 
 define('BKB_VC_PATH', plugin_dir_path(__FILE__));
 define("BKB_VC_PLUGIN_DIR", plugins_url() . '/kb-addon-for-visual-composer/');
+define('BKB_VC_ADDON_UPDATER_SLUG', plugin_basename(__FILE__)); // change plugin current version in here.
+
 
 require_once(BKB_VC_PATH . 'public/class-kbvc-addon.php');
 
@@ -43,6 +45,7 @@ add_action('plugins_loaded', array('BKB_VC', 'get_instance'));
  * ---------------------------------------------------------------------------- */
 
 if (is_admin()) {
+
   //require_once( plugin_dir_path( __FILE__ ) . 'admin/class-kbdabp-addon-admin.php' );
   //add_action( 'plugins_loaded', array( 'BKB_VC_Admin', 'get_instance' ) );
 
