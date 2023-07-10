@@ -16,7 +16,7 @@
       if ($bkbm_carousel.find(".row").length) {
         $bkbm_carousel.find(".row").removeAttr("class").find('[class^="col-sm-"]').unwrap()
       } else {
-        $bkbm_carousel.find(".grid-pad").removeAttr("class").find('[class^="bkbcol-"]').unwrap()
+        $bkbm_carousel.find(".bkbm-grid-pad").removeAttr("class").find('[class^="bkbcol-"]').unwrap()
       }
 
       var $bkbm_carousel = $bkbm_carousel.addClass("bwl-kb")
