@@ -22,7 +22,9 @@ define('BKB_VC_PARENT_PLUGIN_INSTALLED_VERSION', get_option('bwl_kb_plugin_versi
 define('BKB_VC_ADDON_PARENT_PLUGIN_TITLE', 'BWL Knowledge Base Manager Plugin');
 define('BKB_VC_ADDON_TITLE', 'KB Addon For WPBakery Page Builder');
 define('BKB_VC_PARENT_PLUGIN_REQUIRED_VERSION', '1.4.2'); // change plugin required version in here.
-define('BKB_VC_ADDON_CURRENT_VERSION', '1.1.2'); // change plugin current version in here.
+define('BKB_VC_ADDON_CURRENT_VERSION', '1.1.2'); //Plugin current version.
+
+define('BKB_VC_ADDON_INSTALLATION_TAG', 'bkbm_kavc_installation_' . str_replace('.', '_', BKB_VC_ADDON_CURRENT_VERSION));
 
 define('BKB_VC_PATH', plugin_dir_path(__FILE__));
 define("BKB_VC_PLUGIN_DIR", plugins_url() . '/kb-addon-for-visual-composer/');
