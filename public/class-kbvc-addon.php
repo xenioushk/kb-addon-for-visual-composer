@@ -75,7 +75,7 @@ class BKB_VC
             'bkb-admin-vc-addon',
             'BkbmKavcAdminData',
             [
-                'product_id' => 14935093,
+                'product_id' => BKB_VC_ADDON_CC_ID,
                 'installation' => get_option('bkbm_kavc_installation')
             ]
         );

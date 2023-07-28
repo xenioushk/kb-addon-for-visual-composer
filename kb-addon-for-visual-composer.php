@@ -1,11 +1,11 @@
 <?php
 /*
   Plugin Name: KB Addon For WPBakery Page Builder
-  Plugin URI:  http://codecanyon.net/item/kb-addon-for-visual-composer/14935093
-  Version: 1.1.1
+  Plugin URI:  https://1.envato.market/bkbm-wp
+  Version: 1.1.2
   Description: Manage KB categories, tags, ask a question form, search box, tabs from WPBakery Page Builder. This addon allows you to sort categories, tags and tabs by using drag drop feature.
   Author: xenioushk
-  Author URI:  http://codecanyon.net/user/xenioushk
+  Author URI:  https://bluewindlab.net
   Text Domain: bkb_vc
   Domain Path: /languages/
  */
@@ -22,12 +22,13 @@ define('BKB_VC_PARENT_PLUGIN_INSTALLED_VERSION', get_option('bwl_kb_plugin_versi
 define('BKB_VC_ADDON_PARENT_PLUGIN_TITLE', 'BWL Knowledge Base Manager Plugin');
 define('BKB_VC_ADDON_TITLE', 'KB Addon For WPBakery Page Builder');
 define('BKB_VC_PARENT_PLUGIN_REQUIRED_VERSION', '1.4.2'); // change plugin required version in here.
-define('BKB_VC_ADDON_CURRENT_VERSION', '1.1.1'); // change plugin current version in here.
+define('BKB_VC_ADDON_CURRENT_VERSION', '1.1.2'); // change plugin current version in here.
 
 define('BKB_VC_PATH', plugin_dir_path(__FILE__));
 define("BKB_VC_PLUGIN_DIR", plugins_url() . '/kb-addon-for-visual-composer/');
 define('BKB_VC_ADDON_UPDATER_SLUG', plugin_basename(__FILE__)); // change plugin current version in here.
 
+define("BKB_VC_ADDON_CC_ID", "14935093"); // Plugin codecanyon Id.
 
 require_once(BKB_VC_PATH . 'public/class-kbvc-addon.php');
 
