@@ -11,7 +11,7 @@ class BKB_VC
     private function __construct()
     {
 
-        if (class_exists('BwlKbManager\\Init') && defined('WPB_VC_VERSION') && BKB_VC_PARENT_PLUGIN_REQUIRED_VERSION > '1.0.5') {
+        if (class_exists('BwlKbManager\\Init') && defined('WPB_VC_VERSION') && BKB_VC_PARENT_PLUGIN_REQUIRED_VERSION > '1.0.5' && BKB_VC_PARENT_PLUGIN_PURCHASE_STATUS == 1) {
 
             add_action('init', array($this, 'load_plugin_textdomain'));
             add_action('init', 'bkb_vc_addon_function');
@@ -21,21 +21,39 @@ class BKB_VC
             add_action('admin_enqueue_scripts', array($this, 'bkb_admin_vc_addon_style'));
 
             $this->included_files();
-        } else {
+        }
 
-            if (is_admin()) {
-                add_action('admin_notices', array($this, 'kbvc_version_update_admin_notice'));
+        if (is_admin()) {
+
+            if (!class_exists('BwlKbManager\\Init') || !defined('WPB_VC_VERSION')) {
+                add_action('admin_notices', array($this, 'kbvcVersionUpdateAdminNotice'));
+                return false;
+            }
+
+
+            if (BKB_VC_PARENT_PLUGIN_PURCHASE_STATUS == 0) {
+                add_action('admin_notices', array($this, 'kbvcPurchaseVerificationNotice'));
+                return false;
             }
         }
     }
 
-    public function kbvc_version_update_admin_notice()
+    public function kbvcVersionUpdateAdminNotice()
     {
 
         echo '<div class="updated"><p>You need to download & install both '
             . '<b><a href="https://1.envato.market/VKEo3" target="_blank">WPBakery Page Builder</a></b> && '
             . '<b><a href="https://1.envato.market/bkbm-wp" target="_blank">' . BKB_VC_ADDON_PARENT_PLUGIN_TITLE . '</a></b> '
             . 'to use <b>' . BKB_VC_ADDON_TITLE . '</b>. </p></div>';
+    }
+
+    public function kbvcPurchaseVerificationNotice()
+    {
+        $licensePage = admin_url("edit.php?post_type=bwl_kb&page=bkb-license");
+
+        echo '<div class="updated"><p>You need to <a href="' . $licensePage . '">activate</a> '
+            . '<b>' . BKB_VC_ADDON_PARENT_PLUGIN_TITLE . '</b> '
+            . 'to use <b>' . BKB_VC_ADDON_TITLE . '</b>.</p></div>';
     }
 
     function included_files()
