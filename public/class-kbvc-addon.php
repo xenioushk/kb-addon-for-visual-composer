@@ -11,7 +11,11 @@ class BKB_VC
     private function __construct()
     {
 
-        if (class_exists('BwlKbManager\\Init') && defined('WPB_VC_VERSION') && BKB_VC_PARENT_PLUGIN_REQUIRED_VERSION > '1.0.5' && BKB_VC_PARENT_PLUGIN_PURCHASE_STATUS == 1) {
+        if (
+            class_exists('BwlKbManager\\Init') && defined('WPB_VC_VERSION')
+            && BKB_VC_PARENT_PLUGIN_REQUIRED_VERSION > '1.0.5'
+            && BKB_VC_PARENT_PLUGIN_PURCHASE_STATUS == 1
+        ) {
 
             add_action('init', array($this, 'load_plugin_textdomain'));
             add_action('init', 'bkb_vc_addon_function');
