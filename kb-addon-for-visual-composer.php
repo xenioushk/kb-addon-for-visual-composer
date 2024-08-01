@@ -28,14 +28,22 @@ define('BKB_VC_PATH', plugin_dir_path(__FILE__));
 define("BKB_VC_PLUGIN_DIR", plugins_url() . '/kb-addon-for-visual-composer/');
 define('BKB_VC_ADDON_UPDATER_SLUG', plugin_basename(__FILE__)); // change plugin current version in here.
 define("BKB_VC_ADDON_CC_ID", "14935093"); // Plugin codecanyon Id.
-define("BKB_VC_PARENT_PLUGIN_PURCHASE_STATUS", get_option('bkbm_purchase_verified') == 1 ? 1 : 0);
+
+// Pre activated plugin for knowledgedesk theme
+$currentTheme = trim(wp_get_theme());
+
+if ($currentTheme == "knowledgedesk" || $currentTheme == "knowledgedesk Child") {
+  $purchaseVerified = 1;
+} else if (get_option('bkbm_purchase_verified') == 1) {
+  $purchaseVerified = 1;
+} else {
+  $purchaseVerified = 0;
+}
+
+define("BKB_VC_PARENT_PLUGIN_PURCHASE_STATUS", $purchaseVerified);
 
 require_once(BKB_VC_PATH . 'public/class-kbvc-addon.php');
 
-/*
- * Register hooks that are fired when the plugin is activated or deactivated.
- * When the plugin is deleted, the uninstall.php file is loaded.
- */
 register_activation_hook(__FILE__, array('BKB_VC', 'activate'));
 register_deactivation_hook(__FILE__, array('BKB_VC', 'deactivate'));
 
