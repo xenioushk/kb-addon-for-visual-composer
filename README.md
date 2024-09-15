@@ -2,6 +2,8 @@
 
 Manage KB categories, tags, ask a question form, search box, tabs from WPBakery Page Builder. This addon allows you to sort categories, tags and tabs by using drag drop feature.
 
+![overview of KB Addon For WPBakery Page Builder](https://xenioushk.github.io/docs-plugins-addon/bkbm-addon/kbvc/screenshot/vc_block.png)
+
 [Demo](https://projects.bluewindlab.net/wpplugin/bkbm/) | [Download](https://bluewindlab.net/portfolio/kb-for-wp-bakery-page-builder-bwl-knowledge-base-manager-addon/) | [Documentation](https://xenioushk.github.io/docs-plugins-addon/bkbm-addon/kbvc/index.html)
 
 ## Addon requirements
