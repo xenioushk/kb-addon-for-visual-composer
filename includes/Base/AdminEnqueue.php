@@ -4,7 +4,7 @@ namespace KAFWPB\Base;
 /**
  * Class for registering the plugin admin scripts and styles.
  *
- * @package BwlPetitionsManager
+ * @package KAFWPB
  */
 class AdminEnqueue extends BaseController {
 
@@ -21,7 +21,7 @@ class AdminEnqueue extends BaseController {
 	public function __construct() {
 		// Frontend script slug.
 		// This is required to hook the loclization texts.
-		$this->admin_script_slug = 'bptm-admin';
+		$this->admin_script_slug = 'bkb_vc-admin';
 	}
 
 	/**
@@ -36,16 +36,15 @@ class AdminEnqueue extends BaseController {
      */
 	public function get_the_scripts() {
 			// Register Data Table Styles.
-        wp_enqueue_style( 'bptm-tipsy', BWL_PETITIONS_PLUGIN_LIBS_DIR . 'tipsy/styles/bptm-tipsy.css', [], '1.0.0', false );
-        wp_enqueue_style( 'bptm-jquery-ui-dialog-structure', BWL_PETITIONS_PLUGIN_LIBS_DIR . 'jqueryui/flick/jquery-ui.structure.min.css', [], BWL_PETITIONS_VERSION );
-        wp_enqueue_style( 'bptm-jquery-ui-theme', BWL_PETITIONS_PLUGIN_LIBS_DIR . 'jqueryui/flick/jquery-ui.theme.min.css', [], BWL_PETITIONS_VERSION );
-        wp_enqueue_style( 'bptm-datatables', BWL_PETITIONS_PLUGIN_LIBS_DIR . 'datatable/styles/jquery.dataTables.css', [ 'bptm-jquery-ui-dialog-structure', 'bptm-jquery-ui-theme' ] );
-        wp_enqueue_style( $this->admin_script_slug, BWL_PETITIONS_PLUGIN_STYLES_ASSETS_DIR . 'admin.css', [], BWL_PETITIONS_VERSION );
+        wp_enqueue_style( $this->admin_script_slug, BWL_PLUGIN_STYLES_ASSETS_DIR . 'admin.css', [], BWL_PLUGIN_VERSION );
 
         // Register Data Table & It's required codes.
-        wp_enqueue_script( 'bptm-tipsy', BWL_PETITIONS_PLUGIN_LIBS_DIR . 'tipsy/scripts/jquery.tipsy.js', [ 'jquery' ], '1.0.0', true );
-        wp_enqueue_script( 'bptm-datatable', BWL_PETITIONS_PLUGIN_LIBS_DIR . 'datatable/scripts/jquery.dataTables.min.js', [ 'jquery' ], '1.10.12', true );
-        wp_enqueue_script( $this->admin_script_slug, BWL_PETITIONS_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js', [ 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-dialog', 'bptm-datatable' ], BWL_PETITIONS_VERSION, true );
+        wp_enqueue_script(
+            $this->admin_script_slug,
+            BWL_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js',
+            [ 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-sortable' ],
+            BWL_PLUGIN_VERSION, true
+        );
 		// Load frontend variables used by the JS files.
 		$this->get_the_localization_texts();
 	}
@@ -60,10 +59,12 @@ class AdminEnqueue extends BaseController {
 		// Access data: BptmAdminData.version
 		wp_localize_script(
             $this->admin_script_slug,
-            'BptmAdminData',
+            'BkbmKavcAdminData',
             [
-				'version' => BWL_PETITIONS_VERSION,
-				'ajaxurl' => esc_url( admin_url( 'admin-ajax.php' ) ),
+				'version'      => BWL_PLUGIN_VERSION,
+				'ajaxurl'      => esc_url( admin_url( 'admin-ajax.php' ) ),
+				'product_id'   => BWL_PRODUCT_ID,
+				'installation' => get_option( BWL_PRODUCT_INSTALLATION_TAG ),
 			]
 		);
 	}

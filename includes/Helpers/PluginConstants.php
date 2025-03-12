@@ -37,6 +37,7 @@ class PluginConstants {
 		self::set_paths_dir_constants();
 		self::set_assets_constants();
 		self::set_updater_constants();
+		self::set_product_info_constants();
 	}
 
 	/**
@@ -76,5 +77,13 @@ class PluginConstants {
 	private static function set_updater_constants() {
 		define( 'BWL_PLUGIN_UPDATER_SLUG', BWL_PLUGIN_FOLDER . '/' . BWL_PLUGIN_ROOT_FILE ); // phpcs:ignore
 		define( 'BWL_PLUGIN_PATH', BWL_PLUGIN_DIR );
+	}
+
+	/**
+	 * Set the product info constants.
+	 */
+	private static function set_product_info_constants() {
+		define( 'BWL_PRODUCT_ID', '14935093' ); // Plugin codecanyon Id.
+		define( 'BWL_PRODUCT_INSTALLATION_TAG', 'bkbm_kavc_installation_' . str_replace( '.', '_', BWL_PLUGIN_VERSION ) );
 	}
 }

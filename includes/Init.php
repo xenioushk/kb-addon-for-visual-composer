@@ -90,7 +90,7 @@ class Init {
 			// Base\IncludePluginFiles::class,
 			// Base\ThumbHelper::class,
 			Base\Enqueue::class,
-			// Base\AdminEnqueue::class,
+			Base\AdminEnqueue::class,
 			// Base\Language::class,
 			// Base\FrontendAjaxHandlers::class,
 			// Base\AdminAjaxHandlers::class,
