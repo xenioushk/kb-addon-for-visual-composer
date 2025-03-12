@@ -5,7 +5,7 @@ namespace KAFWPB\Base;
  * Class for plucin deactivation.
  *
  * @since: 1.1.0
- * @package BwlPetitionsManager
+ * @package KAFWPB
  */
 class Deactivate {
 

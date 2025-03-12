@@ -5,7 +5,7 @@ namespace KAFWPB\Controllers\PluginMeta;
  * Class displays options panel, addons, documentation links below the plugin information.
  *
  * @since: 1.1.0
- * @package BwlPetitionsManager
+ * @package KAFWPB
  */
 class MetaInfo {
 
@@ -26,18 +26,14 @@ class MetaInfo {
      */
 	public function get_meta_links( $links, $file ) {
 
-		if ( strpos( $file, BWL_PETITIONS_PLUGIN_ROOT_FILE ) !== false && is_plugin_active( $file ) ) {
+		if ( strpos( $file, BWL_PLUGIN_ROOT_FILE ) !== false && is_plugin_active( $file ) ) {
 
 			// nt = 1 // new tab.
 
 			$additional_links = [
 				[
-					'title' => esc_html__( 'Options Panel', 'bwl_ptmn' ),
-					'url'   => admin_url( 'edit.php?post_type=petitions&page=edit.php?post_type=petitions_options_panel' ),
-				],
-				[
 					'title' => esc_html__( 'Documentation', 'bwl_ptmn' ),
-					'url'   => 'https://xenioushk.github.io/docs-wp-themes/appeal/petitions_manager/index.html',
+					'url'   => 'https://xenioushk.github.io/docs-plugins-addon/bkbm-addon/kbvc/index.html',
 					'nt'    => 1,
 				],
 

@@ -17,10 +17,19 @@
  * @copyright 2025 BlueWindLab
  */
 
-// If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
-	die;
+namespace KAFWPB;
+
+// security check.
+defined( 'ABSPATH' ) || die( 'Unauthorized access' );
+
+// Once we get here, We have passed all validation checks so we can safely include our plugin
+
+if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+    require_once __DIR__ . '/vendor/autoload.php';
 }
+
+use KAFWPB\Base\Activate;
+use KAFWPB\Base\Deactivate;
 
 // Version Define For Parent Plugin And Addon.
 // @Since: 1.0.1
@@ -66,3 +75,43 @@ register_activation_hook( __FILE__, [ 'BKB_VC', 'activate' ] );
 register_deactivation_hook( __FILE__, [ 'BKB_VC', 'deactivate' ] );
 
 add_action( 'plugins_loaded', [ 'BKB_VC', 'get_instance' ] );
+
+
+
+    /**
+     * Function to handle the activation of the plugin.
+     *
+     * @return void
+     */
+    function kafwpb_activate_plugin() { // phpcs:ignore
+
+	$activate = new Activate();
+	$activate->activate();
+}
+
+    /**
+     * Function to handle the deactivation of the plugin.
+     *
+     * @return void
+     */
+    function kafwpb_deactivate_plugin() { // phpcs:ignore
+	Deactivate::deactivate();
+}
+
+    register_activation_hook( __FILE__, __NAMESPACE__ . '\\kafwpb_activate_plugin' );
+    register_deactivation_hook( __FILE__, __NAMESPACE__ . '\\kafwpb_deactivate_plugin' );
+
+    /**
+     * Function to handle the initialization of the plugin.
+     *
+     * @return void
+     */
+function init_kafwpb() {
+
+	if ( class_exists( 'KAFWPB\\Init' ) ) {
+
+		Init::register_services();
+	}
+}
+
+add_action( 'init', __NAMESPACE__ . '\\init_kafwpb' );
