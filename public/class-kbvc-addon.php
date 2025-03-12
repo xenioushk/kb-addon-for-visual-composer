@@ -15,9 +15,9 @@ class BKB_VC {
             add_action( 'init', [ $this, 'load_plugin_textdomain' ] );
             add_action( 'init', 'bkb_vc_addon_function' );
 
-            add_action( 'wp_enqueue_scripts', [ $this, 'bkb_vc_enqueue_styles' ] );
-            add_action( 'wp_enqueue_scripts', [ $this, 'bkb_vc_enqueue_scripts' ] );
-            add_action( 'admin_enqueue_scripts', [ $this, 'bkb_admin_vc_addon_style' ] );
+            // add_action( 'wp_enqueue_scripts', [ $this, 'bkb_vc_enqueue_styles' ] );
+            // add_action( 'wp_enqueue_scripts', [ $this, 'bkb_vc_enqueue_scripts' ] );
+            // add_action( 'admin_enqueue_scripts', [ $this, 'bkb_admin_vc_addon_style' ] );
 
             $this->included_files();
         }
@@ -58,38 +58,37 @@ class BKB_VC {
         include_once BKB_VC_PATH . 'includes/autoupdater/updater.php';
 
         include_once BKB_VC_PATH . 'includes/bkb-vc-element.php';
-        include_once BKB_VC_PATH . 'includes/bkb-vc-tab-shortcode.php';
     }
 
-    public function bkb_vc_enqueue_styles() {
+    // public function bkb_vc_enqueue_styles() {
 
-        wp_enqueue_style( $this->plugin_slug . '-frontend', BKB_VC_PLUGIN_DIR . 'assets/styles/frontend.css', [], self::VERSION );
-    }
+    // wp_enqueue_style( $this->plugin_slug . '-frontend', BKB_VC_PLUGIN_DIR . 'assets/styles/frontend.css', [], self::VERSION );
+    // }
 
     /**
      * Register and enqueues public-facing JavaScript files.
      *
      * @since    1.0.0
      */
-    public function bkb_vc_enqueue_scripts() {
-        wp_enqueue_script( $this->plugin_slug . '-waypoint', BKB_VC_PLUGIN_DIR . 'libs/jquery-counterup/jquery.counterup.min.js', [ 'jquery' ], self::VERSION, true );
-        wp_enqueue_script( $this->plugin_slug . '-counter-up', BKB_VC_PLUGIN_DIR . 'libs/jquery-waypoint/waypoints.min.js', [ 'jquery' ], self::VERSION, true );
-        wp_enqueue_script( $this->plugin_slug . '-frontend', BKB_VC_PLUGIN_DIR . 'assets/scripts/frontend.js', [ 'jquery', $this->plugin_slug . '-counter-up', $this->plugin_slug . '-waypoint' ], self::VERSION, true );
-    }
+    // public function bkb_vc_enqueue_scripts() {
+    // wp_enqueue_script( $this->plugin_slug . '-waypoint', BKB_VC_PLUGIN_DIR . 'libs/jquery-counterup/jquery.counterup.min.js', [ 'jquery' ], self::VERSION, true );
+    // wp_enqueue_script( $this->plugin_slug . '-counter-up', BKB_VC_PLUGIN_DIR . 'libs/jquery-waypoint/waypoints.min.js', [ 'jquery' ], self::VERSION, true );
+    // wp_enqueue_script( $this->plugin_slug . '-frontend', BKB_VC_PLUGIN_DIR . 'assets/scripts/frontend.js', [ 'jquery', $this->plugin_slug . '-counter-up', $this->plugin_slug . '-waypoint' ], self::VERSION, true );
+    // }
 
-    function bkb_admin_vc_addon_style() {
+    // function bkb_admin_vc_addon_style() {
 
-        wp_enqueue_style( 'bkb-vc-admin', BKB_VC_PLUGIN_DIR . 'assets/styles/admin.css', false, BKB_VC_ADDON_CURRENT_VERSION, false );
-        wp_enqueue_script( 'bkb-admin-vc-addon', BKB_VC_PLUGIN_DIR . 'assets/scripts/admin.js', [ 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-sortable' ], BKB_VC_ADDON_CURRENT_VERSION, true );
-        wp_localize_script(
-            'bkb-admin-vc-addon',
-            'BkbmKavcAdminData',
-            [
-                'product_id'   => BKB_VC_ADDON_CC_ID,
-                'installation' => get_option( BKB_VC_ADDON_INSTALLATION_TAG ),
-            ]
-        );
-    }
+    // wp_enqueue_style( 'bkb-vc-admin', BKB_VC_PLUGIN_DIR . 'assets/styles/admin.css', false, BKB_VC_ADDON_CURRENT_VERSION, false );
+    // wp_enqueue_script( 'bkb-admin-vc-addon', BKB_VC_PLUGIN_DIR . 'assets/scripts/admin.js', [ 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-sortable' ], BKB_VC_ADDON_CURRENT_VERSION, true );
+    // wp_localize_script(
+    // 'bkb-admin-vc-addon',
+    // 'BkbmKavcAdminData',
+    // [
+    // 'product_id'   => BKB_VC_ADDON_CC_ID,
+    // 'installation' => get_option( BKB_VC_ADDON_INSTALLATION_TAG ),
+    // ]
+    // );
+    // }
 
     public function get_plugin_slug() {
         return $this->plugin_slug;

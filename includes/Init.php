@@ -94,7 +94,7 @@ class Init {
 			// Base\Language::class,
 			// Base\FrontendAjaxHandlers::class,
 			// Base\AdminAjaxHandlers::class,
-			// Base\FrontendInlineJs::class,
+			Base\FrontendInlineJs::class,
 			// Base\AboutPluginRedirect::class,
 			// Base\CustomTheme::class,
 			// Base\PluginUpdate::class,
