@@ -5,7 +5,7 @@ namespace KAFWPB\Base;
  * Class for including plucin required files.
  *
  * @since: 1.1.0
- * @package BwlPetitionsManager
+ * @package KAFWPB
  */
 class IncludePluginFiles {
 
@@ -38,13 +38,13 @@ class IncludePluginFiles {
 
 		if ( ! empty( $this->frontend_files ) ) {
 			foreach ( $this->frontend_files as $file ) {
-				include_once BWL_PETITIONS_PLUGIN_FILE_PATH . "/{$file}.php";
+				include_once BWL_PLUGIN_FILE_PATH . "/{$file}.php";
 			}
 		}
 
 		if ( is_admin() && ! empty( $this->admin_files ) ) {
 			foreach ( $this->admin_files as $file ) {
-				include_once BWL_PETITIONS_PLUGIN_FILE_PATH . "/{$file}.php";
+				include_once BWL_PLUGIN_FILE_PATH . "/{$file}.php";
 			}
 		}
 	}

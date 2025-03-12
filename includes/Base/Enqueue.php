@@ -4,7 +4,7 @@ namespace KAFWPB\Base;
 /**
  * Class for registering the plugin scripts and styles.
  *
- * @package BwlPetitionsManager
+ * @package KAFWPB
  */
 class Enqueue extends BaseController {
 

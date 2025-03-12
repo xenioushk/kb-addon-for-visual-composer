@@ -87,18 +87,17 @@ class Init {
 	 */
 	private static function get_base_classes() {
 		$classes = [
-			Base\IncludePluginFiles::class,
-			Base\ThumbHelper::class,
+			// Base\IncludePluginFiles::class,
+			// Base\ThumbHelper::class,
 			Base\Enqueue::class,
-			Base\AdminEnqueue::class,
-			Base\Language::class,
-			Base\FrontendAjaxHandlers::class,
-			Base\AdminAjaxHandlers::class,
-			Base\FrontendInlineJs::class,
-			Base\AboutPluginRedirect::class,
-			Base\CustomTheme::class,
-			Base\PluginUpdate::class,
-			Base\PetitionsDefaultSignCount::class,
+			// Base\AdminEnqueue::class,
+			// Base\Language::class,
+			// Base\FrontendAjaxHandlers::class,
+			// Base\AdminAjaxHandlers::class,
+			// Base\FrontendInlineJs::class,
+			// Base\AboutPluginRedirect::class,
+			// Base\CustomTheme::class,
+			// Base\PluginUpdate::class,
 		];
 		return $classes;
 	}
