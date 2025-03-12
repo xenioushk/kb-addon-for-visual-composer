@@ -1,11 +1,11 @@
 <?php
 
-namespace KAFWPB\Controllers\Shortcodes;
+namespace KAFWPB\Controllers\WPBakery\Shortcodes;
 
 use KAFWPB\Api\Shortcodes\ShortcodesApi;
-use KAFWPB\Callbacks\Shortcodes\TabsCb;
-use KAFWPB\Callbacks\Shortcodes\PostsCb;
-use KAFWPB\Callbacks\Shortcodes\CounterCb;
+use KAFWPB\Callbacks\WPBakery\Shortcodes\TabsCb;
+use KAFWPB\Callbacks\WPBakery\Shortcodes\PostsCb;
+use KAFWPB\Callbacks\WPBakery\Shortcodes\CounterCb;
 /**
  * Class for Addon shortcodes.
  *

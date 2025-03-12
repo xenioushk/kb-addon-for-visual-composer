@@ -1,6 +1,6 @@
 <?php
 
-namespace KAFWPB\Callbacks\Shortcodes;
+namespace KAFWPB\Callbacks\WPBakery\Shortcodes;
 
 /**
  * Get all the counter.

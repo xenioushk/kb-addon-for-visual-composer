@@ -24,15 +24,15 @@ class Init {
 		$services = [];
 
 		$service_classes = [
-			'helpers'   => self::get_helper_classes(),
-			'base'      => self::get_base_classes(),
-			'meta'      => self::get_meta_classes(),
+			'helpers'  => self::get_helper_classes(),
+			'base'     => self::get_base_classes(),
+			'meta'     => self::get_meta_classes(),
 			// 'actions'          => self::get_action_classes(),
 			// 'filters'          => self::get_filter_classes(),
 			// 'cpt'              => self::get_cpt_classes(),
 			// 'cmb'              => self::get_cmb_classes(),
-			'shortcode' => self::get_shortcode_classes(),
-			// 'wpbakery'         => self::get_wpbakery_classes(),
+			// 'shortcode' => self::get_shortcode_classes(),
+			'wpbakery' => self::get_wpbakery_classes(),
 			// 'notices'          => self::get_notices_classes(),
 			// 'options_panel'    => self::get_options_panel_classes(),
 			// 'role_manager'     => self::get_role_manager_classes(),
@@ -193,7 +193,7 @@ class Init {
 	 */
 	private static function get_shortcode_classes() {
 		$classes = [
-			Controllers\Shortcodes\AddonShortcodes::class,
+			// Controllers\Shortcodes\AddonShortcodes::class,
 			// Controllers\Shortcodes\PetitionBlocks\PetitionIntro::class,
 			// Controllers\Shortcodes\PetitionBlocks\PetitionAbout::class,
 			// Controllers\Shortcodes\PetitionBlocks\PetitionDetail::class,
@@ -222,19 +222,20 @@ class Init {
 	 */
     private static function get_wpbakery_classes() {
 			$classes = [
-				Controllers\WPBakery\Shortcodes\PetitionTitle::class,
-				Controllers\WPBakery\Elements\Intro::class,
-				Controllers\WPBakery\Elements\About::class,
-				Controllers\WPBakery\Elements\Details::class,
-				Controllers\WPBakery\Elements\Letter::class,
-				Controllers\WPBakery\Elements\SignForm::class,
-				Controllers\WPBakery\Elements\Result::class,
-				Controllers\WPBakery\Elements\SignCounter::class,
-				Controllers\WPBakery\Elements\ResultFeed::class,
-				Controllers\WPBakery\Elements\FeaturedImage::class,
-				Controllers\WPBakery\Elements\SubmittedTo::class,
-				Controllers\WPBakery\Elements\ProgressBar::class,
-				Controllers\WPBakery\Elements\Share::class,
+				Controllers\WPBakery\Shortcodes\AddonShortcodes::class,
+				Controllers\WPBakery\Elements\Category::class,
+				Controllers\WPBakery\Elements\Tags::class,
+				// Controllers\WPBakery\Elements\About::class,
+				// Controllers\WPBakery\Elements\Details::class,
+				// Controllers\WPBakery\Elements\Letter::class,
+				// Controllers\WPBakery\Elements\SignForm::class,
+				// Controllers\WPBakery\Elements\Result::class,
+				// Controllers\WPBakery\Elements\SignCounter::class,
+				// Controllers\WPBakery\Elements\ResultFeed::class,
+				// Controllers\WPBakery\Elements\FeaturedImage::class,
+				// Controllers\WPBakery\Elements\SubmittedTo::class,
+				// Controllers\WPBakery\Elements\ProgressBar::class,
+				// Controllers\WPBakery\Elements\Share::class,
 			];
 
 			return $classes;
