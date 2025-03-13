@@ -3,7 +3,8 @@
 namespace KAFWPB\Callbacks\Shortcodes;
 
 /**
- * Get all the counter callback.
+ * Class CounterCb
+ * Handles Counter shortcode.
  *
  * @package KAFWPB
  * @since: 1.0.0

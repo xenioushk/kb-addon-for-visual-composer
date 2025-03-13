@@ -3,7 +3,8 @@
 namespace KAFWPB\Callbacks\Shortcodes;
 
 /**
- * Get all the petitions and filter by categories.
+ * Class TabsCb
+ * Tabs Shortcode Callback.
  *
  * @package KAFWPB
  * @since: 1.0.0
@@ -39,7 +40,7 @@ class TabsCb {
 
 		$bkb_tab_shortcode_string = '[bkb_tabs vertical=' . $vertical . ' rtl=' . $rtl . ' cont_ext_class=' . $cont_ext_class . ' ]';
 
-		foreach ( $bkb_tabs as $tab_key => $tab_title ) {
+		foreach ( $bkb_tabs as $tab_title ) {
 
 			switch ( $tab_title ) {
 
