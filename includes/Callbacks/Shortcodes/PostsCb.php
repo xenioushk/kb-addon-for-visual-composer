@@ -2,6 +2,8 @@
 
 namespace KAFWPB\Callbacks\Shortcodes;
 
+use KAFWPB\Controllers\WPBakery\Support\Animation;
+
 /**
  * Class PostsCb
  * Handles Tabs shortcode.
@@ -65,7 +67,7 @@ class PostsCb {
 			$wrapper_div_status = 1;
 
 			if ( isset( $animation ) && ! empty( $animation ) ) {
-					$animate_class             = new WPBakeryShortCode_BKB_VC_Animation( [ 'base' => 'vc_bkb_posts' ] );
+					$animate_class             = new Animation( [ 'base' => 'vc_bkb_posts' ] );
 					$bkb_post_column_animation = ' ' . $animate_class->getCSSAnimation( $animation );
 			}
 		}
