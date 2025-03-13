@@ -76,4 +76,47 @@ trait WPBakeryTraits {
         ];
         return $layout;
     }
+
+    /**
+     * Get the counter delay time
+     *
+     * @return array
+     */
+    public function get_counter_delay() {
+
+        $delay = [
+            '5'   => '5',
+            '10'  => '10',
+            '15'  => '15',
+            '20'  => '20',
+            '25'  => '25',
+            '30'  => '30',
+            '35'  => '35',
+            '40'  => '40',
+            '45'  => '45',
+            '50'  => '50',
+            '60'  => '60',
+            '100' => '100',
+        ];
+        return $delay;
+    }
+
+    /**
+     * Get the counter delay interval
+     *
+     * @return array
+     */
+    public function get_delay_interval() {
+
+        $interval = [
+            '1 Second'   => '1000',
+            '2 Seconds'  => '2000',
+            '3 Seconds'  => '3000',
+            '5 Seconds'  => '5000',
+            '10 Seconds' => '10000',
+            '20 Seconds' => '20000',
+            '30 Seconds' => '30000',
+        ];
+        return $interval;
+    }
 }

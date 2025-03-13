@@ -223,19 +223,15 @@ class Init {
     private static function get_wpbakery_classes() {
 			$classes = [
 				Controllers\WPBakery\Shortcodes\AddonShortcodes::class,
-				Controllers\WPBakery\Elements\Category::class,
 				Controllers\WPBakery\Elements\Tags::class,
-				// Controllers\WPBakery\Elements\About::class,
-				// Controllers\WPBakery\Elements\Details::class,
-				// Controllers\WPBakery\Elements\Letter::class,
-				// Controllers\WPBakery\Elements\SignForm::class,
-				// Controllers\WPBakery\Elements\Result::class,
-				// Controllers\WPBakery\Elements\SignCounter::class,
-				// Controllers\WPBakery\Elements\ResultFeed::class,
-				// Controllers\WPBakery\Elements\FeaturedImage::class,
-				// Controllers\WPBakery\Elements\SubmittedTo::class,
-				// Controllers\WPBakery\Elements\ProgressBar::class,
-				// Controllers\WPBakery\Elements\Share::class,
+				Controllers\WPBakery\Elements\AskQuestion::class,
+				Controllers\WPBakery\Elements\Category::class,
+				Controllers\WPBakery\Elements\Counter::class,
+				Controllers\WPBakery\Elements\ExternalForm::class,
+				Controllers\WPBakery\Elements\Posts::class,
+				Controllers\WPBakery\Elements\SearchBox::class,
+				Controllers\WPBakery\Elements\Tabs::class,
+				Controllers\WPBakery\Elements\Tags::class,
 			];
 
 			return $classes;
