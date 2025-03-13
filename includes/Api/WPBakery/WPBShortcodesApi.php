@@ -5,7 +5,7 @@ namespace KAFWPB\Api\WPBakery;
  * Class for registering the WPBShortcodesApi API.
  *
  * @package BwlPluginApi
- * @version 1.0.0
+ * @version 1.0.1
  * @author: Mahbub Alam Khan
  */
 class WPBShortcodesApi {
@@ -36,7 +36,9 @@ class WPBShortcodesApi {
 		if ( ! empty( $this->shortcodes ) ) {
 
 			foreach ( $this->shortcodes as $shortcode ) {
-				vc_add_shortcode_param( $shortcode['tag'], $shortcode['callback'] );
+
+				$scripts = isset( $shortcode['scripts'] ) ? $shortcode['scripts'] : null;
+				vc_add_shortcode_param( $shortcode['tag'], $shortcode['callback'],$scripts );
 			}
 		}
 	}

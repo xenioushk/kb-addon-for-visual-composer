@@ -48,7 +48,9 @@ class PluginConstants {
 		define( 'BWL_PLUGIN_TITLE', 'KB Addon For WPBakery Page Builder' );
 		define( 'BWL_PLUGIN_FOLDER', 'kb-addon-for-visual-composer' );
 		define( 'BWL_PLUGIN_CURRENT_VERSION', BWL_PLUGIN_VERSION );
-		define( 'BWL_PLUGIN_POST_TYPE', 'petitions' );
+		define( 'BWL_PLUGIN_POST_TYPE', 'bwl_kb' );
+		define( 'BWL_PLUGIN_TAXONOMY_CAT', 'bkb_category' );
+		define( 'BWL_PLUGIN_TAXONOMY_TAGS', 'bkb_tags' );
 	}
 
 	/**
