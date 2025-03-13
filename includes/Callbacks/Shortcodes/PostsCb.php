@@ -1,6 +1,6 @@
 <?php
 
-namespace KAFWPB\Callbacks\WPBakery\Shortcodes;
+namespace KAFWPB\Callbacks\Shortcodes;
 
 /**
  * Get all the posts.

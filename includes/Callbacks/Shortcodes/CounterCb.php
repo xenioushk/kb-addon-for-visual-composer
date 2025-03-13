@@ -1,11 +1,11 @@
 <?php
 
-namespace KAFWPB\Callbacks\WPBakery\Shortcodes;
+namespace KAFWPB\Callbacks\Shortcodes;
 
 /**
- * Get all the counter.
+ * Get all the counter callback.
  *
- * @package BwlPetitionsManager
+ * @package KAFWPB
  * @since: 1.0.0
  * @author: Mahbub Alam Khan
  */

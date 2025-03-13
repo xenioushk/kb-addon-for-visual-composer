@@ -222,7 +222,7 @@ class Init {
 	 */
     private static function get_wpbakery_classes() {
 			$classes = [
-				Controllers\WPBakery\Shortcodes\AddonShortcodes::class,
+				Controllers\Shortcodes\AddonShortcodes::class,
 				Controllers\WPBakery\Elements\Tags::class,
 				Controllers\WPBakery\Elements\AskQuestion::class,
 				Controllers\WPBakery\Elements\Category::class,
