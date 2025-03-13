@@ -56,8 +56,6 @@ class BKB_VC {
         include_once BKB_VC_PATH . 'includes/autoupdater/WpAutoUpdater.php';
         include_once BKB_VC_PATH . 'includes/autoupdater/installer.php';
         include_once BKB_VC_PATH . 'includes/autoupdater/updater.php';
-
-        include_once BKB_VC_PATH . 'includes/bkb-vc-element.php';
     }
 
     // public function bkb_vc_enqueue_styles() {
