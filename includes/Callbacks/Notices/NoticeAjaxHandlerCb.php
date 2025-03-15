@@ -7,7 +7,7 @@ namespace KAFWPB\Callbacks\Notices;
  *
  * Handles the notice ajax handler callbacks.
  *
- * @package BwlPetitionsManager
+ * @package KAFWPB
  */
 class NoticeAjaxHandlerCb {
 

@@ -33,7 +33,7 @@ class Init {
 			// 'cmb'              => self::get_cmb_classes(),
 			// 'shortcode' => self::get_shortcode_classes(),
 			'wpbakery' => self::get_wpbakery_classes(),
-			// 'notices'          => self::get_notices_classes(),
+			'notices'  => self::get_notices_classes(),
 			// 'options_panel'    => self::get_options_panel_classes(),
 			// 'role_manager'     => self::get_role_manager_classes(),
 			// 'template_manager' => self::get_template_manager_classes(),

@@ -33,7 +33,7 @@ class WPBShortcodesApi {
 	 * Register shortcodes.
 	 */
 	public function register() {
-		if ( ! empty( $this->shortcodes ) ) {
+		if ( ! empty( $this->shortcodes ) && function_exists( 'vc_add_shortcode_param' ) ) {
 
 			foreach ( $this->shortcodes as $shortcode ) {
 

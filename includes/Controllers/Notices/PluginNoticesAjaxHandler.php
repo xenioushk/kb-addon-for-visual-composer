@@ -1,13 +1,13 @@
 <?php
 namespace KAFWPB\Controllers\Notices;
 
-use BwlPetitionsManager\Api\AjaxHandlers\AjaxHandlersApi;
-use BwlPetitionsManager\Callbacks\Notices\NoticeAjaxHandlerCb;
+use KAFWPB\Api\AjaxHandlers\AjaxHandlersApi;
+use KAFWPB\Callbacks\Notices\NoticeAjaxHandlerCb;
 
 /**
  * PluginNoticesAjaxHandler class.
  *
- * @package BwlPetitionsManager
+ * @package KAFWPB
  */
 class PluginNoticesAjaxHandler {
 
