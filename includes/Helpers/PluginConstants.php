@@ -150,9 +150,10 @@ class PluginConstants {
 		*/
 		$messages = [];
 
-		$bkbm_url    = "<strong><a href='https://1.envato.market/bkbm-wp' target='_blank'>BWL Knowledge Base Manager</a></strong>";
-		$wpb_url     = "<strong><a href='https:// 1.envato.market/VKEo3' target='_blank'>WPBakery Page Builder</a></strong>";
-		$addon_title = '<strong>' . BWL_PLUGIN_TITLE . '</strong>';
+		$bkbm_url         = "<strong><a href='https://1.envato.market/bkbm-wp' target='_blank'>BWL Knowledge Base Manager</a></strong>";
+		$bkbm_license_url = "<strong><a href='" . admin_url( 'edit.php?post_type=bwl_kb&page=bkb-license' ) . "'>BWL Knowledge Base Manager license</a></strong>";
+		$wpb_url          = "<strong><a href='https:// 1.envato.market/VKEo3' target='_blank'>WPBakery Page Builder</a></strong>";
+		$addon_title      = '<strong>' . BWL_PLUGIN_TITLE . '</strong>';
 
 		if ( ! class_exists( 'BwlKbManager\\Init' ) ) {
 			$messages[] = [
@@ -170,7 +171,7 @@ class PluginConstants {
 
 		if ( BWL_PARENT_PLUGIN_PURCHASE_STATUS === 0 ) {
 			$messages[] = [
-				'msg' => "⚠️ Please activate the {$bkbm_url} plugin license to use {$addon_title}.",
+				'msg' => "🔑 Please <strong>Activate</strong> the {$bkbm_license_url} to use the {$addon_title}.",
 			];
 			$status     = 1;
 		}
