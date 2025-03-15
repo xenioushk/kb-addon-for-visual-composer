@@ -88,6 +88,12 @@ class PluginConstants {
 	 * Set the updater constants.
 	 */
 	private static function set_updater_constants() {
+
+		// Only change the slug.
+		$slug        = 'bkbm/notifier_bkbm_kafvc.php';
+		$updater_url = "https://projects.bluewindlab.net/wpplugin/zipped/plugins/{$slug}";
+
+		define( 'BWL_PLUGIN_UPDATER_URL', $updater_url ); // phpcs:ignore
 		define( 'BWL_PLUGIN_UPDATER_SLUG', BWL_PLUGIN_FOLDER . '/' . BWL_PLUGIN_ROOT_FILE ); // phpcs:ignore
 		define( 'BWL_PLUGIN_PATH', BWL_PLUGIN_DIR );
 	}

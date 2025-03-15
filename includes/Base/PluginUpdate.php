@@ -1,15 +1,15 @@
 <?php
 namespace KAFWPB\Base;
 
-use BwlPetitionsManager\Api\PluginUpdate\WpAutoUpdater;
+use KAFWPB\Api\PluginUpdate\WpAutoUpdater;
 
 /**
  * Class for plugin update.
  *
  * @since: 1.1.0
- * @package BwlPetitionsManager
+ * @package KAFWPB
  */
-class PluginUpdate extends BaseController {
+class PluginUpdate {
 
   	/**
      * Register the plugin text domain.
@@ -22,9 +22,6 @@ class PluginUpdate extends BaseController {
      * Check for the plugin update.
      */
 	public function check_for_the_update() {
-
-		$base          = 'https://projects.bluewindlab.net/wpplugin/zipped/plugins/';
-		$notifier_file = $base . 'bptm/notifier_bptm.php';
-		new WpAutoUpdater( BWL_PETITIONS_VERSION, $notifier_file, BWL_PETITIONS_PLUGIN_UPDATER_SLUG );
+		new WpAutoUpdater( BWL_PLUGIN_VERSION, BWL_PLUGIN_UPDATER_URL, BWL_PLUGIN_UPDATER_SLUG );
 	}
 }

@@ -97,7 +97,7 @@ class Init {
 			Base\FrontendInlineJs::class,
 			// Base\AboutPluginRedirect::class,
 			// Base\CustomTheme::class,
-			// Base\PluginUpdate::class,
+			Base\PluginUpdate::class,
 		];
 		return $classes;
 	}
