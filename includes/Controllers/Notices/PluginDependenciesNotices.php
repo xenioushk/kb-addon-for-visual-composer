@@ -12,7 +12,7 @@ use KAFWPB\Callbacks\Notices\NoticeCb;
  *
  * @package BwlPetitionsManager
  */
-class PluginNotices {
+class PluginDependenciesNotices {
 
 	/**
 	 * Notice callback.
@@ -42,7 +42,7 @@ class PluginNotices {
 	 */
 	public function initialize() {
 
-		if ( BWL_PLUGIN_DISPLAY_NOTICE === 0 ) {
+		if ( BWL_PLUGIN_DEPENDENCIES_STATUS === 0 ) {
 			return;
 		}
 
@@ -53,18 +53,27 @@ class PluginNotices {
 		$this->notice_cb = new NoticeCb();
 
 		// Add notices.
-		$notices = [
-			[
-				'callback' => [ $this->notice_cb, 'get_the_notice' ],
-				'notice'   => [
-					'noticeClass'    => 'error',
-					'msg'            => 'hello',
-					'key'            => 'bptm_post_create_limit',
-					'status'         => (int) get_option( 'bptm_post_create_limit' ),
-					'is_dismissable' => 0,
-				],
-			],
-		];
+		$notices = [];
+
+		if ( ! empty( BWL_PLUGIN_DEPENDENCIES_MSG ) ) {
+
+			foreach ( BWL_PLUGIN_DEPENDENCIES_MSG as $data ) {
+
+					$notice = [
+						'callback' => [ $this->notice_cb, 'get_the_notice' ],
+						'notice'   => [
+							'noticeClass'    => $data['class'] ?? 'error',
+							'msg'            => $data['msg'] ?? '',
+							'key'            => $data['key'] ?? '',
+							'status'         => 0,
+							'is_dismissable' => 0,
+						],
+					];
+
+					$notices[] = $notice;
+
+			}
+		}
 
 		$this->notices_api->add_notices( $notices )->register();
 	}

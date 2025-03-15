@@ -24,19 +24,19 @@ class Init {
 		$services = [];
 
 		$service_classes = [
-			'helpers'  => self::get_helper_classes(),
-			'base'     => self::get_base_classes(),
-			'meta'     => self::get_meta_classes(),
+			'helpers'      => self::get_helper_classes(),
+			'base'         => self::get_base_classes(),
+			'meta'         => self::get_meta_classes(),
+			'notices'      => self::get_notices_classes(),
 			// 'actions'          => self::get_action_classes(),
-			// 'filters'          => self::get_filter_classes(),
-			// 'cpt'              => self::get_cpt_classes(),
-			// 'cmb'              => self::get_cmb_classes(),
-			// 'shortcode' => self::get_shortcode_classes(),
-			'wpbakery' => self::get_wpbakery_classes(),
-			'notices'  => self::get_notices_classes(),
-			// 'options_panel'    => self::get_options_panel_classes(),
-			// 'role_manager'     => self::get_role_manager_classes(),
-			// 'template_manager' => self::get_template_manager_classes(),
+				// 'filters'          => self::get_filter_classes(),
+				// 'cpt'              => self::get_cpt_classes(),
+				// 'cmb'              => self::get_cmb_classes(),
+				// 'shortcode' => self::get_shortcode_classes(),
+				'wpbakery' => self::get_wpbakery_classes(),
+				// 'options_panel'    => self::get_options_panel_classes(),
+				// 'role_manager'     => self::get_role_manager_classes(),
+				// 'template_manager' => self::get_template_manager_classes(),
 		];
 
 		foreach ( $service_classes as $service_class ) {
@@ -221,6 +221,7 @@ class Init {
 	 * @return array
 	 */
     private static function get_wpbakery_classes() {
+
 			$classes = [
 				Controllers\Shortcodes\AddonShortcodes::class,
 				Controllers\WPBakery\Shortcodes\ShortcodeParams::class,
@@ -245,7 +246,7 @@ class Init {
 	 */
 	private static function get_notices_classes() {
 		$classes = [
-			Controllers\Notices\PluginNotices::class,
+			Controllers\Notices\PluginDependenciesNotices::class,
 			Controllers\Notices\PluginNoticesAjaxHandler::class,
 		];
 		return $classes;

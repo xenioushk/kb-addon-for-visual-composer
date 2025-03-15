@@ -6,6 +6,8 @@ use KAFWPB\Api\Shortcodes\ShortcodesApi;
 use KAFWPB\Callbacks\Shortcodes\TabsCb;
 use KAFWPB\Callbacks\Shortcodes\PostsCb;
 use KAFWPB\Callbacks\Shortcodes\CounterCb;
+
+use KAFWPB\Traits\DependenciesCheckPoint;
 /**
  * Class for Addon shortcodes.
  *
@@ -14,6 +16,7 @@ use KAFWPB\Callbacks\Shortcodes\CounterCb;
  */
 class AddonShortcodes {
 
+    use DependenciesCheckPoint;
 
     /**
      *  Instance of the shortcodes API.
@@ -48,6 +51,10 @@ class AddonShortcodes {
 	 */
     public function register() {
 
+        // Check if all dependencies are met.
+		if ( ! $this->are_dependencies_met() ) {
+			return;
+		}
         // Initialize API.
         $this->shortcodes_api = new ShortcodesApi();
 

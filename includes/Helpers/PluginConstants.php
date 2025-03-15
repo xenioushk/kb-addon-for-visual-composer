@@ -23,9 +23,9 @@ class PluginConstants {
          * @return string
          * @example wp-content/plugins/<plugin-name>/
          */
-    public static function get_plugin_path(): string {
-        return dirname( dirname( __DIR__ ) ) . '/';
-    }
+	public static function get_plugin_path(): string {
+		return dirname( dirname( __DIR__ ) ) . '/';
+	}
 
 
     /**
@@ -34,7 +34,7 @@ class PluginConstants {
      * @return string
      * @example http://appealwp.local/wp-content/plugins/<plugin-name>/
      */
-    public static function get_plugin_url(): string {
+	public static function get_plugin_url(): string {
 		return plugin_dir_url( self::get_plugin_path() . BWL_PLUGIN_ROOT_FILE );
 	}
 
@@ -117,14 +117,14 @@ class PluginConstants {
 		}
 
 		if ( $kdesk_bundle === 1 ) {
-			$purchaseVerified = 1;
+			$purchase_status = 1;
 		} elseif ( intval( get_option( 'bkbm_purchase_verified' ) ) === 1 ) {
-			$purchaseVerified = 1;
+			$purchase_status = 1;
 		} else {
-			$purchaseVerified = 0;
+			$purchase_status = 0;
 		}
 
-		define( 'BWL_PARENT_PLUGIN_PURCHASE_STATUS', $purchaseVerified );
+		define( 'BWL_PARENT_PLUGIN_PURCHASE_STATUS', $purchase_status );
 
 	}
 
@@ -133,25 +133,49 @@ class PluginConstants {
 	 */
 	private static function set_product_dependency_constants() {
 
-		$notice_status = 0;
-		$messages      = [];
+		/**
+		 * Dependencies Dispaly Status.
+		 *
+		 * @var int $status
+		 * @example 0 = hide notice (all dependencies loaded), 1 = show notice (dependencies not loaded/missing)
+		 */
+		$status = 0;
+
+		/**
+		 * Plugin dependencies messages.
+         *
+		 * @var array $messages
+		 *
+		 * @reference: kb-addon-for-visual-composer/includes/Controllers/Notices/PluginDependenciesNotices.php
+		*/
+		$messages = [];
+
+		$bkbm_url    = "<strong><a href='https://1.envato.market/bkbm-wp' target='_blank'>BWL Knowledge Base Manager</a></strong>";
+		$wpb_url     = "<strong><a href='https:// 1.envato.market/VKEo3' target='_blank'>WPBakery Page Builder</a></strong>";
+		$addon_title = '<strong>' . BWL_PLUGIN_TITLE . '</strong>';
 
 		if ( ! class_exists( 'BwlKbManager\\Init' ) ) {
-			$messages[]    = 'Please install and activate the "Knowledge Base Manager" plugin to use this addon.';
-			$notice_status = 1;
+			$messages[] = [
+				'msg' => "⚠️ Please install and activate the {$bkbm_url} plugin to use {$addon_title}.",
+			];
+			$status     = 1;
 		}
 
 		if ( ! defined( 'WPB_VC_VERSION' ) ) {
-			$messages[]    = 'Please install and activate the "WPBakery Page Builder" plugin to use this addon.';
-			$notice_status = 1;
+			$messages[] = [
+				'msg' => "⚠️ Please install and activate the {$wpb_url} plugin to use {$addon_title}.",
+			];
+			$status     = 1;
 		}
 
 		if ( BWL_PARENT_PLUGIN_PURCHASE_STATUS === 0 ) {
-			$messages[]    = 'Please activate the "Knowledge Base Manager" plugin license to use this addon.';
-			$notice_status = 1;
+			$messages[] = [
+				'msg' => "⚠️ Please activate the {$bkbm_url} plugin license to use {$addon_title}.",
+			];
+			$status     = 1;
 		}
 
-		define( 'BWL_PLUGIN_DISPLAY_NOTICE',  $notice_status );
-		define( 'BWL_PLUGIN_NOTICE_MSG', $messages );
+		define( 'BWL_PLUGIN_DEPENDENCIES_STATUS',  $status );
+		define( 'BWL_PLUGIN_DEPENDENCIES_MSG', $messages );
 	}
 }

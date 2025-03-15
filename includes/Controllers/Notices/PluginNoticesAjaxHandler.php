@@ -46,7 +46,7 @@ class PluginNoticesAjaxHandler {
 		// Add all the ajax handlers here.
 		$this->settings = [
 			[
-				'tag'      => 'bptm_set_notice_status',
+				'tag'      => 'bwl_set_notice_status',
 				'callback' => [ $this->notice_ajax_handler_cb, 'save_notice_settings' ],
 			],
 		];
