@@ -8,6 +8,15 @@ namespace KAFWPB\Helpers;
  */
 class PluginConstants {
 
+
+	/**
+	 * Allowed themes.
+	 *
+	 * @var array
+	 */
+	public static $allowed_themes = [ 'knowledgedesk', 'knowledgedesk Child' ];
+
+
 		/**
          * Get the absolute path to the plugin root.
          *
@@ -38,6 +47,8 @@ class PluginConstants {
 		self::set_assets_constants();
 		self::set_updater_constants();
 		self::set_product_info_constants();
+		self::set_product_activation_constants();
+		self::set_product_dependency_constants();
 	}
 
 	/**
@@ -87,5 +98,60 @@ class PluginConstants {
 	private static function set_product_info_constants() {
 		define( 'BWL_PRODUCT_ID', '14935093' ); // Plugin codecanyon Id.
 		define( 'BWL_PRODUCT_INSTALLATION_TAG', 'bkbm_kavc_installation_' . str_replace( '.', '_', BWL_PLUGIN_VERSION ) );
+	}
+
+	/**
+	 * Set the product activation constants.
+	 */
+	private static function set_product_activation_constants() {
+		$kdesk_bundle = 0;
+
+		if ( function_exists( 'wp_get_theme' ) ) {
+			// Get the current active theme info
+			$currentTheme = \wp_get_theme();
+
+			// Checking if current theme exists in the allowed theme list .
+			if ( in_array( $currentTheme->get( 'Name' ), self::$allowed_themes, true ) ) {
+				$kdesk_bundle = 1;
+			}
+		}
+
+		if ( $kdesk_bundle === 1 ) {
+			$purchaseVerified = 1;
+		} elseif ( intval( get_option( 'bkbm_purchase_verified' ) ) === 1 ) {
+			$purchaseVerified = 1;
+		} else {
+			$purchaseVerified = 0;
+		}
+
+		define( 'BWL_PARENT_PLUGIN_PURCHASE_STATUS', $purchaseVerified );
+
+	}
+
+	/**
+	 * Set the product dependency constants.
+	 */
+	private static function set_product_dependency_constants() {
+
+		$notice_status = 0;
+		$messages      = [];
+
+		if ( ! class_exists( 'BwlKbManager\\Init' ) ) {
+			$messages[]    = 'Please install and activate the "Knowledge Base Manager" plugin to use this addon.';
+			$notice_status = 1;
+		}
+
+		if ( ! defined( 'WPB_VC_VERSION' ) ) {
+			$messages[]    = 'Please install and activate the "WPBakery Page Builder" plugin to use this addon.';
+			$notice_status = 1;
+		}
+
+		if ( BWL_PARENT_PLUGIN_PURCHASE_STATUS === 0 ) {
+			$messages[]    = 'Please activate the "Knowledge Base Manager" plugin license to use this addon.';
+			$notice_status = 1;
+		}
+
+		define( 'BWL_PLUGIN_DISPLAY_NOTICE',  $notice_status );
+		define( 'BWL_PLUGIN_NOTICE_MSG', $messages );
 	}
 }
