@@ -20,11 +20,30 @@ class CustomTheme {
 	 * Get the custom theme.
 	 */
 	public function get_custom_theme() {
-		// Get option panel settings.
 
-		$custom_theme = '<style type="text/css">';
+		$custom_theme = "<style type='text/css'> 
+			.bkb-counter-container {
+					margin: 48px 0;
+			}
 
-		$custom_theme .= '</style>';
+			.bkb_counter_icon {
+					font-size: 54px;
+			}
+
+			.bkb_counter_value {
+					font-size: 32px;
+					line-height: 24px;
+					display: block;
+					margin: 12px 0 0 0;
+					font-weight: bold;
+			}
+
+			.bkb_counter_title {
+					font-size: 14px;
+					line-height: 48px;
+					text-transform: uppercase;
+			}
+		</style>";
 
 		echo $custom_theme; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
