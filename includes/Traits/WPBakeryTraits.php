@@ -42,6 +42,24 @@ trait WPBakeryTraits {
     }
 
     /**
+     * Get the columns tags
+     *
+     * @example one column, two columns, three columns
+     * @return array
+     */
+    public function get_columns_tags() {
+
+        $tags = [
+            esc_html__( 'Select', 'bkb_vc' )        => '',
+			esc_html__( 'One Column', 'bkb_vc' )    => 1,
+			esc_html__( 'Two Columns', 'bkb_vc' )   => 2,
+			esc_html__( 'Three Columns', 'bkb_vc' ) => 3,
+        ];
+
+        return $tags;
+    }
+
+    /**
      * Get the wpbakery alignment tags
      *
      * @example Left, Center, Right, Justify
@@ -55,6 +73,43 @@ trait WPBakeryTraits {
 			'Center'  => 'center',
 			'Right'   => 'right',
 			'Justify' => 'justify',
+        ];
+
+        return $tags;
+    }
+
+    /**
+     * Get the view tags
+     *
+     * @example list, box
+     * @return array
+     */
+    public function get_view_tags() {
+
+        $tags = [
+            esc_html__( 'Select', 'bkb_vc' )     => '',
+            esc_html__( 'Lists View', 'bkb_vc' ) => 0,
+            esc_html__( 'Boxed View', 'bkb_vc' ) => 1,
+        ];
+
+        return $tags;
+    }
+
+    /**
+     * Get the list types tags
+     *
+     * @example rounded, rectangle, iconized, accordion, none
+     * @return array
+     */
+    public function get_list_types_tags() {
+
+        $tags = [
+            esc_html__( 'Select', 'bkb_vc' )    => '',
+            esc_html__( 'Rounded', 'bkb_vc' )   => 'rounded',
+            esc_html__( 'Rectangle', 'bkb_vc' ) => 'rectangle',
+            esc_html__( 'Iconized', 'bkb_vc' )  => 'iconized',
+            esc_html__( 'Accordion', 'bkb_vc' ) => 'accordion',
+            esc_html__( 'None', 'bkb_vc' )      => 'none',
         ];
 
         return $tags;
@@ -118,5 +173,38 @@ trait WPBakeryTraits {
             '30 Seconds' => '30000',
         ];
         return $interval;
+    }
+
+
+    /**
+     * Get the orderby tags
+     *
+     * @return array
+     */
+    public function get_orderby_tags() {
+
+        $tags = [
+            esc_html__( 'ID', 'bkb_vc' )              => 'ID',
+            esc_html__( 'Title', 'bkb_vc' )           => 'title',
+            esc_html__( 'Date', 'bkb_vc' )            => 'date',
+            esc_html__( 'Recent Modified', 'bkb_vc' ) => 'modified',
+            esc_html__( 'Random', 'bkb_vc' )          => 'rand',
+            esc_html__( 'Custom Sort', 'bkb_vc' )     => 'custom_order',
+        ];
+        return $tags;
+    }
+
+    /**
+     * Get the order tags
+     *
+     * @return array
+     */
+    public function get_order_tags() {
+
+        $tags = [
+            esc_html__( 'Ascending', 'bkb_vc' )  => 'ASC',
+            esc_html__( 'Descending', 'bkb_vc' ) => 'DESC',
+        ];
+        return $tags;
     }
 }

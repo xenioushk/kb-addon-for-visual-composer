@@ -55,7 +55,7 @@ class Tabs {
 	private function set_wpb_elem() {
 
 		$this->wpb_elem = [
-			'name'            => __( 'KB Tabs', 'bkb_vc' ),
+			'name'            => esc_html__( 'KB Tabs', 'bkb_vc' ),
 			'base'            => 'vc_bkb_tabs',
 			'icon'            => 'icon-bkb-tab-vc-addon',
 			'category'        => 'BWL KB',
@@ -83,9 +83,9 @@ class Tabs {
 					'admin_label' => true,
 					'type'        => 'kb_tabs',
 					'value'       => '',
-					'heading'     => __( 'Tab Items', 'bkb_vc' ),
+					'heading'     => esc_html__( 'Tab Items', 'bkb_vc' ),
 					'param_name'  => 'tabs',
-					'description' => __( 'You can use drag & drop to re-order tab position.', 'bkb_vc' ),
+					'description' => esc_html__( 'You can use drag & drop to re-order tab position.', 'bkb_vc' ),
 					'group'       => 'Tabs',
 				],
 
@@ -93,11 +93,11 @@ class Tabs {
 					'admin_label' => true,
 					'type'        => 'dropdown',
 					'class'       => '',
-					'heading'     => __( 'Tab Style', 'bkb_vc' ),
+					'heading'     => esc_html__( 'Tab Style', 'bkb_vc' ),
 					'param_name'  => 'vertical',
 					'value'       => [
-						__( 'Horizontal Tab', 'bkb_vc' ) => 0,
-						__( 'Vertical Tab', 'bkb_vc' )   => 1,
+						esc_html__( 'Horizontal Tab', 'bkb_vc' ) => 0,
+						esc_html__( 'Vertical Tab', 'bkb_vc' )   => 1,
 					],
 					'group'       => 'Tabs',
 					'description' => '',
@@ -107,13 +107,13 @@ class Tabs {
 					'admin_label' => true,
 					'type'        => 'dropdown',
 					'class'       => '',
-					'heading'     => __( 'Tab Item Style', 'bkb_vc' ),
+					'heading'     => esc_html__( 'Tab Item Style', 'bkb_vc' ),
 					'param_name'  => 'bkb_list_type',
 					'value'       => [
-						__( 'Rounded', 'bkb_vc' )   => 'rounded',
-						__( 'Rectangle', 'bkb_vc' ) => 'rectangle',
-						__( 'Iconized', 'bkb_vc' )  => 'iconized',
-						__( 'None', 'bkb_vc' )      => 'none',
+						esc_html__( 'Rounded', 'bkb_vc' )  => 'rounded',
+						esc_html__( 'Rectangle', 'bkb_vc' ) => 'rectangle',
+						esc_html__( 'Iconized', 'bkb_vc' ) => 'iconized',
+						esc_html__( 'None', 'bkb_vc' )     => 'none',
 					],
 					'group'       => 'Tabs',
 					'description' => '',
@@ -122,7 +122,7 @@ class Tabs {
 				[
 					'type'        => 'textfield',
 					'class'       => '',
-					'heading'     => __( 'No of Items', 'bkb_vc' ),
+					'heading'     => esc_html__( 'No of Items', 'bkb_vc' ),
 					'param_name'  => 'limit',
 					'value'       => '',
 					'description' => '',
@@ -134,30 +134,30 @@ class Tabs {
 				[
 					'type'        => 'textfield',
 					'class'       => '',
-					'heading'     => __( 'Featured Tab Title', 'bkb_vc' ),
+					'heading'     => esc_html__( 'Featured Tab Title', 'bkb_vc' ),
 					'param_name'  => 'feat_tab_title',
 					'value'       => '',
-					'description' => __( 'Set custom title for Featured KB Tab', 'bkb_vc' ),
+					'description' => esc_html__( 'Set custom title for Featured KB Tab', 'bkb_vc' ),
 					'group'       => 'Tabs Title',
 				],
 
 				[
 					'type'        => 'textfield',
 					'class'       => '',
-					'heading'     => __( 'Popular Tab Title', 'bkb_vc' ),
+					'heading'     => esc_html__( 'Popular Tab Title', 'bkb_vc' ),
 					'param_name'  => 'popular_tab_title',
 					'value'       => '',
-					'description' => __( 'Set custom title for Popular KB Tab', 'bkb_vc' ),
+					'description' => esc_html__( 'Set custom title for Popular KB Tab', 'bkb_vc' ),
 					'group'       => 'Tabs Title',
 				],
 
 				[
 					'type'        => 'textfield',
 					'class'       => '',
-					'heading'     => __( 'Recent Tab Title', 'bkb_vc' ),
+					'heading'     => esc_html__( 'Recent Tab Title', 'bkb_vc' ),
 					'param_name'  => 'recent_tab_title',
 					'value'       => '',
-					'description' => __( 'Set custom title for Recent KB Tab', 'bkb_vc' ),
+					'description' => esc_html__( 'Set custom title for Recent KB Tab', 'bkb_vc' ),
 					'group'       => 'Tabs Title',
 				],
 
@@ -166,11 +166,11 @@ class Tabs {
 				[
 					'type'        => 'dropdown',
 					'class'       => '',
-					'heading'     => __( 'Enable RTL Mode?', 'bkb_vc' ),
+					'heading'     => esc_html__( 'Enable RTL Mode?', 'bkb_vc' ),
 					'param_name'  => 'rtl',
 					'value'       => [
-						__( 'No', 'bkb_vc' )  => 0,
-						__( 'Yes', 'bkb_vc' ) => 1,
+						esc_html__( 'No', 'bkb_vc' )  => 0,
+						esc_html__( 'Yes', 'bkb_vc' ) => 1,
 					],
 					'group'       => 'Settings',
 					'description' => '',
@@ -179,10 +179,10 @@ class Tabs {
 				[
 					'type'        => 'textfield',
 					'class'       => '',
-					'heading'     => __( 'Extra Class', 'bkb_vc' ),
+					'heading'     => esc_html__( 'Extra Class', 'bkb_vc' ),
 					'param_name'  => 'cont_ext_class',
 					'value'       => '',
-					'description' => __( 'Add additional class of tabs.', 'bkb_vc' ),
+					'description' => esc_html__( 'Add additional class of tabs.', 'bkb_vc' ),
 					'group'       => 'Settings',
 				],
 

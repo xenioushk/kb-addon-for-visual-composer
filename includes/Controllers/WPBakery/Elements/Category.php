@@ -72,10 +72,12 @@ class Category {
 	 */
 	private function get_params() {
 
-		$petition_content_tags   = $this->get_content_tags();
-		$petition_text_alignment = $this->get_alignment_tags();
-
-		$boolean_tags = $this->get_boolean_tags();
+		$columns_tags    = $this->get_columns_tags();
+		$boolean_tags    = $this->get_boolean_tags();
+		$list_types_tags = $this->get_list_types_tags();
+		$view_tags       = $this->get_view_tags();
+		$order_tags      = $this->get_order_tags();
+		$orderby_tags    = $this->get_orderby_tags();
 
 			$params = [
 				// add params same as with any other content element
@@ -107,10 +109,7 @@ class Category {
 					'class'       => '',
 					'heading'     => esc_html__( 'Layout Type', 'bkb_vc' ),
 					'param_name'  => 'box_view',
-					'value'       => [
-						esc_html__( 'Lists View', 'bkb_vc' ) => 0,
-						esc_html__( 'Boxed View', 'bkb_vc' ) => 1,
-					],
+					'value'       => $view_tags,
 					'group'       => 'Settings',
 					'description' => '',
 				],
@@ -133,10 +132,7 @@ class Category {
 					'class'       => '',
 					'heading'     => esc_html__( 'Hide Carousel Navigation Arrow?', 'bkb_vc' ),
 					'param_name'  => 'carousel_nav',
-					'value'       => [
-						esc_html__( 'Yes', 'bkb_vc' ) => 1,
-						esc_html__( 'No', 'bkb_vc' )  => 0,
-					],
+					'value'       => $boolean_tags,
 					'description' => esc_html__( 'You can show/hide two arrow will display beside the carousel items.', 'bkb_vc' ),
 					'group'       => 'Settings',
 					'dependency'  => [ 'element' => 'carousel', 'value' => [ '1' ] ],
@@ -178,14 +174,7 @@ class Category {
 					'class'       => '',
 					'heading'     => esc_html__( 'List Styles', 'bkb_vc' ),
 					'param_name'  => 'bkb_list_type',
-					'value'       => [
-						esc_html__( 'Select', 'bkb_vc' )   => '',
-						esc_html__( 'Rounded', 'bkb_vc' )  => 'rounded',
-						esc_html__( 'Rectangle', 'bkb_vc' ) => 'rectangle',
-						esc_html__( 'Iconized', 'bkb_vc' ) => 'iconized',
-						esc_html__( 'Accordion', 'bkb_vc' ) => 'accordion',
-						esc_html__( 'None', 'bkb_vc' )     => 'none',
-					],
+					'value'       => $list_types_tags,
 					'group'       => 'Settings',
 					'description' => '',
 					'dependency'  => [ 'element' => 'box_view', 'value' => [ '0' ] ],
@@ -210,12 +199,7 @@ class Category {
 					'class'       => '',
 					'heading'     => esc_html__( 'Column Settings', 'bkb_vc' ),
 					'param_name'  => 'cols',
-					'value'       => [
-						esc_html__( 'Select', 'bkb_vc' ) => '',
-						esc_html__( 'One Column', 'bkb_vc' ) => 1,
-						esc_html__( 'Two Columns', 'bkb_vc' ) => 2,
-						esc_html__( 'Three Columns', 'bkb_vc' ) => 3,
-					],
+					'value'       => $columns_tags,
 					'group'       => 'Settings',
 					'description' => '',
 				],
@@ -245,14 +229,7 @@ class Category {
 					'class'       => '',
 					'heading'     => esc_html__( 'Order By Settings', 'bkb_vc' ),
 					'param_name'  => 'orderby',
-					'value'       => [
-						esc_html__( 'ID', 'bkb_vc' )     => 'ID',
-						esc_html__( 'Title', 'bkb_vc' )  => 'title',
-						esc_html__( 'Date', 'bkb_vc' )   => 'date',
-						esc_html__( 'Recent Modified', 'bkb_vc' ) => 'modified',
-						esc_html__( 'Random', 'bkb_vc' ) => 'rand',
-						esc_html__( 'Custom Sort', 'bkb_vc' ) => 'custom_order',
-					],
+					'value'       => $orderby_tags,
 					'group'       => 'Settings',
 					'description' => '',
 					'dependency'  => [ 'element' => 'box_view', 'value' => [ '0' ] ],
@@ -262,10 +239,7 @@ class Category {
 					'class'       => '',
 					'heading'     => esc_html__( 'Order Type Settings', 'bkb_vc' ),
 					'param_name'  => 'order',
-					'value'       => [
-						esc_html__( 'Ascending', 'bkb_vc' )  => 'ASC',
-						esc_html__( 'Descending', 'bkb_vc' ) => 'DESC',
-					],
+					'value'       => $order_tags,
 					'group'       => 'Settings',
 					'description' => '',
 					'dependency'  => [ 'element' => 'box_view', 'value' => [ '0' ] ],

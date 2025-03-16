@@ -72,11 +72,6 @@ class SearchBox {
 	 */
 	private function get_params() {
 
-		$petition_content_tags   = $this->get_content_tags();
-		$petition_text_alignment = $this->get_alignment_tags();
-
-		$boolean_tags = $this->get_boolean_tags();
-
 			$params = [
 
 				// add params same as with any other content element
