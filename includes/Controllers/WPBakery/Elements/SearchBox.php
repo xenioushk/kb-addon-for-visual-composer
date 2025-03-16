@@ -8,7 +8,7 @@ use KAFWPB\Traits\WPBakeryTraits;
 /**
  * Class SearchBox
  *
- * Handles Petition info WPBakery page builder element.
+ * Handles kb search box wpbakery page builder element.
  *
  * @package KAFWPB
  */

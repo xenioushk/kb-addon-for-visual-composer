@@ -8,7 +8,7 @@ use KAFWPB\Traits\WPBakeryTraits;
 /**
  * Class KB Posts
  *
- * Knowledgebase Posts
+ * Handles kb posts wpbakery page builder element.
  *
  * @package KAFWPB
  */
@@ -72,9 +72,6 @@ class Posts {
 	 */
 	private function get_params() {
 
-		$petition_content_tags   = $this->get_content_tags();
-		$petition_text_alignment = $this->get_alignment_tags();
-
 		$boolean_tags = $this->get_boolean_tags();
 
 			$params = [
@@ -92,7 +89,6 @@ class Posts {
 						esc_html__( 'Popular KB', 'bkb_vc' )  => 'popular',
 						esc_html__( 'Featured KB', 'bkb_vc' ) => 'featured',
 						esc_html__( 'Random KB', 'bkb_vc' )   => 'random',
-
 					],
 					'group'       => 'General',
 					'description' => '',
@@ -114,10 +110,7 @@ class Posts {
 					'class'       => '',
 					'heading'     => esc_html__( 'Display KB Type Title?', 'bkb_vc' ),
 					'param_name'  => 'kb_type_title_status',
-					'value'       => [
-						esc_html__( 'Yes', 'bkb_vc' ) => 1,
-						esc_html__( 'No', 'bkb_vc' )  => 0,
-					],
+					'value'       => $boolean_tags,
 					'group'       => 'General',
 					'description' => '',
 				],
@@ -128,10 +121,7 @@ class Posts {
 					'class'       => '',
 					'heading'     => esc_html__( 'Enable Pagination?', 'bkb_vc' ),
 					'param_name'  => 'paginate',
-					'value'       => [
-						esc_html__( 'No', 'bkb_vc' )  => 0,
-						esc_html__( 'Yes', 'bkb_vc' ) => 1,
-					],
+					'value'       => $boolean_tags,
 					'group'       => 'General',
 					'description' => '',
 				],

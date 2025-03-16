@@ -8,7 +8,7 @@ use KAFWPB\Traits\WPBakeryTraits;
 /**
  * Class Counter
  *
- * Knowledgebase Counter.
+ * Handles counter wpbakery page builder element.
  *
  * @package KAFWPB
  */

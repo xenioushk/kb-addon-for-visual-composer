@@ -8,7 +8,7 @@ use KAFWPB\Traits\WPBakeryTraits;
 /**
  * Class Category
  *
- * Handles Petition info WPBakery page builder element.
+ * Handles Category WPBakery page builder element.
  *
  * @package KAFWPB
  */

@@ -8,7 +8,7 @@ use KAFWPB\Traits\WPBakeryTraits;
 /**
  * Class ExternalForm
  *
- * Knowledgebase KB External Form
+ * Handles external form wpbakery page builder element.
  *
  * @package KAFWPB
  */
@@ -72,10 +72,7 @@ class ExternalForm {
 	 */
 	private function get_params() {
 
-		$petition_content_tags   = $this->get_content_tags();
-		$petition_text_alignment = $this->get_alignment_tags();
-
-		$boolean_tags = $this->get_boolean_tags();
+			$layout_tags = $this->get_layouts();
 
 			$params = [
 
@@ -101,10 +98,7 @@ class ExternalForm {
 					'class'       => '',
 					'heading'     => esc_html__( 'Form Layout', 'bkb_vc' ),
 					'param_name'  => 'layout',
-					'value'       => [
-						esc_html__( 'Layout 01', 'bkb_vc' ) => 'layout_1',
-						esc_html__( 'Layout 02', 'bkb_vc' ) => 'layout_2',
-					],
+					'value'       => $layout_tags,
 					'group'       => 'General',
 					'description' => esc_html__( 'Layout 01 will display Form labels and Layout 02 will hide Form label.', 'bkb_vc' ),
 				],

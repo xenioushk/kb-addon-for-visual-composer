@@ -8,7 +8,7 @@ use KAFWPB\Traits\WPBakeryTraits;
 /**
  * Class AskQuestion
  *
- * Handles Petition info WPBakery page builder element.
+ * Handles AskQuestion WPBakery page builder element.
  *
  * @package KAFWPB
  */
@@ -71,11 +71,6 @@ class AskQuestion {
 	 * @return array
 	 */
 	private function get_params() {
-
-		$petition_content_tags   = $this->get_content_tags();
-		$petition_text_alignment = $this->get_alignment_tags();
-
-		$boolean_tags = $this->get_boolean_tags();
 
 			$params = [
 

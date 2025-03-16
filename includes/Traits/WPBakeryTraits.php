@@ -123,11 +123,9 @@ trait WPBakeryTraits {
     public function get_layouts() {
 
         $layout = [
-            'Select'    => '',
-            'Layout 01' => 'layout_1',
-            'Layout 02' => 'layout_2',
-            'Layout 03' => 'layout_3',
-            'Layout 04' => 'layout_4',
+            'Select'                            => '',
+			esc_html__( 'Layout 01', 'bkb_vc' ) => 'layout_1',
+			esc_html__( 'Layout 02', 'bkb_vc' ) => 'layout_2',
         ];
         return $layout;
     }

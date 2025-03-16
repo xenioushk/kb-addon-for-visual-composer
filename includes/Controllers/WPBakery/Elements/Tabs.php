@@ -8,7 +8,7 @@ use KAFWPB\Traits\WPBakeryTraits;
 /**
  * Class Tabs
  *
- * Knowledgebase Tabs.
+ * Handles kb tabs wpbakery page builder element.
  *
  * @package KAFWPB
  */
@@ -71,9 +71,6 @@ class Tabs {
 	 * @return array
 	 */
 	private function get_params() {
-
-		$petition_content_tags   = $this->get_content_tags();
-		$petition_text_alignment = $this->get_alignment_tags();
 
 		$boolean_tags = $this->get_boolean_tags();
 
@@ -168,10 +165,7 @@ class Tabs {
 					'class'       => '',
 					'heading'     => esc_html__( 'Enable RTL Mode?', 'bkb_vc' ),
 					'param_name'  => 'rtl',
-					'value'       => [
-						esc_html__( 'No', 'bkb_vc' )  => 0,
-						esc_html__( 'Yes', 'bkb_vc' ) => 1,
-					],
+					'value'       => $boolean_tags,
 					'group'       => 'Settings',
 					'description' => '',
 				],
