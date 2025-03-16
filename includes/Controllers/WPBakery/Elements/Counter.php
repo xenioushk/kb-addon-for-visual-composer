@@ -60,7 +60,7 @@ class Counter {
 			'icon'            => 'icon-bkb-counter-vc-addon',
 			'category'        => 'BWL KB',
 			'content_element' => true,
-			'description'     => esc_htmlesc_html__( 'Display kb counter.','bkb_vc' ),
+			'description'     => esc_html__( 'Display kb counter.','bkb_vc' ),
 			'params'          => $this->get_params(),
 		];
 	}
