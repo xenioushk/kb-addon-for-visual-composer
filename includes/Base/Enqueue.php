@@ -37,12 +37,12 @@ class Enqueue extends BaseController {
 	 */
 	public function get_the_styles() {
 
-		// Register Styles.
 		wp_enqueue_style(
-			$this->frontend_script_slug,
+            $this->frontend_script_slug,
             BWL_PLUGIN_STYLES_ASSETS_DIR . 'frontend.css',
             [],
-		BWL_PLUGIN_VERSION );
+            BWL_PLUGIN_VERSION
+		);
 	}
 
 	/**
@@ -55,19 +55,25 @@ class Enqueue extends BaseController {
             'counterup',
             BWL_PLUGIN_LIBS_DIR . 'jquery-counterup/jquery.counterup.min.js',
             [ 'jquery' ],
-        BWL_PLUGIN_VERSION, true  );
+            BWL_PLUGIN_VERSION,
+            true
+        );
 
 		wp_enqueue_script(
             'waypoints',
             BWL_PLUGIN_LIBS_DIR . 'jquery-waypoint/waypoints.min.js',
             [ 'jquery' ],
-        BWL_PLUGIN_VERSION, true  );
+            BWL_PLUGIN_VERSION,
+            true
+        );
 
 		wp_enqueue_script(
             $this->frontend_script_slug,
             BWL_PLUGIN_SCRIPTS_ASSETS_DIR . 'frontend.js',
             [ 'jquery' ],
-        BWL_PLUGIN_VERSION, true  );
+            BWL_PLUGIN_VERSION,
+            true
+        );
 
 		// Load frontend variables used by the JS files.
 		$this->get_the_localization_texts();
@@ -80,7 +86,7 @@ class Enqueue extends BaseController {
 
 		// Localize scripts.
 		// Frontend.
-		// Access data: BptmFrontendData.version
+		// Access data: KafwpbFrontendData.version
 		wp_localize_script(
             $this->frontend_script_slug,
             'KafwpbFrontendData',

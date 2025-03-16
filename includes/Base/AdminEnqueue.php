@@ -6,7 +6,7 @@ namespace KAFWPB\Base;
  *
  * @package KAFWPB
  */
-class AdminEnqueue extends BaseController {
+class AdminEnqueue {
 
 	/**
 	 * Admin script slug.
@@ -35,18 +35,22 @@ class AdminEnqueue extends BaseController {
      * Load the plugin styles and scripts.
      */
 	public function get_the_scripts() {
-			// Register Data Table Styles.
-        wp_enqueue_style( $this->admin_script_slug, BWL_PLUGIN_STYLES_ASSETS_DIR . 'admin.css', [], BWL_PLUGIN_VERSION );
 
-        // Register Data Table & It's required codes.
+        wp_enqueue_style(
+            $this->admin_script_slug,
+            BWL_PLUGIN_STYLES_ASSETS_DIR . 'admin.css',
+            [],
+            BWL_PLUGIN_VERSION
+        );
+
         wp_enqueue_script(
             $this->admin_script_slug,
             BWL_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js',
             [ 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-sortable' ],
             BWL_PLUGIN_VERSION, true
         );
-		// Load frontend variables used by the JS files.
-		$this->get_the_localization_texts();
+
+				$this->get_the_localization_texts();
 	}
 
 	/**
@@ -56,7 +60,7 @@ class AdminEnqueue extends BaseController {
 
 		// Localize scripts.
 		// Frontend.
-		// Access data: BptmAdminData.version
+		// Access data: KAFWPBAdminData.version
 		wp_localize_script(
             $this->admin_script_slug,
             'KAFWPBAdminData',
