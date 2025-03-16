@@ -76,7 +76,7 @@
 .bkb_connected {
   float: left;
   width: 48%;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   min-height: 250px;
   height: 250px;
   overflow-y: scroll;
@@ -86,16 +86,16 @@
 .bkb_connected.bkb_tags {
   float: right;
   background: #fffff4;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
 }
 
 .bkb_connected.bkb_cat li,
 .bkb_connected.bkb_tags li {
-  background: #FFF;
+  background: #fff;
 }
 
 li.sortable-placeholder {
-  border: 1px dashed #CCC;
+  border: 1px dashed #ccc;
   background: none;
 }
 

@@ -59,7 +59,7 @@ class AdminEnqueue extends BaseController {
 		// Access data: BptmAdminData.version
 		wp_localize_script(
             $this->admin_script_slug,
-            'BkbmKavcAdminData',
+            'KAFWPBAdminData',
             [
 				'version'      => BWL_PLUGIN_VERSION,
 				'ajaxurl'      => esc_url( admin_url( 'admin-ajax.php' ) ),

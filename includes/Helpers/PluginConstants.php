@@ -102,7 +102,7 @@ class PluginConstants {
 	 * Set the product info constants.
 	 */
 	private static function set_product_info_constants() {
-		define( 'BWL_PRODUCT_ID', '14935093' ); // Plugin codecanyon Id.
+		define( 'BWL_PRODUCT_ID', '14935093' ); // Plugin codecanyon/themeforest Id.
 		define( 'BWL_PRODUCT_INSTALLATION_TAG', 'bkbm_kavc_installation_' . str_replace( '.', '_', BWL_PLUGIN_VERSION ) );
 	}
 

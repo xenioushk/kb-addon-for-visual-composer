@@ -10,16 +10,16 @@
 jQuery(document).ready(function ($) {
   $(function () {
     function _bkb_cat_lists() {
-      var output = '';
+      var output = "";
       var count = 0;
-      $('.bkb_cat').find('li').each(function () {
-        output += $(this).data('value') + ',';
+      $(".bkb_cat").find("li").each(function () {
+        output += $(this).data("value") + ",";
         count++;
       });
       if (count > 0) {
         output = output.substr(0, output.length - 1);
       }
-      $('.kb_cat').val("").val(output);
+      $(".kb_cat").val("").val(output);
     }
     setTimeout(function () {
       $("span[data-vc-ui-element=button-save]").on("click", function () {
@@ -43,16 +43,16 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function ($) {
   $(function () {
     function _bkb_counter_lists() {
-      var output = '';
+      var output = "";
       var count = 0;
-      $('.bkb_counter').find('li').each(function () {
-        output += $(this).data('value') + ',';
+      $(".bkb_counter").find("li").each(function () {
+        output += $(this).data("value") + ",";
         count++;
       });
       if (count > 0) {
         output = output.substr(0, output.length - 1);
       }
-      $('.kb_counter').val("").val(output);
+      $(".kb_counter").val("").val(output);
     }
     setTimeout(function () {
       $("span[data-vc-ui-element=button-save]").on("click", function () {
@@ -74,16 +74,16 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function ($) {
   $(function () {
     function _bkb_tabs_lists() {
-      var output = '';
+      var output = "";
       var count = 0;
-      $('.bkb_tabs').find('li').each(function () {
-        output += $(this).data('value') + ',';
+      $(".bkb_tabs").find("li").each(function () {
+        output += $(this).data("value") + ",";
         count++;
       });
       if (count > 0) {
         output = output.substr(0, output.length - 1);
       }
-      $('.kb_tabs').val("").val(output);
+      $(".kb_tabs").val("").val(output);
     }
     setTimeout(function () {
       $("span[data-vc-ui-element=button-save]").on("click", function () {
@@ -105,16 +105,16 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function ($) {
   $(function () {
     function _bkb_tags_lists() {
-      var output = '';
+      var output = "";
       var count = 0;
-      $('.bkb_tags').find('li').each(function () {
-        output += $(this).data('value') + ',';
+      $(".bkb_tags").find("li").each(function () {
+        output += $(this).data("value") + ",";
         count++;
       });
       if (count > 0) {
         output = output.substr(0, output.length - 1);
       }
-      $('.kb_tags').val("").val(output);
+      $(".kb_tags").val("").val(output);
     }
     setTimeout(function () {
       $("span[data-vc-ui-element=button-save]").on("click", function () {
@@ -142,15 +142,15 @@ jQuery(document).ready(function ($) {
       type: "POST",
       url: ajaxurl,
       data: {
-        action: "bkbm_kavc_installation_counter",
+        action: "bwl_installation_counter",
         // this is the name of our WP AJAX function that we'll set up next
-        product_id: BkbmKavcAdminData.product_id // change the localization variable.
+        product_id: KAFWPBAdminData.product_id // change the localization variable.
       },
 
       dataType: "JSON"
     });
   }
-  if (typeof BkbmKavcAdminData.installation != "undefined" && BkbmKavcAdminData.installation != 1) {
+  if (typeof KAFWPBAdminData.installation != "undefined" && KAFWPBAdminData.installation != 1) {
     $.when(bkbm_kavc_installation_counter()).done(function (response_data) {
       // console.log(response_data)
     });
