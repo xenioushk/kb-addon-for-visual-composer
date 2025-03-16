@@ -6,7 +6,7 @@ namespace KAFWPB\Base;
  *
  * @package KAFWPB
  */
-class Enqueue extends BaseController {
+class Enqueue {
 
 	/**
 	 * Frontend script slug.

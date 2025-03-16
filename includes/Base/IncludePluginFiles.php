@@ -55,11 +55,11 @@ class IncludePluginFiles {
 	private function set_frontend_files() {
 
 		// example
-		$frontend_files = [
-			'includes/bptm-email-template',
-			'includes/bwl-pm-helper',
-			'includes/bwl-sql-helper',
-		];
+		// $frontend_files = [
+		// 'includes/bptm-email-template',
+		// 'includes/bwl-pm-helper',
+		// 'includes/bwl-sql-helper',
+		// ];
 
 		$frontend_files = [];
 

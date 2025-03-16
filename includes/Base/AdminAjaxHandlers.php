@@ -33,13 +33,13 @@ class AdminAjaxHandlers {
 
 		// Do not change the tag.
 		// If do so, you need to change in js file too.
-		$adminAjaxRequests = [
+		$ajax_requests = [
 			[
 				'tag'      => 'bwl_installation_counter',
 				'callback' => [ $this->plugin_installation_cb, 'save' ],
 			],
 		];
 
-		$this->ajax_handlers_api->add_ajax_handlers( $adminAjaxRequests )->register();
+		$this->ajax_handlers_api->add_ajax_handlers( $ajax_requests )->register();
 	}
 }
