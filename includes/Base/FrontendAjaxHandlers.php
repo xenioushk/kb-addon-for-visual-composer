@@ -2,18 +2,16 @@
 
 namespace KAFWPB\Base;
 
-use BwlPetitionsManager\Base\BaseController;
 use Xenioushk\BwlPluginApi\Api\AjaxHandlers\AjaxHandlersApi;
-use BwlPetitionsManager\Callbacks\FrontendAjaxHandlers\SaveSignCb;
 
 /**
  * Class for frontend ajax handlers.
  *
- * @package BwlPetitionsManager
+ * @package KAFWPB
  * @since: 1.1.0
  * @author: Mahbub Alam Khan
  */
-class FrontendAjaxHandlers extends BaseController {
+class FrontendAjaxHandlers {
 
 	/**
 	 * Instance of the ajax handlers API.
@@ -23,33 +21,16 @@ class FrontendAjaxHandlers extends BaseController {
 	public $ajax_handlers_api;
 
 	/**
-	 * Instance of the SaveSignCb.
-	 *
-	 * @var object $save_sign_cb SaveSignCb.
-	 */
-	public $save_sign_cb;
-
-	/**
 	 * Register frontend ajax handlers.
 	 */
 	public function register() {
 
 		$this->ajax_handlers_api = new AjaxHandlersApi();
 
-		// Initalize Callbacks.
-		$this->save_sign_cb = new SaveSignCb();
-
 		// Do not change the tag.
 		// If do so, you need to change in js file too.
-		$adminAjaxRequests = [
+		$ajax_requests = [];
 
-			[
-				'tag'      => 'bwl_petitions_save_post_data',
-				'callback' => [ $this->save_sign_cb, 'save_data' ],
-			],
-
-		];
-
-		$this->ajax_handlers_api->add_ajax_handlers( $adminAjaxRequests )->register();
+		$this->ajax_handlers_api->add_ajax_handlers( $ajax_requests )->register();
 	}
 }
