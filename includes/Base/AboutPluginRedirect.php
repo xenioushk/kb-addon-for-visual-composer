@@ -4,7 +4,7 @@ namespace KAFWPB\Base;
 /**
  * Class for plucin redirection to about page.
  *
- * @package BwlPetitionsManager
+ * @package KAFWPB
  */
 class AboutPluginRedirect {
 

@@ -1,7 +1,7 @@
 <?php
 namespace KAFWPB\Controllers\Notices;
 
-use KAFWPB\Api\AjaxHandlers\AjaxHandlersApi;
+use Xenioushk\BwlPluginApi\Api\AjaxHandlers\AjaxHandlersApi;
 use KAFWPB\Callbacks\Notices\NoticeAjaxHandlerCb;
 
 /**

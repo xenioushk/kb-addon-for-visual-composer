@@ -2,7 +2,7 @@
 
 namespace KAFWPB\Controllers\WPBakery\Elements;
 
-use KAFWPB\Api\WPBakery\WPBakeryApi;
+use Xenioushk\BwlPluginApi\Api\WPBakery\WPBakeryApi;
 use KAFWPB\Traits\WPBakeryTraits;
 
 /**

@@ -24,19 +24,11 @@ class Init {
 		$services = [];
 
 		$service_classes = [
-			'helpers'      => self::get_helper_classes(),
-			'base'         => self::get_base_classes(),
-			'meta'         => self::get_meta_classes(),
-			'notices'      => self::get_notices_classes(),
-			// 'actions'          => self::get_action_classes(),
-				// 'filters'          => self::get_filter_classes(),
-				// 'cpt'              => self::get_cpt_classes(),
-				// 'cmb'              => self::get_cmb_classes(),
-				// 'shortcode' => self::get_shortcode_classes(),
-				'wpbakery' => self::get_wpbakery_classes(),
-				// 'options_panel'    => self::get_options_panel_classes(),
-				// 'role_manager'     => self::get_role_manager_classes(),
-				// 'template_manager' => self::get_template_manager_classes(),
+			'helpers'  => self::get_helper_classes(),
+			'base'     => self::get_base_classes(),
+			'meta'     => self::get_meta_classes(),
+			'notices'  => self::get_notices_classes(),
+			'wpbakery' => self::get_wpbakery_classes(),
 		];
 
 		foreach ( $service_classes as $service_class ) {
@@ -88,16 +80,11 @@ class Init {
 	private static function get_base_classes() {
 		$classes = [
 			// Base\IncludePluginFiles::class,
-			// Base\ThumbHelper::class,
 			Base\Enqueue::class,
 			Base\AdminEnqueue::class,
-			// Base\Language::class,
-			// Base\FrontendAjaxHandlers::class,
-			// Base\AdminAjaxHandlers::class,
 			Base\FrontendInlineJs::class,
-			// Base\AboutPluginRedirect::class,
-			// Base\CustomTheme::class,
 			Base\PluginUpdate::class,
+			Base\Language::class,
 		];
 		return $classes;
 	}
@@ -126,94 +113,6 @@ class Init {
 		return $classes;
 	}
 
-	/**
-	 * Get Action classes.
-	 *
-	 * @return array
-	 */
-	private static function get_action_classes() {
-		$classes = [
-			Controllers\Actions\PetitionActions::class,
-			Controllers\Actions\RoleManager\AccessActions::class,
-			Controllers\Actions\RoleManager\PostsActions::class,
-		];
-		return $classes;
-	}
-
-	/**
-	 * Get Filter classes.
-	 *
-	 * @return array
-	 */
-	private static function get_filter_classes() {
-
-		$classes = [
-			Controllers\Filters\RoleManager\LoginMsgFilter::class,
-		];
-		return $classes;
-	}
-	/**
-	 * Get CPT classes.
-	 *
-	 * @return array
-	 */
-	private static function get_cpt_classes() {
-		$classes = [
-			Controllers\Cpt\PluginCpt::class,
-			Controllers\Cpt\CustomColumns::class,
-			Controllers\Cpt\TaxonomyFilters::class,
-		];
-		return $classes;
-	}
-
-	/**
-	 * Get CMB classes.
-	 *
-	 * @return array
-	 */
-	private static function get_cmb_classes() {
-		$classes = [
-			Controllers\Cmb\PetitionsIntroCmb::class,
-			Controllers\Cmb\PetitionsAboutCmb::class,
-			Controllers\Cmb\PetitionsLetterCmb::class,
-			Controllers\Cmb\PetitionsFormCmb::class,
-			Controllers\Cmb\PetitionsTargetCmb::class,
-			Controllers\Cmb\PetitionsLetterSubmitCmb::class,
-			Controllers\Cmb\PetitionsShareCmb::class,
-			Controllers\Cmb\PetitionsStatsCmb::class,
-		];
-
-		return $classes;
-	}
-
-	/**
-	 * Get shortcode classes.
-	 *
-	 * @return array
-	 */
-	private static function get_shortcode_classes() {
-		$classes = [
-			// Controllers\Shortcodes\AddonShortcodes::class,
-			// Controllers\Shortcodes\PetitionBlocks\PetitionIntro::class,
-			// Controllers\Shortcodes\PetitionBlocks\PetitionAbout::class,
-			// Controllers\Shortcodes\PetitionBlocks\PetitionDetail::class,
-			// Controllers\Shortcodes\PetitionBlocks\PetitionProgressBar::class,
-			// Controllers\Shortcodes\PetitionBlocks\PetitionResult::class,
-			// Controllers\Shortcodes\PetitionBlocks\PetitionResultFeed::class,
-			// Controllers\Shortcodes\PetitionBlocks\PetitionLetter::class,
-			// Controllers\Shortcodes\PetitionBlocks\PetitionSignCounter::class,
-			// Controllers\Shortcodes\PetitionBlocks\PetitionSubmitTo::class,
-			// Controllers\Shortcodes\PetitionBlocks\PetitionFeaturedImage::class,
-			// Controllers\Shortcodes\PetitionBlocks\PetitionShare::class,
-			// Controllers\Shortcodes\PetitionSignForm\CountryLists::class,
-			// Controllers\Shortcodes\PetitionSignForm\FormFields::class,
-			// Controllers\Shortcodes\PetitionSignForm\LoginForm::class,
-			// Controllers\Shortcodes\PetitionSignForm\SignVerify::class,
-			// Controllers\Shortcodes\ExternalForm\PetitionCreateForm::class,
-		];
-
-		return $classes;
-	}
 
 	/**
 	 * Get WPBakery classes.
@@ -248,47 +147,6 @@ class Init {
 		$classes = [
 			Controllers\Notices\PluginDependenciesNotices::class,
 			Controllers\Notices\PluginNoticesAjaxHandler::class,
-		];
-		return $classes;
-	}
-
-	/**
-	 * Get Options Panel classes.
-	 *
-	 * @return array
-	 */
-	private static function get_options_panel_classes() {
-
-		$classes = [
-			Controllers\Pages\PluginPages::class,
-			Controllers\Pages\OptionsPanel\CoreOptionsPanel::class,
-			Controllers\Pages\OptionsPanel\EmailTemplate::class,
-			Controllers\Pages\OptionsPanel\SignFormTemplate::class,
-			Controllers\Pages\OptionsPanel\ReportDownload::class,
-		];
-		return $classes;
-	}
-
-	/**
-	 * Get Role Manager classes.
-	 *
-	 * @return array
-	 */
-	private static function get_role_manager_classes() {
-		$classes = [
-			Controllers\RoleManager\PetitionCreator::class,
-		];
-		return $classes;
-	}
-
-	/**
-	 * Get Template Manager classes.
-	 *
-	 * @return array
-	 */
-	private static function get_template_manager_classes() {
-		$classes = [
-			Controllers\TemplatesManager\PetitionTemplates::class,
 		];
 		return $classes;
 	}

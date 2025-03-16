@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-03-12T17:28:57+00:00\n"
+"POT-Creation-Date: 2025-03-16T02:33:16+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: bkb_vc\n"
@@ -34,764 +34,738 @@ msgstr ""
 msgid "https://bluewindlab.net"
 msgstr ""
 
-#: includes/bkb-vc-element.php:39
-msgid "KB Category"
-msgstr ""
-
-#: includes/bkb-vc-element.php:42
-#: includes/bkb-vc-element.php:339
-#: includes/bkb-vc-element.php:632
-#: includes/bkb-vc-element.php:677
-#: includes/bkb-vc-element.php:774
-#: includes/bkb-vc-element.php:837
-#: includes/bkb-vc-element.php:957
-#: includes/bkb-vc-element.php:1154
-msgid "BWL KB"
-msgstr ""
-
-#: includes/bkb-vc-element.php:50
-msgid "Categories"
-msgstr ""
-
-#: includes/bkb-vc-element.php:52
-msgid "Just drag and drop your required categories in to right box."
-msgstr ""
-
-#: includes/bkb-vc-element.php:59
-#: includes/bkb-vc-element.php:356
-#: includes/bkb-vc-element.php:652
-#: includes/bkb-vc-element.php:811
-#: includes/bkb-vc-element.php:941
-#: includes/bkb-vc-element.php:1138
-#: includes/bkb-vc-element.php:1246
-msgid "Extra Class"
-msgstr ""
-
-#: includes/bkb-vc-element.php:62
-msgid "Additional classes: bkbm-custom-layout-1, bkbm-box-shadow"
-msgstr ""
-
-#: includes/bkb-vc-element.php:72
-msgid "Layout Type"
-msgstr ""
-
-#: includes/bkb-vc-element.php:75
-#: includes/bkb-vc-element.php:372
-msgid "Lists View"
-msgstr ""
-
-#: includes/bkb-vc-element.php:76
-#: includes/bkb-vc-element.php:373
-msgid "Boxed View"
-msgstr ""
-
-#: includes/bkb-vc-element.php:88
-#: includes/bkb-vc-element.php:385
-msgid "Enable Carousel?"
-msgstr ""
-
-#: includes/bkb-vc-element.php:90
-#: includes/bkb-vc-element.php:101
-#: includes/bkb-vc-element.php:116
-#: includes/bkb-vc-element.php:167
-#: includes/bkb-vc-element.php:202
-#: includes/bkb-vc-element.php:256
-#: includes/bkb-vc-element.php:269
-#: includes/bkb-vc-element.php:387
-#: includes/bkb-vc-element.php:398
-#: includes/bkb-vc-element.php:413
-#: includes/bkb-vc-element.php:462
-#: includes/bkb-vc-element.php:497
-#: includes/bkb-vc-element.php:550
-#: includes/bkb-vc-element.php:563
-#: includes/bkb-vc-element.php:932
-#: includes/bkb-vc-element.php:1195
-#: includes/bkb-vc-element.php:1210
-msgid "Yes"
-msgstr ""
-
-#: includes/bkb-vc-element.php:98
-#: includes/bkb-vc-element.php:395
-msgid "Hide Carousel Navigation Arrow?"
-msgstr ""
-
-#: includes/bkb-vc-element.php:102
-#: includes/bkb-vc-element.php:115
-#: includes/bkb-vc-element.php:168
-#: includes/bkb-vc-element.php:201
-#: includes/bkb-vc-element.php:255
-#: includes/bkb-vc-element.php:268
-#: includes/bkb-vc-element.php:399
-#: includes/bkb-vc-element.php:412
-#: includes/bkb-vc-element.php:463
-#: includes/bkb-vc-element.php:496
-#: includes/bkb-vc-element.php:549
-#: includes/bkb-vc-element.php:562
-#: includes/bkb-vc-element.php:931
-#: includes/bkb-vc-element.php:1196
-#: includes/bkb-vc-element.php:1209
-msgid "No"
-msgstr ""
-
-#: includes/bkb-vc-element.php:104
-#: includes/bkb-vc-element.php:401
-msgid "You can show/hide two arrow will display beside the carousel items."
-msgstr ""
-
-#: includes/bkb-vc-element.php:112
-#: includes/bkb-vc-element.php:409
-msgid "Hide Carousel Dots ?"
-msgstr ""
-
-#: includes/bkb-vc-element.php:118
-#: includes/bkb-vc-element.php:415
-msgid "You can show/hide bottom will display below the carousel items."
-msgstr ""
-
-#: includes/bkb-vc-element.php:126
-#: includes/bkb-vc-element.php:423
-msgid "Auto Play Time Out"
-msgstr ""
-
-#: includes/bkb-vc-element.php:137
-#: includes/bkb-vc-element.php:434
-msgid "Select scroll speed."
-msgstr ""
-
-#: includes/bkb-vc-element.php:146
-#: includes/bkb-vc-element.php:441
-#: includes/bkb-vc-element.php:1230
-msgid "List Styles"
-msgstr ""
-
-#: includes/bkb-vc-element.php:149
-#: includes/bkb-vc-element.php:186
-#: includes/bkb-vc-element.php:444
-#: includes/bkb-vc-element.php:481
-#: includes/bkb-vc-element.php:700
-#: includes/bkb-vc-element.php:731
-#: includes/bkb-vc-element.php:746
-#: includes/bkb-vc-element.php:1233
-msgid "Select"
-msgstr ""
-
-#: includes/bkb-vc-element.php:150
-#: includes/bkb-vc-element.php:445
-#: includes/bkb-vc-element.php:733
-#: includes/bkb-vc-element.php:872
-#: includes/bkb-vc-element.php:1234
-msgid "Rounded"
-msgstr ""
-
-#: includes/bkb-vc-element.php:151
-#: includes/bkb-vc-element.php:446
-#: includes/bkb-vc-element.php:873
-#: includes/bkb-vc-element.php:1235
-msgid "Rectangle"
-msgstr ""
-
-#: includes/bkb-vc-element.php:152
-#: includes/bkb-vc-element.php:447
-#: includes/bkb-vc-element.php:874
-#: includes/bkb-vc-element.php:1236
-msgid "Iconized"
-msgstr ""
-
-#: includes/bkb-vc-element.php:153
-#: includes/bkb-vc-element.php:448
-msgid "Accordion"
-msgstr ""
-
-#: includes/bkb-vc-element.php:154
-#: includes/bkb-vc-element.php:449
-#: includes/bkb-vc-element.php:875
-#: includes/bkb-vc-element.php:1237
-msgid "None"
-msgstr ""
-
-#: includes/bkb-vc-element.php:164
-msgid "Show Category Title?"
-msgstr ""
-
-#: includes/bkb-vc-element.php:183
-#: includes/bkb-vc-element.php:478
-msgid "Column Settings"
-msgstr ""
-
-#: includes/bkb-vc-element.php:187
-#: includes/bkb-vc-element.php:482
-msgid "One Column"
-msgstr ""
-
-#: includes/bkb-vc-element.php:188
-#: includes/bkb-vc-element.php:483
-msgid "Two Columns"
-msgstr ""
-
-#: includes/bkb-vc-element.php:189
-#: includes/bkb-vc-element.php:484
-msgid "Three Columns"
-msgstr ""
-
-#: includes/bkb-vc-element.php:198
-#: includes/bkb-vc-element.php:493
-msgid "Display Category Description?"
-msgstr ""
-
-#: includes/bkb-vc-element.php:211
-#: includes/bkb-vc-element.php:506
-msgid "No of items to display"
-msgstr ""
-
-#: includes/bkb-vc-element.php:221
-#: includes/bkb-vc-element.php:516
-msgid "Order By Settings"
-msgstr ""
-
-#: includes/bkb-vc-element.php:224
-#: includes/bkb-vc-element.php:519
-msgid "ID"
-msgstr ""
-
-#: includes/bkb-vc-element.php:225
-#: includes/bkb-vc-element.php:520
-msgid "Title"
-msgstr ""
-
-#: includes/bkb-vc-element.php:226
-#: includes/bkb-vc-element.php:521
-msgid "Date"
-msgstr ""
-
-#: includes/bkb-vc-element.php:227
-#: includes/bkb-vc-element.php:522
-msgid "Recent Modified"
-msgstr ""
-
-#: includes/bkb-vc-element.php:228
-#: includes/bkb-vc-element.php:523
-msgid "Random"
-msgstr ""
-
-#: includes/bkb-vc-element.php:229
-#: includes/bkb-vc-element.php:524
-msgid "Custom Sort"
-msgstr ""
-
-#: includes/bkb-vc-element.php:238
-#: includes/bkb-vc-element.php:533
-msgid "Order Type Settings"
-msgstr ""
-
-#: includes/bkb-vc-element.php:241
-#: includes/bkb-vc-element.php:536
-msgid "Ascending"
-msgstr ""
-
-#: includes/bkb-vc-element.php:242
-#: includes/bkb-vc-element.php:537
-msgid "Descending"
-msgstr ""
-
-#: includes/bkb-vc-element.php:252
-#: includes/bkb-vc-element.php:546
-msgid "Display Post Count?"
-msgstr ""
-
-#: includes/bkb-vc-element.php:265
-#: includes/bkb-vc-element.php:559
-msgid "Display Post Count Info?"
-msgstr ""
-
-#: includes/bkb-vc-element.php:272
-#: includes/bkb-vc-element.php:566
-msgid "Display total number of posts below the list."
-msgstr ""
-
-#: includes/bkb-vc-element.php:281
-#: includes/bkb-vc-element.php:575
-msgid "Icon Type"
-msgstr ""
-
-#: includes/bkb-vc-element.php:284
-#: includes/bkb-vc-element.php:578
-msgid "Font Awesome Icon"
-msgstr ""
-
-#: includes/bkb-vc-element.php:285
-#: includes/bkb-vc-element.php:579
-msgid "Image Icon"
-msgstr ""
-
-#: includes/bkb-vc-element.php:294
-#: includes/bkb-vc-element.php:588
-msgid "Icon Size"
-msgstr ""
-
-#: includes/bkb-vc-element.php:297
-#: includes/bkb-vc-element.php:591
-msgid "Option Panel Size"
-msgstr ""
-
-#: includes/bkb-vc-element.php:298
-#: includes/bkb-vc-element.php:592
-msgid "Auto Size"
-msgstr ""
-
-#: includes/bkb-vc-element.php:307
-#: includes/bkb-vc-element.php:601
-msgid "Box View Extra Class"
-msgstr ""
-
-#: includes/bkb-vc-element.php:310
-msgid "Additional classes: box-left-align, box-right-align, no-icon, no-separator, no-view-more-link"
-msgstr ""
-
-#: includes/bkb-vc-element.php:321
-#: includes/bkb-vc-element.php:615
-#: includes/bkb-vc-element.php:661
-#: includes/bkb-vc-element.php:820
-#: includes/bkb-vc-element.php:1255
-msgid "Animation"
-msgstr ""
-
-#: includes/bkb-vc-element.php:323
-#: includes/bkb-vc-element.php:617
-#: includes/bkb-vc-element.php:663
-#: includes/bkb-vc-element.php:822
-#: includes/bkb-vc-element.php:1257
-msgid "Choose your animation style."
-msgstr ""
-
-#: includes/bkb-vc-element.php:336
-#: includes/bkb-vc-element.php:1094
-#: includes/bkb-vc-tab-shortcode.php:73
-msgid "KB Tags"
-msgstr ""
-
-#: includes/bkb-vc-element.php:347
-msgid "Tags"
-msgstr ""
-
-#: includes/bkb-vc-element.php:349
-msgid "Just drag and drop your required Tags in to right box."
-msgstr ""
-
-#: includes/bkb-vc-element.php:359
-msgid "Additional class: bkbm-box-shadow"
-msgstr ""
-
-#: includes/bkb-vc-element.php:369
-msgid "Layout Type Settings"
-msgstr ""
-
-#: includes/bkb-vc-element.php:459
-msgid "Show Tag Title?"
-msgstr ""
-
-#: includes/bkb-vc-element.php:604
-msgid "Additional classes: box-left-align, box-right-align, no-icon, no-separator"
-msgstr ""
-
-#: includes/bkb-vc-element.php:629
-msgid "KB Search"
-msgstr ""
-
-#: includes/bkb-vc-element.php:642
-msgid "Placeholder Text"
-msgstr ""
-
-#: includes/bkb-vc-element.php:644
-msgid "Search Keywords ..... "
-msgstr ""
-
-#: includes/bkb-vc-element.php:645
-msgid "Text will display in search input box."
-msgstr ""
-
-#: includes/bkb-vc-element.php:655
-msgid "Add additional class: bkb-sbox-layout-1, bkb-sbox-layout-1 semi-rounded-box, bkb-sbox-layout-1 rounded-box, bkb-sbox-layout-1 dark-box"
-msgstr ""
-
-#: includes/bkb-vc-element.php:674
-msgid "Question Modal Button"
-msgstr ""
-
-#: includes/bkb-vc-element.php:687
-msgid "Button Title"
-msgstr ""
-
-#: includes/bkb-vc-element.php:689
-msgid "Add a Question"
-msgstr ""
-
-#: includes/bkb-vc-element.php:697
-msgid "Button Size"
-msgstr ""
-
-#: includes/bkb-vc-element.php:701
-msgid "Large"
-msgstr ""
-
-#: includes/bkb-vc-element.php:702
-msgid "Medium"
-msgstr ""
-
-#: includes/bkb-vc-element.php:703
-msgid "Small"
-msgstr ""
-
-#: includes/bkb-vc-element.php:704
-msgid "Full Width"
-msgstr ""
-
-#: includes/bkb-vc-element.php:714
-msgid "Button Alignment"
-msgstr ""
-
-#: includes/bkb-vc-element.php:717
-msgid "Center"
-msgstr ""
-
-#: includes/bkb-vc-element.php:718
-msgid "Left"
-msgstr ""
-
-#: includes/bkb-vc-element.php:719
-msgid "Right"
-msgstr ""
-
-#: includes/bkb-vc-element.php:728
-msgid "Button Border Style"
-msgstr ""
-
-#: includes/bkb-vc-element.php:732
-msgid "Square"
-msgstr ""
-
-#: includes/bkb-vc-element.php:743
-msgid "Button Animation"
-msgstr ""
-
-#: includes/bkb-vc-element.php:747
-msgid "Animation 1"
-msgstr ""
-
-#: includes/bkb-vc-element.php:748
-msgid "Animation 2"
-msgstr ""
-
-#: includes/bkb-vc-element.php:749
-msgid "Animation 3"
-msgstr ""
-
-#: includes/bkb-vc-element.php:750
-msgid "Animation 4"
-msgstr ""
-
-#: includes/bkb-vc-element.php:751
-msgid "Animation 5"
-msgstr ""
-
-#: includes/bkb-vc-element.php:752
-msgid "Animation 6"
-msgstr ""
-
-#: includes/bkb-vc-element.php:753
-msgid "Animation 7"
-msgstr ""
-
-#: includes/bkb-vc-element.php:754
-msgid "Animation 8"
-msgstr ""
-
-#: includes/bkb-vc-element.php:755
-msgid "Animation 9"
-msgstr ""
-
-#: includes/bkb-vc-element.php:756
-msgid "Animation 10"
-msgstr ""
-
-#: includes/bkb-vc-element.php:757
-msgid "Animation 11"
-msgstr ""
-
-#: includes/bkb-vc-element.php:758
-msgid "Animation 12"
-msgstr ""
-
-#: includes/bkb-vc-element.php:771
-msgid "KB External Form"
-msgstr ""
-
-#: includes/bkb-vc-element.php:784
-msgid "Form Headline"
-msgstr ""
-
-#: includes/bkb-vc-element.php:786
-msgid "Add A Knowledge Base Question !"
-msgstr ""
-
-#: includes/bkb-vc-element.php:787
-msgid "You can set custom form heading for KB External Form ."
-msgstr ""
-
-#: includes/bkb-vc-element.php:798
-msgid "Form Layout"
-msgstr ""
-
-#: includes/bkb-vc-element.php:801
-msgid "Layout 01"
-msgstr ""
-
-#: includes/bkb-vc-element.php:802
-msgid "Layout 02"
-msgstr ""
-
-#: includes/bkb-vc-element.php:805
-msgid "Layout 01 will display Form labels and Layout 02 will hide Form label."
-msgstr ""
-
-#: includes/bkb-vc-element.php:814
-msgid "Add additional class of button."
-msgstr ""
-
-#: includes/bkb-vc-element.php:834
-msgid "KB Tabs"
-msgstr ""
-
-#: includes/bkb-vc-element.php:845
-msgid "Tab Items"
-msgstr ""
-
-#: includes/bkb-vc-element.php:847
-#: includes/bkb-vc-element.php:967
-msgid "You can use drag & drop to re-order tab position."
-msgstr ""
-
-#: includes/bkb-vc-element.php:855
-msgid "Tab Style"
-msgstr ""
-
-#: includes/bkb-vc-element.php:858
-msgid "Horizontal Tab"
-msgstr ""
-
-#: includes/bkb-vc-element.php:859
-msgid "Vertical Tab"
-msgstr ""
-
-#: includes/bkb-vc-element.php:869
-msgid "Tab Item Style"
-msgstr ""
-
-#: includes/bkb-vc-element.php:884
-msgid "No of Items"
-msgstr ""
-
-#: includes/bkb-vc-element.php:896
-msgid "Featured Tab Title"
-msgstr ""
-
-#: includes/bkb-vc-element.php:899
-msgid "Set custom title for Featured KB Tab"
-msgstr ""
-
-#: includes/bkb-vc-element.php:906
-msgid "Popular Tab Title"
-msgstr ""
-
-#: includes/bkb-vc-element.php:909
-msgid "Set custom title for Popular KB Tab"
-msgstr ""
-
-#: includes/bkb-vc-element.php:916
-msgid "Recent Tab Title"
-msgstr ""
-
-#: includes/bkb-vc-element.php:919
-msgid "Set custom title for Recent KB Tab"
-msgstr ""
-
-#: includes/bkb-vc-element.php:928
-msgid "Enable RTL Mode?"
-msgstr ""
-
-#: includes/bkb-vc-element.php:944
-msgid "Add additional class of tabs."
-msgstr ""
-
-#: includes/bkb-vc-element.php:954
-msgid "KB counter"
-msgstr ""
-
-#: includes/bkb-vc-element.php:965
-msgid "Elements"
-msgstr ""
-
-#: includes/bkb-vc-element.php:974
-msgid "Counter Delay"
-msgstr ""
-
-#: includes/bkb-vc-element.php:983
-msgid "Counter Time"
-msgstr ""
-
-#: includes/bkb-vc-element.php:991
-msgid "Counter Icon Color"
-msgstr ""
-
-#: includes/bkb-vc-element.php:994
-#: includes/bkb-vc-element.php:1002
-#: includes/bkb-vc-element.php:1019
-#: includes/bkb-vc-element.php:1037
-msgid "Set counter icon color."
-msgstr ""
-
-#: includes/bkb-vc-element.php:999
-msgid "Icon Font Size"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1008
-msgid "Counter Text Color"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1011
-msgid "Set counter text color."
-msgstr ""
-
-#: includes/bkb-vc-element.php:1016
-msgid "Text Font Size"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1025
-msgid "Counter Title Color"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1028
-msgid "Set counter title color."
-msgstr ""
-
-#: includes/bkb-vc-element.php:1034
-msgid "Title Font Size"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1046
-msgid "Total Kb Title"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1048
-#: includes/bkb-vc-tab-shortcode.php:69
+#: includes/Callbacks/Shortcodes/CounterCb.php:34
+#: includes/Controllers/WPBakery/Elements/Counter.php:167
 msgid "KB Posts"
 msgstr ""
 
-#: includes/bkb-vc-element.php:1055
-msgid "Total KB Icon"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1063
-#: includes/bkb-vc-element.php:1086
-#: includes/bkb-vc-element.php:1109
-#: includes/bkb-vc-element.php:1132
-msgid "Select icon from library."
-msgstr ""
-
-#: includes/bkb-vc-element.php:1069
-msgid "Total Category Title"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1071
-#: includes/bkb-vc-tab-shortcode.php:71
+#: includes/Callbacks/Shortcodes/CounterCb.php:36
+#: includes/Controllers/WPBakery/Elements/Counter.php:190
 msgid "KB Categories"
 msgstr ""
 
-#: includes/bkb-vc-element.php:1078
-msgid "Total Category Icon"
+#: includes/Callbacks/Shortcodes/CounterCb.php:38
+#: includes/Controllers/WPBakery/Elements/Counter.php:213
+#: includes/Controllers/WPBakery/Elements/Tags.php:58
+msgid "KB Tags"
 msgstr ""
 
-#: includes/bkb-vc-element.php:1092
-msgid "Total Tag Title"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1101
-msgid "Total Tag Icon"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1115
-msgid "Total Like Title"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1117
-#: includes/bkb-vc-tab-shortcode.php:75
+#: includes/Callbacks/Shortcodes/CounterCb.php:40
+#: includes/Controllers/WPBakery/Elements/Counter.php:236
 msgid "KB Likes"
 msgstr ""
 
-#: includes/bkb-vc-element.php:1124
-msgid "Total Like Icon"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1142
-#: includes/bkb-vc-element.php:1249
-msgid "Additional Class: bkbm-post-list-custom-layout, bkbm-posts-box-shadow"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1151
-msgid "Knowledgebase Posts"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1165
-msgid "KB Type"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1168
-#: includes/bkb-vc-tab-shortcode.php:226
-msgid "Recent KB"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1169
-#: includes/bkb-vc-tab-shortcode.php:211
+#: includes/Callbacks/Shortcodes/PostsCb.php:84
+#: includes/Controllers/WPBakery/Elements/Posts.php:92
 msgid "Popular KB"
 msgstr ""
 
-#: includes/bkb-vc-element.php:1170
-#: includes/bkb-vc-tab-shortcode.php:216
+#: includes/Callbacks/Shortcodes/PostsCb.php:89
+#: includes/Controllers/WPBakery/Elements/Posts.php:93
 msgid "Featured KB"
 msgstr ""
 
-#: includes/bkb-vc-element.php:1171
-#: includes/bkb-vc-tab-shortcode.php:221
+#: includes/Callbacks/Shortcodes/PostsCb.php:94
+#: includes/Controllers/WPBakery/Elements/Posts.php:94
 msgid "Random KB"
 msgstr ""
 
-#: includes/bkb-vc-element.php:1181
-msgid "KB Type Title"
+#: includes/Callbacks/Shortcodes/PostsCb.php:99
+#: includes/Controllers/WPBakery/Elements/Posts.php:91
+msgid "Recent KB"
 msgstr ""
 
-#: includes/bkb-vc-element.php:1192
-msgid "Display KB Type Title?"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1206
-msgid "Enable Pagination?"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1219
-msgid "Post Per Page"
-msgstr ""
-
-#: includes/bkb-vc-element.php:1222
-msgid "Default: 5. You can add any number. Set -1 to display all the posts."
-msgstr ""
-
-#: includes/bkb-vc-tab-shortcode.php:11
+#: includes/Callbacks/Shortcodes/TabsCb.php:26
 msgid "Featured"
 msgstr ""
 
-#: includes/bkb-vc-tab-shortcode.php:12
+#: includes/Callbacks/Shortcodes/TabsCb.php:27
 msgid "Popular"
 msgstr ""
 
-#: includes/bkb-vc-tab-shortcode.php:13
+#: includes/Callbacks/Shortcodes/TabsCb.php:28
 msgid "Recent"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:58
+msgid "Question Modal Button"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:87
+msgid "Button Title"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:89
+msgid "Add a Question"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:97
+msgid "Button Size"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:100
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:131
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:146
+#: includes/Controllers/WPBakery/Elements/Category.php:182
+#: includes/Controllers/WPBakery/Elements/Category.php:214
+#: includes/Controllers/WPBakery/Elements/Posts.php:156
+#: includes/Controllers/WPBakery/Elements/Tags.php:177
+#: includes/Controllers/WPBakery/Elements/Tags.php:209
+msgid "Select"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:101
+msgid "Large"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:102
+msgid "Medium"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:103
+msgid "Small"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:104
+msgid "Full Width"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:114
+msgid "Button Alignment"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:117
+msgid "Center"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:118
+msgid "Left"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:119
+msgid "Right"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:128
+msgid "Button Border Style"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:132
+msgid "Square"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:133
+#: includes/Controllers/WPBakery/Elements/Category.php:183
+#: includes/Controllers/WPBakery/Elements/Posts.php:157
+#: includes/Controllers/WPBakery/Elements/Tabs.php:113
+#: includes/Controllers/WPBakery/Elements/Tags.php:178
+msgid "Rounded"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:143
+msgid "Button Animation"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:147
+msgid "Animation 1"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:148
+msgid "Animation 2"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:149
+msgid "Animation 3"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:150
+msgid "Animation 4"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:151
+msgid "Animation 5"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:152
+msgid "Animation 6"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:153
+msgid "Animation 7"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:154
+msgid "Animation 8"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:155
+msgid "Animation 9"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:156
+msgid "Animation 10"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:157
+msgid "Animation 11"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/AskQuestion.php:158
+msgid "Animation 12"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:58
+msgid "KB Category"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:86
+msgid "Categories"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:88
+msgid "Just drag and drop your required categories in to right box."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:95
+#: includes/Controllers/WPBakery/Elements/Counter.php:257
+#: includes/Controllers/WPBakery/Elements/ExternalForm.php:115
+#: includes/Controllers/WPBakery/Elements/Posts.php:169
+#: includes/Controllers/WPBakery/Elements/SearchBox.php:97
+#: includes/Controllers/WPBakery/Elements/Tabs.php:182
+#: includes/Controllers/WPBakery/Elements/Tags.php:95
+msgid "Extra Class"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:98
+msgid "Additional classes: bkbm-custom-layout-1, bkbm-box-shadow"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:108
+msgid "Layout Type"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:111
+#: includes/Controllers/WPBakery/Elements/Tags.php:111
+msgid "Lists View"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:112
+#: includes/Controllers/WPBakery/Elements/Tags.php:112
+msgid "Boxed View"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:124
+#: includes/Controllers/WPBakery/Elements/Tags.php:124
+msgid "Enable Carousel?"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:126
+#: includes/Controllers/WPBakery/Elements/Category.php:137
+#: includes/Controllers/WPBakery/Elements/Posts.php:118
+#: includes/Controllers/WPBakery/Elements/Posts.php:133
+#: includes/Controllers/WPBakery/Elements/Tabs.php:173
+#: includes/Controllers/WPBakery/Elements/Tags.php:126
+msgid "Yes"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:134
+#: includes/Controllers/WPBakery/Elements/Tags.php:134
+msgid "Hide Carousel Navigation Arrow?"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:138
+#: includes/Controllers/WPBakery/Elements/Posts.php:119
+#: includes/Controllers/WPBakery/Elements/Posts.php:132
+#: includes/Controllers/WPBakery/Elements/Tabs.php:172
+msgid "No"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:140
+#: includes/Controllers/WPBakery/Elements/Tags.php:137
+msgid "You can show/hide two arrow will display beside the carousel items."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:148
+#: includes/Controllers/WPBakery/Elements/Tags.php:145
+msgid "Hide Carousel Dots ?"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:151
+#: includes/Controllers/WPBakery/Elements/Tags.php:148
+msgid "You can show/hide bottom will display below the carousel items."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:159
+#: includes/Controllers/WPBakery/Elements/Tags.php:156
+msgid "Auto Play Time Out"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:170
+#: includes/Controllers/WPBakery/Elements/Tags.php:167
+msgid "Select scroll speed."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:179
+#: includes/Controllers/WPBakery/Elements/Posts.php:153
+#: includes/Controllers/WPBakery/Elements/Tags.php:174
+msgid "List Styles"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:184
+#: includes/Controllers/WPBakery/Elements/Posts.php:158
+#: includes/Controllers/WPBakery/Elements/Tabs.php:114
+#: includes/Controllers/WPBakery/Elements/Tags.php:179
+msgid "Rectangle"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:185
+#: includes/Controllers/WPBakery/Elements/Posts.php:159
+#: includes/Controllers/WPBakery/Elements/Tabs.php:115
+#: includes/Controllers/WPBakery/Elements/Tags.php:180
+msgid "Iconized"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:186
+#: includes/Controllers/WPBakery/Elements/Tags.php:181
+msgid "Accordion"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:187
+#: includes/Controllers/WPBakery/Elements/Posts.php:160
+#: includes/Controllers/WPBakery/Elements/Tabs.php:116
+#: includes/Controllers/WPBakery/Elements/Tags.php:182
+msgid "None"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:197
+msgid "Show Category Title?"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:211
+#: includes/Controllers/WPBakery/Elements/Tags.php:206
+msgid "Column Settings"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:215
+#: includes/Controllers/WPBakery/Elements/Tags.php:210
+msgid "One Column"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:216
+#: includes/Controllers/WPBakery/Elements/Tags.php:211
+msgid "Two Columns"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:217
+#: includes/Controllers/WPBakery/Elements/Tags.php:212
+msgid "Three Columns"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:226
+msgid "Display Category Description?"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:236
+#: includes/Controllers/WPBakery/Elements/Tags.php:231
+msgid "No of items to display"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:246
+#: includes/Controllers/WPBakery/Elements/Tags.php:241
+msgid "Order By Settings"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:249
+#: includes/Controllers/WPBakery/Elements/Tags.php:244
+msgid "ID"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:250
+#: includes/Controllers/WPBakery/Elements/Tags.php:245
+msgid "Title"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:251
+#: includes/Controllers/WPBakery/Elements/Tags.php:246
+msgid "Date"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:252
+#: includes/Controllers/WPBakery/Elements/Tags.php:247
+msgid "Recent Modified"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:253
+#: includes/Controllers/WPBakery/Elements/Tags.php:248
+msgid "Random"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:254
+#: includes/Controllers/WPBakery/Elements/Tags.php:249
+msgid "Custom Sort"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:263
+#: includes/Controllers/WPBakery/Elements/Tags.php:258
+msgid "Order Type Settings"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:266
+#: includes/Controllers/WPBakery/Elements/Tags.php:261
+msgid "Ascending"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:267
+#: includes/Controllers/WPBakery/Elements/Tags.php:262
+msgid "Descending"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:277
+#: includes/Controllers/WPBakery/Elements/Tags.php:271
+msgid "Display Post Count?"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:287
+#: includes/Controllers/WPBakery/Elements/Tags.php:281
+msgid "Display Post Count Info?"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:291
+#: includes/Controllers/WPBakery/Elements/Tags.php:285
+msgid "Display total number of posts below the list."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:300
+#: includes/Controllers/WPBakery/Elements/Tags.php:294
+msgid "Icon Type"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:303
+#: includes/Controllers/WPBakery/Elements/Tags.php:297
+msgid "Font Awesome Icon"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:304
+#: includes/Controllers/WPBakery/Elements/Tags.php:298
+msgid "Image Icon"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:313
+#: includes/Controllers/WPBakery/Elements/Tags.php:307
+msgid "Icon Size"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:316
+#: includes/Controllers/WPBakery/Elements/Tags.php:310
+msgid "Option Panel Size"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:317
+#: includes/Controllers/WPBakery/Elements/Tags.php:311
+msgid "Auto Size"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:326
+#: includes/Controllers/WPBakery/Elements/Tags.php:320
+msgid "Box View Extra Class"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:329
+msgid "Additional classes: box-left-align, box-right-align, no-icon, no-separator, no-view-more-link"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:340
+#: includes/Controllers/WPBakery/Elements/ExternalForm.php:124
+#: includes/Controllers/WPBakery/Elements/Posts.php:178
+#: includes/Controllers/WPBakery/Elements/SearchBox.php:106
+#: includes/Controllers/WPBakery/Elements/Tags.php:334
+msgid "Animation"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Category.php:342
+#: includes/Controllers/WPBakery/Elements/ExternalForm.php:126
+#: includes/Controllers/WPBakery/Elements/Posts.php:180
+#: includes/Controllers/WPBakery/Elements/SearchBox.php:108
+#: includes/Controllers/WPBakery/Elements/Tags.php:336
+msgid "Choose your animation style."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:58
+msgid "KB counter"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:63
+msgid "Display kb counter."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:84
+msgid "Elements"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:86
+#: includes/Controllers/WPBakery/Elements/Tabs.php:88
+msgid "You can use drag & drop to re-order tab position."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:93
+msgid "Counter Delay"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:102
+msgid "Counter Time"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:110
+msgid "Counter Icon Color"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:113
+#: includes/Controllers/WPBakery/Elements/Counter.php:121
+#: includes/Controllers/WPBakery/Elements/Counter.php:138
+#: includes/Controllers/WPBakery/Elements/Counter.php:156
+msgid "Set counter icon color."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:118
+msgid "Icon Font Size"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:127
+msgid "Counter Text Color"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:130
+msgid "Set counter text color."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:135
+msgid "Text Font Size"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:144
+msgid "Counter Title Color"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:147
+msgid "Set counter title color."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:153
+msgid "Title Font Size"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:165
+msgid "Total Kb Title"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:174
+msgid "Total KB Icon"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:182
+#: includes/Controllers/WPBakery/Elements/Counter.php:205
+#: includes/Controllers/WPBakery/Elements/Counter.php:228
+#: includes/Controllers/WPBakery/Elements/Counter.php:251
+msgid "Select icon from library."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:188
+msgid "Total Category Title"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:197
+msgid "Total Category Icon"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:211
+msgid "Total Tag Title"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:220
+msgid "Total Tag Icon"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:234
+msgid "Total Like Title"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:243
+msgid "Total Like Icon"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Counter.php:261
+#: includes/Controllers/WPBakery/Elements/Posts.php:172
+msgid "Additional Class: bkbm-post-list-custom-layout, bkbm-posts-box-shadow"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/ExternalForm.php:58
+msgid "KB External Form"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/ExternalForm.php:88
+msgid "Form Headline"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/ExternalForm.php:90
+msgid "Add A Knowledge Base Question !"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/ExternalForm.php:91
+msgid "You can set custom form heading for KB External Form ."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/ExternalForm.php:102
+msgid "Form Layout"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/ExternalForm.php:105
+msgid "Layout 01"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/ExternalForm.php:106
+msgid "Layout 02"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/ExternalForm.php:109
+msgid "Layout 01 will display Form labels and Layout 02 will hide Form label."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/ExternalForm.php:118
+msgid "Add additional class of button."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Posts.php:58
+msgid "Knowledgebase Posts"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Posts.php:88
+msgid "KB Type"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Posts.php:104
+msgid "KB Type Title"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Posts.php:115
+msgid "Display KB Type Title?"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Posts.php:129
+msgid "Enable Pagination?"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Posts.php:142
+msgid "Post Per Page"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Posts.php:145
+msgid "Default: 5. You can add any number. Set -1 to display all the posts."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/SearchBox.php:58
+msgid "KB Search"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/SearchBox.php:87
+msgid "Placeholder Text"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/SearchBox.php:89
+msgid "Search Keywords ..... "
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/SearchBox.php:90
+msgid "Text will display in search input box."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/SearchBox.php:100
+msgid "Add additional class: bkb-sbox-layout-1, bkb-sbox-layout-1 semi-rounded-box, bkb-sbox-layout-1 rounded-box, bkb-sbox-layout-1 dark-box"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:58
+msgid "KB Tabs"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:86
+msgid "Tab Items"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:96
+msgid "Tab Style"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:99
+msgid "Horizontal Tab"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:100
+msgid "Vertical Tab"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:110
+msgid "Tab Item Style"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:125
+msgid "No of Items"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:137
+msgid "Featured Tab Title"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:140
+msgid "Set custom title for Featured KB Tab"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:147
+msgid "Popular Tab Title"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:150
+msgid "Set custom title for Popular KB Tab"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:157
+msgid "Recent Tab Title"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:160
+msgid "Set custom title for Recent KB Tab"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:169
+msgid "Enable RTL Mode?"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tabs.php:185
+msgid "Add additional class of tabs."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tags.php:86
+msgid "Tags"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tags.php:88
+msgid "Just drag and drop your required Tags in to right box."
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tags.php:98
+msgid "Additional class: bkbm-box-shadow"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tags.php:108
+msgid "Layout Type Settings"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tags.php:192
+msgid "Show Tag Title?"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tags.php:221
+msgid "Display Tags Description?"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Tags.php:323
+msgid "Additional classes: box-left-align, box-right-align, no-icon, no-separator"
 msgstr ""

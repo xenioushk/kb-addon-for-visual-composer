@@ -2,7 +2,7 @@
 
 namespace KAFWPB\Controllers\Notices;
 
-use KAFWPB\Api\Notices\NoticesApi;
+use Xenioushk\BwlPluginApi\Api\Notices\NoticesApi;
 use KAFWPB\Callbacks\Notices\NoticeCb;
 
 /**

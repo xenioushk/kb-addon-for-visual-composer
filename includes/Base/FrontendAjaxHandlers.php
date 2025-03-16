@@ -3,7 +3,7 @@
 namespace KAFWPB\Base;
 
 use BwlPetitionsManager\Base\BaseController;
-use BwlPetitionsManager\Api\AjaxHandlers\AjaxHandlersApi;
+use Xenioushk\BwlPluginApi\Api\AjaxHandlers\AjaxHandlersApi;
 use BwlPetitionsManager\Callbacks\FrontendAjaxHandlers\SaveSignCb;
 
 /**

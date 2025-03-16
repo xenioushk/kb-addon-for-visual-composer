@@ -1,7 +1,7 @@
 <?php
 namespace KAFWPB\Base;
 
-use KAFWPB\Api\PluginUpdate\WpAutoUpdater;
+use Xenioushk\BwlPluginApi\Api\PluginUpdate\WpAutoUpdater;
 
 /**
  * Class for plugin update.

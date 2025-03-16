@@ -3,7 +3,7 @@
 namespace KAFWPB\Controllers\WPBakery\Shortcodes;
 
 use KAFWPB\Traits\WPBakeryTraits;
-use KAFWPB\Api\WPBakery\WPBShortcodesApi;
+use Xenioushk\BwlPluginApi\Api\WPBakery\WPBShortcodesApi;
 use KAFWPB\Callbacks\WPBakery\Shortcodes\CatShortcodeParamCb;
 use KAFWPB\Callbacks\WPBakery\Shortcodes\TagsShortcodeParamCb;
 use KAFWPB\Callbacks\WPBakery\Shortcodes\TabsShortcodeParamCb;

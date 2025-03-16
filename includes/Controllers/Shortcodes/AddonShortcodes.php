@@ -2,7 +2,7 @@
 
 namespace KAFWPB\Controllers\Shortcodes;
 
-use KAFWPB\Api\Shortcodes\ShortcodesApi;
+use Xenioushk\BwlPluginApi\Api\Shortcodes\ShortcodesApi;
 use KAFWPB\Callbacks\Shortcodes\TabsCb;
 use KAFWPB\Callbacks\Shortcodes\PostsCb;
 use KAFWPB\Callbacks\Shortcodes\CounterCb;
