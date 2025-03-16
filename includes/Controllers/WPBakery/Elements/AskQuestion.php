@@ -82,16 +82,15 @@ class AskQuestion {
 					'heading'     => esc_html__( 'Button Title', 'bkb_vc' ),
 					'param_name'  => 'title',
 					'value'       => esc_html__( 'Add a Question', 'bkb_vc' ),
-					'description' => '',
 					'group'       => 'General',
 				],
 
 				[
-					'type'        => 'dropdown',
-					'class'       => '',
-					'heading'     => esc_html__( 'Button Size', 'bkb_vc' ),
-					'param_name'  => 'btn_size',
-					'value'       => [
+					'type'       => 'dropdown',
+					'class'      => '',
+					'heading'    => esc_html__( 'Button Size', 'bkb_vc' ),
+					'param_name' => 'btn_size',
+					'value'      => [
 						esc_html__( 'Select', 'bkb_vc' ) => '',
 						esc_html__( 'Large', 'bkb_vc' )  => 'bkb_btn_lg',
 						esc_html__( 'Medium', 'bkb_vc' ) => 'bkb_btn_md',
@@ -99,45 +98,42 @@ class AskQuestion {
 						esc_html__( 'Full Width', 'bkb_vc' ) => 'bkb_btn_full',
 
 					],
-					'group'       => 'General',
-					'description' => '',
+					'group'      => 'General',
 				],
 
 				[
-					'type'        => 'dropdown',
-					'class'       => '',
-					'heading'     => esc_html__( 'Button Alignment', 'bkb_vc' ),
-					'param_name'  => 'btn_align',
-					'value'       => [
+					'type'       => 'dropdown',
+					'class'      => '',
+					'heading'    => esc_html__( 'Button Alignment', 'bkb_vc' ),
+					'param_name' => 'btn_align',
+					'value'      => [
 						esc_html__( 'Center', 'bkb_vc' ) => '',
 						esc_html__( 'Left', 'bkb_vc' )   => 'bkb_btn_left',
 						esc_html__( 'Right', 'bkb_vc' )  => 'bkb_btn_right',
 					],
-					'group'       => 'General',
-					'description' => '',
+					'group'      => 'General',
 				],
 
 				[
-					'type'        => 'dropdown',
-					'class'       => '',
-					'heading'     => esc_html__( 'Button Border Style', 'bkb_vc' ),
-					'param_name'  => 'btn_border_style',
-					'value'       => [
+					'type'       => 'dropdown',
+					'class'      => '',
+					'heading'    => esc_html__( 'Button Border Style', 'bkb_vc' ),
+					'param_name' => 'btn_border_style',
+					'value'      => [
 						esc_html__( 'Select', 'bkb_vc' )  => '',
 						esc_html__( 'Square', 'bkb_vc' )  => 'bkb_btn_square',
 						esc_html__( 'Rounded', 'bkb_vc' ) => 'bkb_btn_rounded',
 
 					],
-					'group'       => 'General',
-					'description' => '',
+					'group'      => 'General',
 				],
 
 				[
-					'type'        => 'dropdown',
-					'class'       => '',
-					'heading'     => esc_html__( 'Button Animation', 'bkb_vc' ),
-					'param_name'  => 'btn_animate',
-					'value'       => [
+					'type'       => 'dropdown',
+					'class'      => '',
+					'heading'    => esc_html__( 'Button Animation', 'bkb_vc' ),
+					'param_name' => 'btn_animate',
+					'value'      => [
 						esc_html__( 'Select', 'bkb_vc' ) => '',
 						esc_html__( 'Animation 1', 'bkb_vc' ) => 'animated-button sandy-one',
 						esc_html__( 'Animation 2', 'bkb_vc' ) => 'animated-button sandy-two',
@@ -153,8 +149,7 @@ class AskQuestion {
 						esc_html__( 'Animation 12', 'bkb_vc' ) => 'animated-button thar-four',
 
 					],
-					'group'       => 'Animation',
-					'description' => '',
+					'group'      => 'Animation',
 				],
 
 			];

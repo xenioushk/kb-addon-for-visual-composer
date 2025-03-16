@@ -77,7 +77,6 @@ class Posts {
 			$params = [
 
 				// add params same as with any other content element
-
 				[
 					'admin_label' => true,
 					'type'        => 'dropdown',
@@ -91,17 +90,15 @@ class Posts {
 						esc_html__( 'Random KB', 'bkb_vc' )   => 'random',
 					],
 					'group'       => 'General',
-					'description' => '',
 				],
 
 				[
-					'type'        => 'textfield',
-					'class'       => '',
-					'heading'     => esc_html__( 'KB Type Title', 'bkb_vc' ),
-					'param_name'  => 'kb_type_title',
-					'value'       => '',
-					'description' => '',
-					'group'       => 'General',
+					'type'       => 'textfield',
+					'class'      => '',
+					'heading'    => esc_html__( 'KB Type Title', 'bkb_vc' ),
+					'param_name' => 'kb_type_title',
+					'value'      => '',
+					'group'      => 'General',
 				],
 
 				[
@@ -112,7 +109,6 @@ class Posts {
 					'param_name'  => 'kb_type_title_status',
 					'value'       => $boolean_tags,
 					'group'       => 'General',
-					'description' => '',
 				],
 
 				[
@@ -123,7 +119,6 @@ class Posts {
 					'param_name'  => 'paginate',
 					'value'       => $boolean_tags,
 					'group'       => 'General',
-					'description' => '',
 				],
 
 				[
@@ -150,7 +145,6 @@ class Posts {
 						esc_html__( 'None', 'bkb_vc' )     => 'none',
 					],
 					'group'       => 'Design',
-					'description' => '',
 				],
 
 				[

@@ -160,13 +160,12 @@ class Counter {
 				// add params same as with any other content element
 
 				[
-					'type'        => 'textfield',
-					'class'       => '',
-					'heading'     => esc_html__( 'Total Kb Title', 'bkb_vc' ),
-					'param_name'  => 'title_total_kb',
-					'value'       => esc_html__( 'KB Posts', 'bkb_vc' ),
-					'description' => '',
-					'group'       => 'Total KB',
+					'type'       => 'textfield',
+					'class'      => '',
+					'heading'    => esc_html__( 'Total Kb Title', 'bkb_vc' ),
+					'param_name' => 'title_total_kb',
+					'value'      => esc_html__( 'KB Posts', 'bkb_vc' ),
+					'group'      => 'Total KB',
 				],
 
 				[
@@ -183,13 +182,12 @@ class Counter {
 				],
 
 				[
-					'type'        => 'textfield',
-					'class'       => '',
-					'heading'     => esc_html__( 'Total Category Title', 'bkb_vc' ),
-					'param_name'  => 'title_total_cat',
-					'value'       => esc_html__( 'KB Categories', 'bkb_vc' ),
-					'description' => '',
-					'group'       => 'Total Category',
+					'type'       => 'textfield',
+					'class'      => '',
+					'heading'    => esc_html__( 'Total Category Title', 'bkb_vc' ),
+					'param_name' => 'title_total_cat',
+					'value'      => esc_html__( 'KB Categories', 'bkb_vc' ),
+					'group'      => 'Total Category',
 				],
 
 				[
@@ -206,13 +204,12 @@ class Counter {
 				],
 
 				[
-					'type'        => 'textfield',
-					'class'       => '',
-					'heading'     => esc_html__( 'Total Tag Title', 'bkb_vc' ),
-					'param_name'  => 'title_total_tag',
-					'value'       => esc_html__( 'KB Tags', 'bkb_vc' ),
-					'description' => '',
-					'group'       => 'Total Tag',
+					'type'       => 'textfield',
+					'class'      => '',
+					'heading'    => esc_html__( 'Total Tag Title', 'bkb_vc' ),
+					'param_name' => 'title_total_tag',
+					'value'      => esc_html__( 'KB Tags', 'bkb_vc' ),
+					'group'      => 'Total Tag',
 				],
 
 				[
@@ -229,13 +226,12 @@ class Counter {
 				],
 
 				[
-					'type'        => 'textfield',
-					'class'       => '',
-					'heading'     => esc_html__( 'Total Like Title', 'bkb_vc' ),
-					'param_name'  => 'title_total_likes',
-					'value'       => esc_html__( 'KB Likes', 'bkb_vc' ),
-					'description' => '',
-					'group'       => 'Total Like',
+					'type'       => 'textfield',
+					'class'      => '',
+					'heading'    => esc_html__( 'Total Like Title', 'bkb_vc' ),
+					'param_name' => 'title_total_likes',
+					'value'      => esc_html__( 'KB Likes', 'bkb_vc' ),
+					'group'      => 'Total Like',
 				],
 
 				[

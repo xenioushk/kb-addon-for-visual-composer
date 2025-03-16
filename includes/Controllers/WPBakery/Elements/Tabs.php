@@ -97,7 +97,6 @@ class Tabs {
 						esc_html__( 'Vertical Tab', 'bkb_vc' )   => 1,
 					],
 					'group'       => 'Tabs',
-					'description' => '',
 				],
 
 				[
@@ -113,17 +112,15 @@ class Tabs {
 						esc_html__( 'None', 'bkb_vc' )     => 'none',
 					],
 					'group'       => 'Tabs',
-					'description' => '',
 				],
 
 				[
-					'type'        => 'textfield',
-					'class'       => '',
-					'heading'     => esc_html__( 'No of Items', 'bkb_vc' ),
-					'param_name'  => 'limit',
-					'value'       => '',
-					'description' => '',
-					'group'       => 'Tabs',
+					'type'       => 'textfield',
+					'class'      => '',
+					'heading'    => esc_html__( 'No of Items', 'bkb_vc' ),
+					'param_name' => 'limit',
+					'value'      => '',
+					'group'      => 'Tabs',
 				],
 
 				// Tab Title Settings.
@@ -161,13 +158,12 @@ class Tabs {
 				// add params same as with any other content element
 
 				[
-					'type'        => 'dropdown',
-					'class'       => '',
-					'heading'     => esc_html__( 'Enable RTL Mode?', 'bkb_vc' ),
-					'param_name'  => 'rtl',
-					'value'       => $boolean_tags,
-					'group'       => 'Settings',
-					'description' => '',
+					'type'       => 'dropdown',
+					'class'      => '',
+					'heading'    => esc_html__( 'Enable RTL Mode?', 'bkb_vc' ),
+					'param_name' => 'rtl',
+					'value'      => $boolean_tags,
+					'group'      => 'Settings',
 				],
 
 				[

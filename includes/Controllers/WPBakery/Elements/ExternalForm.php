@@ -77,7 +77,6 @@ class ExternalForm {
 			$params = [
 
 				// Tab Title Settings.
-
 				[
 					'admin_label' => true,
 					'type'        => 'textfield',
@@ -90,9 +89,7 @@ class ExternalForm {
 				],
 
 				// add params same as with any other content element
-
 				[
-
 					'admin_label' => true,
 					'type'        => 'dropdown',
 					'class'       => '',
