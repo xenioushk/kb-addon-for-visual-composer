@@ -55,7 +55,7 @@ class PluginConstants {
 	 * Set the plugin base constants.
 	 */
 	private static function set_base_constants() {
-		define( 'BWL_PLUGIN_VERSION', '1.1.6' );
+		define( 'BWL_PLUGIN_VERSION', '1.1.7' );
 		define( 'BWL_PLUGIN_TITLE', 'KB Addon For WPBakery Page Builder' );
 		define( 'BWL_PLUGIN_FOLDER', 'kb-addon-for-visual-composer' );
 		define( 'BWL_PLUGIN_CURRENT_VERSION', BWL_PLUGIN_VERSION );
