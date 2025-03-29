@@ -9,37 +9,23 @@ use KAFWPB\Callbacks\AdminAjaxHandlers\PluginInstallationCb;
  * @package KAFWPB
  */
 class AdminAjaxHandlers {
-	/**
-	 * Ajax handlers api.
-	 *
-	 * @var object $ajax_handlers_api
-	 */
-	public $ajax_handlers_api;
-
-	/**
-	 * Plugin installation callback
-	 *
-	 * @var object $plugin_installation_cb
-	 */
-	public $plugin_installation_cb;
 
 	/**
 	 * Register admin ajax handlers.
 	 */
 	public function register() {
 
-		$this->ajax_handlers_api      = new AjaxHandlersApi();
-		$this->plugin_installation_cb = new PluginInstallationCb();
+		$ajax_handlers_api      = new AjaxHandlersApi();
+		$plugin_installation_cb = new PluginInstallationCb();
 
 		// Do not change the tag.
 		// If do so, you need to change in js file too.
 		$ajax_requests = [
 			[
-				'tag'      => 'bwl_installation_counter',
-				'callback' => [ $this->plugin_installation_cb, 'save' ],
+				'tag'      => 'kafwpb_installation_counter',
+				'callback' => [ $plugin_installation_cb, 'save' ],
 			],
 		];
-
-		$this->ajax_handlers_api->add_ajax_handlers( $ajax_requests )->register();
+		$ajax_handlers_api->add_ajax_handlers( $ajax_requests )->register();
 	}
 }

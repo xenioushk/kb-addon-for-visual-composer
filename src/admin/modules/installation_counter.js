@@ -4,7 +4,7 @@
       type: "POST",
       url: ajaxurl,
       data: {
-        action: "bwl_installation_counter", // this is the name of our WP AJAX function that we'll set up next
+        action: "kafwpb_installation_counter", // this is the name of our WP AJAX function that we'll set up next
         product_id: KAFWPBAdminData.product_id, // change the localization variable.
       },
       dataType: "JSON",

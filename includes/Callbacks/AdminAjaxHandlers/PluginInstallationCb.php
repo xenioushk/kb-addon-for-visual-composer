@@ -25,7 +25,7 @@ class PluginInstallationCb {
 
 		if ( ! current_user_can( 'manage_options' ) ) {
 			echo wp_json_encode( $data );
-			die();
+			wp_die();
 		}
 
 		$api_url    = $this->bwl_api_url();
@@ -69,6 +69,6 @@ class PluginInstallationCb {
 
 		echo wp_json_encode( $data );
 
-		die();
+		wp_die();
 	}
 }
