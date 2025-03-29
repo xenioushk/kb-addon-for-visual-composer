@@ -42,7 +42,7 @@ class PluginDependenciesNotices {
 	 */
 	public function initialize() {
 
-		if ( BWL_PLUGIN_DEPENDENCIES_STATUS === 0 ) {
+		if ( KAFWPB_PLUGIN_DEPENDENCIES_STATUS === 0 ) {
 			return;
 		}
 
@@ -55,9 +55,9 @@ class PluginDependenciesNotices {
 		// Add notices.
 		$notices = [];
 
-		if ( ! empty( BWL_PLUGIN_DEPENDENCIES_MSG ) ) {
+		if ( ! empty( KAFWPB_PLUGIN_DEPENDENCIES_MSG ) ) {
 
-			foreach ( BWL_PLUGIN_DEPENDENCIES_MSG as $data ) {
+			foreach ( KAFWPB_PLUGIN_DEPENDENCIES_MSG as $data ) {
 
 					$notice = [
 						'callback' => [ $this->notice_cb, 'get_the_notice' ],

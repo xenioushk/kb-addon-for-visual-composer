@@ -26,7 +26,7 @@ class MetaInfo {
      */
 	public function get_meta_links( $links, $file ) {
 
-		if ( strpos( $file, BWL_PLUGIN_ROOT_FILE ) !== false && is_plugin_active( $file ) ) {
+		if ( strpos( $file, KAFWPB_PLUGIN_ROOT_FILE ) !== false && is_plugin_active( $file ) ) {
 
 			// nt = 1 // new tab.
 

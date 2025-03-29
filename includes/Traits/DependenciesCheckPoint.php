@@ -9,8 +9,8 @@ trait DependenciesCheckPoint {
      */
     public function are_dependencies_met() {
 
-		return ( defined( 'BWL_PLUGIN_DEPENDENCIES_STATUS' )
-								&& BWL_PLUGIN_DEPENDENCIES_STATUS === 1
+		return ( defined( 'KAFWPB_PLUGIN_DEPENDENCIES_STATUS' )
+								&& KAFWPB_PLUGIN_DEPENDENCIES_STATUS === 1
 							) ? false : true;
 	}
 }

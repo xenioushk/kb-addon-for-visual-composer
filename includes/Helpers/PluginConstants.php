@@ -35,7 +35,7 @@ class PluginConstants {
      * @example http://appealwp.local/wp-content/plugins/<plugin-name>/
      */
 	public static function get_plugin_url(): string {
-		return plugin_dir_url( self::get_plugin_path() . BWL_PLUGIN_ROOT_FILE );
+		return plugin_dir_url( self::get_plugin_path() . KAFWPB_PLUGIN_ROOT_FILE );
 	}
 
 	/**
@@ -55,23 +55,23 @@ class PluginConstants {
 	 * Set the plugin base constants.
 	 */
 	private static function set_base_constants() {
-		define( 'BWL_PLUGIN_VERSION', '1.1.7' );
-		define( 'BWL_PLUGIN_TITLE', 'KB Addon For WPBakery Page Builder' );
-		define( 'BWL_PLUGIN_FOLDER', 'kb-addon-for-visual-composer' );
-		define( 'BWL_PLUGIN_CURRENT_VERSION', BWL_PLUGIN_VERSION );
-		define( 'BWL_PLUGIN_POST_TYPE', 'bwl_kb' );
-		define( 'BWL_PLUGIN_TAXONOMY_CAT', 'bkb_category' );
-		define( 'BWL_PLUGIN_TAXONOMY_TAGS', 'bkb_tags' );
+		define( 'KAFWPB_PLUGIN_VERSION', '1.1.7' );
+		define( 'KAFWPB_PLUGIN_TITLE', 'KB Addon For WPBakery Page Builder' );
+		define( 'KAFWPB_PLUGIN_FOLDER', 'kb-addon-for-visual-composer' );
+		define( 'KAFWPB_PLUGIN_CURRENT_VERSION', KAFWPB_PLUGIN_VERSION );
+		define( 'KAFWPB_PLUGIN_POST_TYPE', 'bwl_kb' );
+		define( 'KAFWPB_PLUGIN_TAXONOMY_CAT', 'bkb_category' );
+		define( 'KAFWPB_PLUGIN_TAXONOMY_TAGS', 'bkb_tags' );
 	}
 
 	/**
 	 * Set the plugin paths constants.
 	 */
 	private static function set_paths_dir_constants() {
-		define( 'BWL_PLUGIN_ROOT_FILE', 'kb-addon-for-visual-composer.php' );
-		define( 'BWL_PLUGIN_DIR', self::get_plugin_path() );
-		define( 'BWL_PLUGIN_FILE_PATH', BWL_PLUGIN_DIR );
-		define( 'BWL_PLUGIN_URL', self::get_plugin_url() );
+		define( 'KAFWPB_PLUGIN_ROOT_FILE', 'kb-addon-for-visual-composer.php' );
+		define( 'KAFWPB_PLUGIN_DIR', self::get_plugin_path() );
+		define( 'KAFWPB_PLUGIN_FILE_PATH', KAFWPB_PLUGIN_DIR );
+		define( 'KAFWPB_PLUGIN_URL', self::get_plugin_url() );
 
 	}
 
@@ -79,9 +79,9 @@ class PluginConstants {
 	 * Set the plugin assets constants.
 	 */
 	private static function set_assets_constants() {
-		define( 'BWL_PLUGIN_STYLES_ASSETS_DIR', BWL_PLUGIN_URL . 'assets/styles/' );
-		define( 'BWL_PLUGIN_SCRIPTS_ASSETS_DIR', BWL_PLUGIN_URL . 'assets/scripts/' );
-		define( 'BWL_PLUGIN_LIBS_DIR', BWL_PLUGIN_URL . 'libs/' );
+		define( 'KAFWPB_PLUGIN_STYLES_ASSETS_DIR', KAFWPB_PLUGIN_URL . 'assets/styles/' );
+		define( 'KAFWPB_PLUGIN_SCRIPTS_ASSETS_DIR', KAFWPB_PLUGIN_URL . 'assets/scripts/' );
+		define( 'KAFWPB_PLUGIN_LIBS_DIR', KAFWPB_PLUGIN_URL . 'libs/' );
 	}
 
 	/**
@@ -93,17 +93,17 @@ class PluginConstants {
 		$slug        = 'bkbm/notifier_bkbm_kafvc.php';
 		$updater_url = "https://projects.bluewindlab.net/wpplugin/zipped/plugins/{$slug}";
 
-		define( 'BWL_PLUGIN_UPDATER_URL', $updater_url ); // phpcs:ignore
-		define( 'BWL_PLUGIN_UPDATER_SLUG', BWL_PLUGIN_FOLDER . '/' . BWL_PLUGIN_ROOT_FILE ); // phpcs:ignore
-		define( 'BWL_PLUGIN_PATH', BWL_PLUGIN_DIR );
+		define( 'KAFWPB_PLUGIN_UPDATER_URL', $updater_url ); // phpcs:ignore
+		define( 'KAFWPB_PLUGIN_UPDATER_SLUG', KAFWPB_PLUGIN_FOLDER . '/' . KAFWPB_PLUGIN_ROOT_FILE ); // phpcs:ignore
+		define( 'KAFWPB_PLUGIN_PATH', KAFWPB_PLUGIN_DIR );
 	}
 
 	/**
 	 * Set the product info constants.
 	 */
 	private static function set_product_info_constants() {
-		define( 'BWL_PRODUCT_ID', '14935093' ); // Plugin codecanyon/themeforest Id.
-		define( 'BWL_PRODUCT_INSTALLATION_TAG', 'bkbm_kavc_installation_' . str_replace( '.', '_', BWL_PLUGIN_VERSION ) );
+		define( 'KAFWPB_PRODUCT_ID', '14935093' ); // Plugin codecanyon/themeforest Id.
+		define( 'KAFWPB_PRODUCT_INSTALLATION_TAG', 'bkbm_kavc_installation_' . str_replace( '.', '_', KAFWPB_PLUGIN_VERSION ) );
 	}
 
 	/**
@@ -130,7 +130,7 @@ class PluginConstants {
 			$purchase_status = 0;
 		}
 
-		define( 'BWL_PARENT_PLUGIN_PURCHASE_STATUS', $purchase_status );
+		define( 'KAFWPB_PARENT_PLUGIN_PURCHASE_STATUS', $purchase_status );
 
 	}
 
@@ -159,7 +159,7 @@ class PluginConstants {
 		$bkbm_url         = "<strong><a href='https://1.envato.market/bkbm-wp' target='_blank'>BWL Knowledge Base Manager</a></strong>";
 		$bkbm_license_url = "<strong><a href='" . admin_url( 'edit.php?post_type=bwl_kb&page=bkb-license' ) . "'>BWL Knowledge Base Manager license</a></strong>";
 		$wpb_url          = "<strong><a href='https:// 1.envato.market/VKEo3' target='_blank'>WPBakery Page Builder</a></strong>";
-		$addon_title      = '<strong>' . BWL_PLUGIN_TITLE . '</strong>';
+		$addon_title      = '<strong>' . KAFWPB_PLUGIN_TITLE . '</strong>';
 
 		if ( ! class_exists( 'BwlKbManager\\Init' ) ) {
 			$messages[] = [
@@ -175,14 +175,14 @@ class PluginConstants {
 			$status     = 1;
 		}
 
-		if ( BWL_PARENT_PLUGIN_PURCHASE_STATUS === 0 ) {
+		if ( KAFWPB_PARENT_PLUGIN_PURCHASE_STATUS === 0 ) {
 			$messages[] = [
 				'msg' => "🔑 Please <strong>Activate</strong> the {$bkbm_license_url} to use the {$addon_title}.",
 			];
 			$status     = 1;
 		}
 
-		define( 'BWL_PLUGIN_DEPENDENCIES_STATUS',  $status );
-		define( 'BWL_PLUGIN_DEPENDENCIES_MSG', $messages );
+		define( 'KAFWPB_PLUGIN_DEPENDENCIES_STATUS',  $status );
+		define( 'KAFWPB_PLUGIN_DEPENDENCIES_MSG', $messages );
 	}
 }

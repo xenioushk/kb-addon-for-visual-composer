@@ -38,16 +38,16 @@ class AdminEnqueue {
 
         wp_enqueue_style(
             $this->admin_script_slug,
-            BWL_PLUGIN_STYLES_ASSETS_DIR . 'admin.css',
+            KAFWPB_PLUGIN_STYLES_ASSETS_DIR . 'admin.css',
             [],
-            BWL_PLUGIN_VERSION
+            KAFWPB_PLUGIN_VERSION
         );
 
         wp_enqueue_script(
             $this->admin_script_slug,
-            BWL_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js',
+            KAFWPB_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js',
             [ 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-sortable' ],
-            BWL_PLUGIN_VERSION, true
+            KAFWPB_PLUGIN_VERSION, true
         );
 
 				$this->get_the_localization_texts();
@@ -65,10 +65,10 @@ class AdminEnqueue {
             $this->admin_script_slug,
             'KAFWPBAdminData',
             [
-				'version'      => BWL_PLUGIN_VERSION,
+				'version'      => KAFWPB_PLUGIN_VERSION,
 				'ajaxurl'      => esc_url( admin_url( 'admin-ajax.php' ) ),
-				'product_id'   => BWL_PRODUCT_ID,
-				'installation' => get_option( BWL_PRODUCT_INSTALLATION_TAG ),
+				'product_id'   => KAFWPB_PRODUCT_ID,
+				'installation' => get_option( KAFWPB_PRODUCT_INSTALLATION_TAG ),
 			]
 		);
 	}

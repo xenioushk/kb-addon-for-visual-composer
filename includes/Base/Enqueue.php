@@ -39,9 +39,9 @@ class Enqueue {
 
 		wp_enqueue_style(
             $this->frontend_script_slug,
-            BWL_PLUGIN_STYLES_ASSETS_DIR . 'frontend.css',
+            KAFWPB_PLUGIN_STYLES_ASSETS_DIR . 'frontend.css',
             [],
-            BWL_PLUGIN_VERSION
+            KAFWPB_PLUGIN_VERSION
 		);
 	}
 
@@ -53,25 +53,25 @@ class Enqueue {
 		// Register JS
 		wp_enqueue_script(
             'counterup',
-            BWL_PLUGIN_LIBS_DIR . 'jquery-counterup/jquery.counterup.min.js',
+            KAFWPB_PLUGIN_LIBS_DIR . 'jquery-counterup/jquery.counterup.min.js',
             [ 'jquery' ],
-            BWL_PLUGIN_VERSION,
+            KAFWPB_PLUGIN_VERSION,
             true
         );
 
 		wp_enqueue_script(
             'waypoints',
-            BWL_PLUGIN_LIBS_DIR . 'jquery-waypoint/waypoints.min.js',
+            KAFWPB_PLUGIN_LIBS_DIR . 'jquery-waypoint/waypoints.min.js',
             [ 'jquery' ],
-            BWL_PLUGIN_VERSION,
+            KAFWPB_PLUGIN_VERSION,
             true
         );
 
 		wp_enqueue_script(
             $this->frontend_script_slug,
-            BWL_PLUGIN_SCRIPTS_ASSETS_DIR . 'frontend.js',
+            KAFWPB_PLUGIN_SCRIPTS_ASSETS_DIR . 'frontend.js',
             [ 'jquery' ],
-            BWL_PLUGIN_VERSION,
+            KAFWPB_PLUGIN_VERSION,
             true
         );
 
@@ -91,7 +91,7 @@ class Enqueue {
             $this->frontend_script_slug,
             'KafwpbFrontendData',
             [
-				'version' => BWL_PLUGIN_VERSION,
+				'version' => KAFWPB_PLUGIN_VERSION,
             ]
 		);
 	}

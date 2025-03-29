@@ -22,6 +22,6 @@ class PluginUpdate {
      * Check for the plugin update.
      */
 	public function check_for_the_update() {
-		new WpAutoUpdater( BWL_PLUGIN_VERSION, BWL_PLUGIN_UPDATER_URL, BWL_PLUGIN_UPDATER_SLUG );
+		new WpAutoUpdater( KAFWPB_PLUGIN_VERSION, KAFWPB_PLUGIN_UPDATER_URL, KAFWPB_PLUGIN_UPDATER_SLUG );
 	}
 }

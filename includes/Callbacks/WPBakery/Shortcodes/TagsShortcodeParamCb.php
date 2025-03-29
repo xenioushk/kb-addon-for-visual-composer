@@ -34,8 +34,8 @@ class TagsShortcodeParamCb {
 		}
 
 		$bkb_tags_args = [
-			'post_type'        => BWL_PLUGIN_POST_TYPE,
-			'taxonomy'         => BWL_PLUGIN_TAXONOMY_TAGS,
+			'post_type'        => KAFWPB_PLUGIN_POST_TYPE,
+			'taxonomy'         => KAFWPB_PLUGIN_TAXONOMY_TAGS,
 			'hide_empty'       => 1,
 			'orderby'          => 'title',
 			'order'            => 'ASC',

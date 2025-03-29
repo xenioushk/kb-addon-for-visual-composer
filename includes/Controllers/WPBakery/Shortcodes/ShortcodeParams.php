@@ -83,22 +83,22 @@ class ShortcodeParams {
 			[
 				'tag'      => 'kb_cat',
 				'callback' => [ $this->cat_shortcode_param_cb, 'get_the_output' ],
-				'scripts'  => BWL_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js',
+				'scripts'  => KAFWPB_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js',
 			],
 			[
 				'tag'      => 'kb_tags',
 				'callback' => [ $this->tags_shortcode_param_cb, 'get_the_output' ],
-				'scripts'  => BWL_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js',
+				'scripts'  => KAFWPB_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js',
 			],
 			[
 				'tag'      => 'kb_tabs',
 				'callback' => [ $this->tabs_shortcode_param_cb, 'get_the_output' ],
-				'scripts'  => BWL_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js',
+				'scripts'  => KAFWPB_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js',
 			],
 			[
 				'tag'      => 'kb_counter',
 				'callback' => [ $this->counter_shortcode_param_cb, 'get_the_output' ],
-				'scripts'  => BWL_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js',
+				'scripts'  => KAFWPB_PLUGIN_SCRIPTS_ASSETS_DIR . 'admin.js',
 			],
 		];
 
