@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "xenioushk/bwl-plugin-api",
-            "version": "1.0.2",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xenioushk/bwl-plugin-api.git",
-                "reference": "d843ccd346f7e14c3d45853b5e2346f8b71ddf41"
+                "reference": "5ccc4d85e7423e3383ba7552eec41ab861038e6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xenioushk/bwl-plugin-api/zipball/d843ccd346f7e14c3d45853b5e2346f8b71ddf41",
-                "reference": "d843ccd346f7e14c3d45853b5e2346f8b71ddf41",
+                "url": "https://api.github.com/repos/xenioushk/bwl-plugin-api/zipball/5ccc4d85e7423e3383ba7552eec41ab861038e6d",
+                "reference": "5ccc4d85e7423e3383ba7552eec41ab861038e6d",
                 "shasum": ""
             },
             "type": "library",
@@ -39,9 +39,9 @@
             "description": "Plugin api for BWL plugins.",
             "support": {
                 "issues": "https://github.com/xenioushk/bwl-plugin-api/issues",
-                "source": "https://github.com/xenioushk/bwl-plugin-api/tree/1.0.2"
+                "source": "https://github.com/xenioushk/bwl-plugin-api/tree/1.0.4"
             },
-            "time": "2025-03-17T09:59:44+00:00"
+            "time": "2025-03-22T14:19:45+00:00"
         }
     ],
     "packages-dev": [
