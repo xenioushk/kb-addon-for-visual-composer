@@ -27,8 +27,8 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 }
 
 // Load the plugin constants
-if ( file_exists( __DIR__ . '/includes/Helpers/DependencyConstants.php' ) ) {
-    Helpers\DependencyConstants::register();
+if ( file_exists( __DIR__ . '/includes/Helpers/DependencyManager.php' ) ) {
+    Helpers\DependencyManager::register();
 }
 
 use KAFWPB\Base\Activate;
@@ -64,13 +64,22 @@ register_deactivation_hook( __FILE__, __NAMESPACE__ . '\\deactivate_plugin' );
 function init_kafwpb() {
 
     // Check if the parent plugin installed.
-
     if ( ! class_exists( 'BwlKbManager\\Init' ) ) {
-        add_action( 'admin_notices', [ Helpers\DependencyConstants::class, 'notice_missing_main_plugin' ] );
+        add_action( 'admin_notices', [ Helpers\DependencyManager::class, 'notice_missing_main_plugin' ] );
         return;
     }
 
-    // Check if dependent plugin is installed.
+    // Check if the wp bakery page builder plugin installed.
+    if ( ! defined( 'WPB_VC_VERSION' ) ) {
+        add_action( 'admin_notices', [ Helpers\DependencyManager::class, 'notice_missing_wpb_plugin' ] );
+        return;
+    }
+
+    // Check parent plugin activation status.
+    if ( ! ( Helpers\DependencyManager::get_product_activation_status() ) ) {
+        add_action( 'admin_notices', [ Helpers\DependencyManager::class, 'notice_missing_purchase_verification' ] );
+        return;
+    }
 
     if ( class_exists( 'KAFWPB\\Init' ) ) {
 

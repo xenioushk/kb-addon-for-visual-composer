@@ -79,7 +79,6 @@ class Init {
 	 */
 	private static function get_base_classes() {
 		$classes = [
-			// Base\IncludePluginFiles::class,
 			Base\Enqueue::class,
 			Base\CustomTheme::class,
 			Base\AdminEnqueue::class,
@@ -148,7 +147,6 @@ class Init {
 	 */
 	private static function get_notices_classes() {
 		$classes = [
-			Controllers\Notices\PluginDependenciesNotices::class,
 			Controllers\Notices\PluginNoticesAjaxHandler::class,
 		];
 		return $classes;
