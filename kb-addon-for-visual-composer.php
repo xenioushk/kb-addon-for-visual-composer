@@ -26,6 +26,11 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
     require_once __DIR__ . '/vendor/autoload.php';
 }
 
+// Load the plugin constants
+if ( file_exists( __DIR__ . '/includes/Helpers/DependencyConstants.php' ) ) {
+    Helpers\DependencyConstants::register();
+}
+
 use KAFWPB\Base\Activate;
 use KAFWPB\Base\Deactivate;
 
@@ -57,6 +62,15 @@ register_deactivation_hook( __FILE__, __NAMESPACE__ . '\\deactivate_plugin' );
  * @return void
  */
 function init_kafwpb() {
+
+    // Check if the parent plugin installed.
+
+    if ( ! class_exists( 'BwlKbManager\\Init' ) ) {
+        add_action( 'admin_notices', [ Helpers\DependencyConstants::class, 'notice_missing_main_plugin' ] );
+        return;
+    }
+
+    // Check if dependent plugin is installed.
 
     if ( class_exists( 'KAFWPB\\Init' ) ) {
 
