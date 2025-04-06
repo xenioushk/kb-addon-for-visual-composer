@@ -105,7 +105,7 @@ class DependencyManager {
 	public static function notice_missing_main_plugin() {
 
 		$message = sprintf(
-						/* translators: 1: BWL KB Manager activation 2: Addon title */
+						// translators: 1: Plugin name, 2: Addon title
             esc_html__( 'Please install and activate the %1$s plugin to use %2$s.', 'bkb_vc' ),
             self::$bkbm_url,
             self::$addon_title
@@ -122,7 +122,7 @@ class DependencyManager {
 	public static function notice_missing_wpb_plugin() {
 
 		$message = sprintf(
-						/* translators: 1: WPBakery activation 2: Addon title */
+						// translators: 1: Plugin name, 2: Addon title
             esc_html__( 'Please install and activate the %1$s plugin to use %2$s.', 'bkb_vc' ),
             self::$wpb_url,
             self::$addon_title
@@ -139,7 +139,7 @@ class DependencyManager {
 	public static function notice_missing_purchase_verification() {
 
 		$message = sprintf(
-						/* translators: 1: License activation 2: Addon title */
+						// translators: 1: Plugin activation link, 2: Addon title
             esc_html__( 'Please Activate the %1$s to use the %2$s.', 'bkb_vc' ),
             self::$bkbm_license_url,
             self::$addon_title

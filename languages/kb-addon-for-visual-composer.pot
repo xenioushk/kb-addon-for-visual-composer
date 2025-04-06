@@ -2,35 +2,40 @@
 # This file is distributed under the same license as the KB Addon For WPBakery Page Builder plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: KB Addon For WPBakery Page Builder 1.1.5\n"
+"Project-Id-Version: KB Addon For WPBakery Page Builder 1.1.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/kb-addon-for-visual-composer\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-03-16T04:33:22+00:00\n"
+"POT-Creation-Date: 2025-04-06T11:11:22+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: bkb_vc\n"
 
 #. Plugin Name of the plugin
+#: kb-addon-for-visual-composer.php
 msgid "KB Addon For WPBakery Page Builder"
 msgstr ""
 
 #. Plugin URI of the plugin
+#: kb-addon-for-visual-composer.php
 msgid "https://1.envato.market/bkbm-wp"
 msgstr ""
 
 #. Description of the plugin
+#: kb-addon-for-visual-composer.php
 msgid "Manage KB categories, tags, ask a question form, search box, tabs from WPBakery Page Builder."
 msgstr ""
 
 #. Author of the plugin
+#: kb-addon-for-visual-composer.php
 msgid "Mahbub Alam Khan"
 msgstr ""
 
 #. Author URI of the plugin
+#: kb-addon-for-visual-composer.php
 msgid "https://bluewindlab.net"
 msgstr ""
 
@@ -678,6 +683,17 @@ msgstr ""
 
 #: includes/Controllers/WPBakery/Elements/Tags.php:290
 msgid "Additional classes: box-left-align, box-right-align, no-icon, no-separator"
+msgstr ""
+
+#. translators: 1: Plugin name, 2: Addon title
+#: includes/Helpers/DependencyManager.php:109
+#: includes/Helpers/DependencyManager.php:126
+msgid "Please install and activate the %1$s plugin to use %2$s."
+msgstr ""
+
+#. translators: 1: Plugin activation link, 2: Addon title
+#: includes/Helpers/DependencyManager.php:143
+msgid "Please Activate the %1$s to use the %2$s."
 msgstr ""
 
 #: includes/Traits/WPBakeryTraits.php:54

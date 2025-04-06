@@ -20,7 +20,7 @@ class Language {
      * Load the translation file.
      */
 	public function load_plugin_textdomain() {
-		$domain = 'bkb_vc';
+		$domain = KAFWPB_TEXT_DOMAIN; // only change here.
 		$locale = \apply_filters( 'plugin_locale', get_locale(), $domain ); // returns en_US
 		load_textdomain( $domain, trailingslashit( WP_LANG_DIR ) . $domain . '/' . $domain . '-' . $locale . '.mo' );
 	}
