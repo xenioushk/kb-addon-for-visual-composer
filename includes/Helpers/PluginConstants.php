@@ -18,7 +18,7 @@ class PluginConstants {
 
 
 		/**
-         * Get the absolute path to the plugin root.
+         * Get the relative path to the plugin root.
          *
          * @return string
          * @example wp-content/plugins/<plugin-name>/
@@ -42,8 +42,8 @@ class PluginConstants {
 	 * Register the plugin constants.
 	 */
 	public static function register() {
+		self::set_paths_constants();
 		self::set_base_constants();
-		self::set_paths_dir_constants();
 		self::set_assets_constants();
 		self::set_updater_constants();
 		self::set_product_info_constants();
@@ -53,10 +53,22 @@ class PluginConstants {
 
 	/**
 	 * Set the plugin base constants.
+     *
+	 * @example: $plugin_data = get_plugin_data( KAFWPB_PLUGIN_DIR . '/' . KAFWPB_PLUGIN_ROOT_FILE );
+	 * echo '<pre>';
+	 * print_r( $plugin_data );
+	 * echo '</pre>';
+	 * @example_param: Name,PluginURI,Description,Author,Version,AuthorURI,RequiresAtLeast,TestedUpTo,TextDomain,DomainPath
 	 */
 	private static function set_base_constants() {
-		define( 'KAFWPB_PLUGIN_VERSION', '1.1.7' );
-		define( 'KAFWPB_PLUGIN_TITLE', 'KB Addon For WPBakery Page Builder' );
+
+		$plugin_data = get_plugin_data( KAFWPB_PLUGIN_DIR . '/' . KAFWPB_PLUGIN_ROOT_FILE );
+
+		define( 'KAFWPB_PLUGIN_VERSION', $plugin_data['Version'] ?? '1.0.0' );
+		define( 'KAFWPB_PLUGIN_TITLE', $plugin_data['Name'] ?? 'KB Addon For WPBakery Page Builder' );
+		define( 'KAFWPB_TRANSLATION_DIR', $plugin_data['DomainPath'] ?? '/languages/' );
+		define( 'KAFWPB_TEXT_DOMAIN', $plugin_data['TextDomain'] ?? '' );
+
 		define( 'KAFWPB_PLUGIN_FOLDER', 'kb-addon-for-visual-composer' );
 		define( 'KAFWPB_PLUGIN_CURRENT_VERSION', KAFWPB_PLUGIN_VERSION );
 		define( 'KAFWPB_PLUGIN_POST_TYPE', 'bwl_kb' );
@@ -67,12 +79,11 @@ class PluginConstants {
 	/**
 	 * Set the plugin paths constants.
 	 */
-	private static function set_paths_dir_constants() {
+	private static function set_paths_constants() {
 		define( 'KAFWPB_PLUGIN_ROOT_FILE', 'kb-addon-for-visual-composer.php' );
 		define( 'KAFWPB_PLUGIN_DIR', self::get_plugin_path() );
 		define( 'KAFWPB_PLUGIN_FILE_PATH', KAFWPB_PLUGIN_DIR );
 		define( 'KAFWPB_PLUGIN_URL', self::get_plugin_url() );
-
 	}
 
 	/**
