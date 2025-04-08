@@ -32,7 +32,7 @@ class MetaInfo {
 
 			$additional_links = [
 				[
-					'title' => esc_html__( 'Documentation', 'bwl_ptmn' ),
+					'title' => esc_html__( 'Docs', 'bkb_vc' ),
 					'url'   => 'https://xenioushk.github.io/docs-plugins-addon/bkbm-addon/kbvc/index.html',
 					'nt'    => 1,
 				],

@@ -4,7 +4,7 @@
  * Plugin URI: https://1.envato.market/bkbm-wp
  * Description: Manage KB categories, tags, ask a question form, search box, tabs from WPBakery Page Builder.
  * Author: Mahbub Alam Khan
- * Version: 1.1.8
+ * Version: 1.1.9
  * Author URI: https://bluewindlab.net
  * WP Requires at least: 6.0+
  * Text Domain: bkb_vc
@@ -28,6 +28,7 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 
 // Load the plugin constants
 if ( file_exists( __DIR__ . '/includes/Helpers/DependencyManager.php' ) ) {
+    require_once __DIR__ . '/includes/Helpers/DependencyManager.php';
     Helpers\DependencyManager::register();
 }
 
