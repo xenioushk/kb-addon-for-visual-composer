@@ -1,5 +1,4 @@
 <?php
-
 namespace KAFWPB;
 
 /**
@@ -27,7 +26,6 @@ class Init {
 			'helpers'  => self::get_helper_classes(),
 			'base'     => self::get_base_classes(),
 			'meta'     => self::get_meta_classes(),
-			'notices'  => self::get_notices_classes(),
 			'wpbakery' => self::get_wpbakery_classes(),
 		];
 
@@ -86,7 +84,6 @@ class Init {
 			Base\PluginUpdate::class,
 			Base\Language::class,
 			Base\AdminAjaxHandlers::class,
-
 		];
 		return $classes;
 	}
@@ -115,7 +112,6 @@ class Init {
 		return $classes;
 	}
 
-
 	/**
 	 * Get WPBakery classes.
 	 *
@@ -138,17 +134,5 @@ class Init {
 			];
 
 			return $classes;
-	}
-
-	/**
-	 * Get Notices classes.
-	 *
-	 * @return array
-	 */
-	private static function get_notices_classes() {
-		$classes = [
-			Controllers\Notices\PluginNoticesAjaxHandler::class,
-		];
-		return $classes;
 	}
 }

@@ -41,7 +41,7 @@ class CounterCb {
 			'icon_total_likes'    => 'fa fa-thumbs-o-up',
 		], $atts);
 
-		extract( $atts );
+		extract( $atts ); //phpcs:ignore
 
 		$counter_explode = explode( ',', $counter );
 

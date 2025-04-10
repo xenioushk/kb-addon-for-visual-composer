@@ -43,7 +43,7 @@ class PostsCb {
 			'cont_ext_class'       => '',
 		], $atts);
 
-		extract( $atts );
+		extract( $atts ); //phpcs:ignore
 
 		$output                  = '';
 		$bkb_posts_wrapper_start = '';
@@ -72,36 +72,36 @@ class PostsCb {
 			}
 		}
 
-		if ( $wrapper_div_status == 1 ) {
+		if ( $wrapper_div_status === 1 ) {
 
 			$bkb_posts_wrapper_start .= '<div class="' . $bkb_post_column_animation . $cont_ext_class . '">';
 		}
 
 		// Start Inner Code.
 
-		if ( 'popular' == trim( $kb_type ) ) {
+		switch ( trim( $kb_type ) ) {
+			case 'popular':
+				$kb_type_title = $kb_type_title ?? esc_html__( 'Popular', 'bkb_vc' );
+				$output       .= do_shortcode( '[bwl_kb bkb_tabify="1" bkb_list_type="' . $bkb_list_type . '" meta_key="bkbm_post_views" orderby="meta_value_num" order="DESC" limit="' . $posts_per_page . '" paginate="' . $paginate . '" posts_per_page="' . $posts_per_page . '"]' );
+				break;
 
-			$kb_type_title = ( $kb_type_title == '' ) ? esc_html__( 'Popular KB', 'bkb_vc' ) : $kb_type_title;
+			case 'featured':
+				$kb_type_title = $kb_type_title ?? esc_html__( 'Featured', 'bkb_vc' );
+				$output       .= do_shortcode( '[bwl_kb bkb_tabify="1" bkb_list_type="' . $bkb_list_type . '" meta_key="bkb_featured_status" meta_value="1" orderby="meta_value_num" order="DESC" limit="' . $posts_per_page . '" paginate="' . $paginate . '" posts_per_page="' . $posts_per_page . '"]' );
+				break;
 
-			$output .= do_shortcode( '[bwl_kb bkb_tabify="1" bkb_list_type="' . $bkb_list_type . '" meta_key="bkbm_post_views" orderby="meta_value_num" order="DESC" limit="' . $posts_per_page . '" paginate="' . $paginate . '" posts_per_page="' . $posts_per_page . '"]' );
-		} elseif ( 'featured' == trim( $kb_type ) ) {
+			case 'random':
+				$kb_type_title = $kb_type_title ?? esc_html__( 'Random', 'bkb_vc' );
+				$output       .= do_shortcode( '[bwl_kb bkb_tabify="1" bkb_list_type="' . $bkb_list_type . '" orderby="rand" limit="' . $posts_per_page . '" paginate="' . $paginate . '" posts_per_page="' . $posts_per_page . '"]' );
+				break;
 
-			$kb_type_title = ( $kb_type_title == '' ) ? __( 'Featured KB', 'bkb_vc' ) : $kb_type_title;
-
-			$output .= do_shortcode( '[bwl_kb bkb_tabify="1" bkb_list_type="' . $bkb_list_type . '" meta_key="bkb_featured_status" meta_value="1" orderby="meta_value_num" order="DESC" limit="' . $posts_per_page . '" paginate="' . $paginate . '" posts_per_page="' . $posts_per_page . '"]' );
-		} elseif ( 'random' == trim( $kb_type ) ) {
-
-			$kb_type_title = ( $kb_type_title == '' ) ? __( 'Random KB', 'bkb_vc' ) : $kb_type_title;
-
-			$output .= do_shortcode( '[bwl_kb bkb_tabify="1" bkb_list_type="' . $bkb_list_type . '" orderby="rand" limit="' . $posts_per_page . '" paginate="' . $paginate . '" posts_per_page="' . $posts_per_page . '"]' );
-		} else {
-
-			$kb_type_title = ( $kb_type_title == '' ) ? __( 'Recent KB', 'bkb_vc' ) : $kb_type_title;
-
-			$output .= do_shortcode( '[bwl_kb bkb_tabify="1" bkb_list_type="' . $bkb_list_type . '" orderby="ID" order="DESC" limit="' . $posts_per_page . '" paginate="' . $paginate . '" posts_per_page="' . $posts_per_page . '"]' );
+			default:
+				$kb_type_title = $kb_type_title ?? esc_html__( 'Recent', 'bkb_vc' );
+				$output       .= do_shortcode( '[bwl_kb bkb_tabify="1" bkb_list_type="' . $bkb_list_type . '" orderby="ID" order="DESC" limit="' . $posts_per_page . '" paginate="' . $paginate . '" posts_per_page="' . $posts_per_page . '"]' );
+				break;
 		}
 
-		if ( $kb_type_title_status == 1 ) {
+		if ( $kb_type_title_status === 1 ) {
 
 			$kb_type_title_string = '<h2 class="bwl-kb-type-title">' . $kb_type_title . '</h2>';
 
@@ -110,7 +110,7 @@ class PostsCb {
 
 		// Finish Wrapper Div.
 
-		if ( $wrapper_div_status == 1 ) {
+		if ( $wrapper_div_status === 1 ) {
 
 			$bkb_posts_wrapper_end .= '</div>';
 		}
