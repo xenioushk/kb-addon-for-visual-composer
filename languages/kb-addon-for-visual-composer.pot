@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-04-08T06:38:40+00:00\n"
+"POT-Creation-Date: 2025-04-10T13:35:56+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: bkb_vc\n"
@@ -61,33 +61,21 @@ msgid "KB Likes"
 msgstr ""
 
 #: includes/Callbacks/Shortcodes/PostsCb.php:84
-#: includes/Controllers/WPBakery/Elements/Posts.php:88
-msgid "Popular KB"
-msgstr ""
-
-#: includes/Callbacks/Shortcodes/PostsCb.php:89
-#: includes/Controllers/WPBakery/Elements/Posts.php:89
-msgid "Featured KB"
-msgstr ""
-
-#: includes/Callbacks/Shortcodes/PostsCb.php:94
-#: includes/Controllers/WPBakery/Elements/Posts.php:90
-msgid "Random KB"
-msgstr ""
-
-#: includes/Callbacks/Shortcodes/PostsCb.php:99
-#: includes/Controllers/WPBakery/Elements/Posts.php:87
-msgid "Recent KB"
-msgstr ""
-
-#: includes/Callbacks/Shortcodes/TabsCb.php:26
-msgid "Featured"
-msgstr ""
-
 #: includes/Callbacks/Shortcodes/TabsCb.php:27
 msgid "Popular"
 msgstr ""
 
+#: includes/Callbacks/Shortcodes/PostsCb.php:89
+#: includes/Callbacks/Shortcodes/TabsCb.php:26
+msgid "Featured"
+msgstr ""
+
+#: includes/Callbacks/Shortcodes/PostsCb.php:94
+#: includes/Traits/WPBakeryTraits.php:189
+msgid "Random"
+msgstr ""
+
+#: includes/Callbacks/Shortcodes/PostsCb.php:99
 #: includes/Callbacks/Shortcodes/TabsCb.php:28
 msgid "Recent"
 msgstr ""
@@ -539,6 +527,22 @@ msgstr ""
 msgid "KB Type"
 msgstr ""
 
+#: includes/Controllers/WPBakery/Elements/Posts.php:87
+msgid "Recent KB"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Posts.php:88
+msgid "Popular KB"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Posts.php:89
+msgid "Featured KB"
+msgstr ""
+
+#: includes/Controllers/WPBakery/Elements/Posts.php:90
+msgid "Random KB"
+msgstr ""
+
 #: includes/Controllers/WPBakery/Elements/Posts.php:98
 msgid "KB Type Title"
 msgstr ""
@@ -746,10 +750,6 @@ msgstr ""
 
 #: includes/Traits/WPBakeryTraits.php:188
 msgid "Recent Modified"
-msgstr ""
-
-#: includes/Traits/WPBakeryTraits.php:189
-msgid "Random"
 msgstr ""
 
 #: includes/Traits/WPBakeryTraits.php:190
